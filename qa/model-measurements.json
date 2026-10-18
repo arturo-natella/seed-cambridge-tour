@@ -1,0 +1,612 @@
+{
+  "model": "/Users/owner/Desktop/Sundai/tour/blender/SEED-Cambridge.blend",
+  "revision": "seed-cambridge-03",
+  "sha256": "73c6ed51fef690c5b2fccd7a175d31b887e0a55a676b597917130b70a1d77152",
+  "blender": "5.2.1 LTS",
+  "status": "approved design modeled; not site surveyed",
+  "checks": [
+    {
+      "name": "Hall slab width",
+      "measured": 210.0,
+      "expected": 210,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "Hall slab depth",
+      "measured": 60.0,
+      "expected": 60,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "Roof low edge",
+      "measured": 7.900263786315918,
+      "expected": 7.9,
+      "tolerance": 0.03,
+      "pass": true
+    },
+    {
+      "name": "Roof high edge",
+      "measured": 9.6847562789917,
+      "expected": 9.6,
+      "tolerance": 0.1,
+      "pass": true
+    },
+    {
+      "name": "Borehole bottom",
+      "measured": -150.03814697265625,
+      "expected": -150,
+      "tolerance": 0.1,
+      "pass": true
+    },
+    {
+      "name": "Borehole field x span",
+      "measured": 155.39999389648438,
+      "expected": 155.4,
+      "tolerance": 0.15,
+      "pass": true
+    },
+    {
+      "name": "computeRack",
+      "measured": 368,
+      "expected": 368,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "networkRack",
+      "measured": 368,
+      "expected": 368,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "sparePosition",
+      "measured": 32,
+      "expected": 32,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "dryCooler",
+      "measured": 102,
+      "expected": 102,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "backupChiller",
+      "measured": 6,
+      "expected": 6,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "borehole",
+      "measured": 1024,
+      "expected": 1024,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "generator",
+      "measured": 30,
+      "expected": 30,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "fuelTank",
+      "measured": 4,
+      "expected": 4,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "pipeBridge",
+      "measured": 3,
+      "expected": 3,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "transformer",
+      "measured": 3,
+      "expected": 3,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "rackPowerDrop",
+      "measured": 736,
+      "expected": 736,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "rowBusway",
+      "measured": 32,
+      "expected": 32,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "upsDistribution",
+      "measured": 4,
+      "expected": 4,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "batteryCabinet",
+      "measured": 64,
+      "expected": 64,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "upsCabinet",
+      "measured": 32,
+      "expected": 32,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Highlighted loop bottom",
+      "measured": -150.03814697265625,
+      "expected": -150,
+      "tolerance": 0.1,
+      "pass": true
+    },
+    {
+      "name": "Highlighted loop at south edge",
+      "measured": -220.07000732421875,
+      "expected": -220.07,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "name": "Surface lids span field",
+      "measured": 155.3000030517578,
+      "expected": 155.3,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "name": "Power drops reach all 736 rack tops (maximum surface gap)",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "warm field columns reach common header (maximum surface distance)",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.11,
+      "pass": true
+    },
+    {
+      "name": "blue field columns reach common header (maximum surface distance)",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.11,
+      "pass": true
+    },
+    {
+      "name": "compute rack top",
+      "measured": 2.299999952316284,
+      "expected": 2.3,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "name": "network rack top",
+      "measured": 2.299999952316284,
+      "expected": 2.3,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "name": "dewpointSensor inventory",
+      "measured": 8,
+      "expected": 8,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "freshAirUnit inventory",
+      "measured": 1,
+      "expected": 1,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "dockAirlock inventory",
+      "measured": 3,
+      "expected": 3,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "airlockInnerDoor inventory",
+      "measured": 3,
+      "expected": 3,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "airlockOuterDoor inventory",
+      "measured": 3,
+      "expected": 3,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "drainTank inventory",
+      "measured": 2,
+      "expected": 2,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "expansionTank inventory",
+      "measured": 4,
+      "expected": 4,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "bypassValve inventory",
+      "measured": 1,
+      "expected": 1,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "coolerIsolationValve inventory",
+      "measured": 204,
+      "expected": 204,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "coolerDrainValve inventory",
+      "measured": 102,
+      "expected": 102,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "coolerFreezeSensor inventory",
+      "measured": 102,
+      "expected": 102,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Dew-point sensor boxes actual mesh components",
+      "measured": 8,
+      "expected": 8,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Dew-point sensors center height",
+      "measured": 4.768371586472142e-08,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "Inner and outer dock doors actual mesh components",
+      "measured": 6,
+      "expected": 6,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Horizontal drain tanks actual mesh components",
+      "measured": 2,
+      "expected": 2,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Upright expansion tanks actual mesh components",
+      "measured": 4,
+      "expected": 4,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Cooler isolation valve bodies actual mesh components",
+      "measured": 204,
+      "expected": 204,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Cooler freeze sensors actual mesh components",
+      "measured": 102,
+      "expected": 102,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Cooler drain actuators actual mesh components",
+      "measured": 102,
+      "expected": 102,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Motorized bypass actuator actual mesh components",
+      "measured": 1,
+      "expected": 1,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Fresh-air casing width",
+      "measured": 6.0,
+      "expected": 6,
+      "tolerance": 0.06,
+      "pass": true
+    },
+    {
+      "name": "Fresh-air casing depth",
+      "measured": 2.5,
+      "expected": 2.5,
+      "tolerance": 0.06,
+      "pass": true
+    },
+    {
+      "name": "Fresh-air casing height",
+      "measured": 2.549999952316284,
+      "expected": 2.5,
+      "tolerance": 0.06,
+      "pass": true
+    },
+    {
+      "name": "Saved routing evidence present",
+      "measured": 1,
+      "expected": 1,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Each cooler has its own isolation attached to its route",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "Each cooler has its own freeze_sensor attached to its route",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "Each cooler has its own drain_actuator attached to its route",
+      "measured": 1.4901161193847656e-08,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "All tracked routes exist as saved mesh spans",
+      "measured": 1.9073486328125e-06,
+      "expected": 0,
+      "tolerance": 0.0002,
+      "pass": true
+    },
+    {
+      "name": "Coolers with connected drain path through one bridge into an indoor tank",
+      "measured": 102,
+      "expected": 102,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Drain paths use all three bridges",
+      "measured": 3,
+      "expected": 3,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "tank_inlet_-81 terminates on actual tank shell",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.0002,
+      "pass": true
+    },
+    {
+      "name": "tank_inlet_-95 terminates on actual tank shell",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.0002,
+      "pass": true
+    },
+    {
+      "name": "Unintended operating-circuit pipe intersections",
+      "measured": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Drain pipes remain separate from operating coolant pipes",
+      "measured": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Cooler ports connected to their own hall circuit",
+      "measured": 204,
+      "expected": 204,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "Intentional bypass connection to chipWarm",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "Intentional bypass connection to chipCool",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    }
+  ],
+  "counts": {
+    "hall": 1,
+    "dockAirlock": 3,
+    "airlockInnerDoor": 3,
+    "airlockOuterDoor": 3,
+    "dewpointSensor": 8,
+    "batteryCabinet": 64,
+    "upsCabinet": 32,
+    "upsDistribution": 4,
+    "rackPowerDrop": 736,
+    "computeRack": 368,
+    "sparePosition": 32,
+    "coolingUnit": 32,
+    "rowBusway": 32,
+    "networkRack": 368,
+    "dryCooler": 102,
+    "pipeBridge": 3,
+    "drainTank": 2,
+    "expansionTank": 4,
+    "freshAirUnit": 1,
+    "freshAirDrainPan": 1,
+    "freshAirLouver": 1,
+    "bypassValve": 1,
+    "bypassActuator": 1,
+    "coolerIsolationValve": 204,
+    "coolerFreezeSensor": 102,
+    "coolerDrainValve": 102,
+    "coolerDrainJoin": 102,
+    "backupChiller": 6,
+    "borehole": 1024,
+    "groundLoopPump": 2,
+    "transformer": 3,
+    "generator": 30,
+    "fuelTank": 4
+  },
+  "bounds": {
+    "sealed": {
+      "min": [
+        -105.0,
+        -30.0,
+        -0.36000001430511475
+      ],
+      "max": [
+        105.0,
+        30.0,
+        0.0
+      ]
+    },
+    "hallRoof": {
+      "min": [
+        -105.0,
+        -29.99312973022461,
+        7.900263786315918
+      ],
+      "max": [
+        105.0,
+        29.99312973022461,
+        9.6847562789917
+      ]
+    },
+    "boreholes": {
+      "min": [
+        -80.19999694824219,
+        -220.07000732421875,
+        -150.03814697265625
+      ],
+      "max": [
+        75.19999694824219,
+        -64.93000030517578,
+        -1.0
+      ]
+    },
+    "house": {
+      "min": [
+        -197.0,
+        -12.0,
+        0.0
+      ],
+      "max": [
+        -134.85000610351562,
+        16.0,
+        9.175000190734863
+      ]
+    },
+    "greenhouse": {
+      "min": [
+        -185.0800018310547,
+        -50.060001373291016,
+        0.0
+      ],
+      "max": [
+        -124.91999816894531,
+        -19.940000534057617,
+        8.078911781311035
+      ]
+    },
+    "chillers": {
+      "min": [
+        99.83999633789062,
+        27.84000015258789,
+        0.0
+      ],
+      "max": [
+        138.0,
+        62.0,
+        3.0
+      ]
+    },
+    "drainTanks": {
+      "min": [
+        -101.0,
+        21.489999771118164,
+        0.0
+      ],
+      "max": [
+        -62.4900016784668,
+        25.255001068115234,
+        4.533997535705566
+      ]
+    },
+    "freshAirCase": {
+      "min": [
+        72.0,
+        21.950000762939453,
+        0.20000004768371582
+      ],
+      "max": [
+        78.0,
+        24.450000762939453,
+        2.75
+      ]
+    }
+  },
+  "notes": [
+    "Bounds read from evaluated saved mesh vertices in world coordinates.",
+    "New equipment counts independently checked against disconnected mesh component bounds.",
+    "Saved-scene routing records checked against mesh cap and side surfaces before connectivity and clearance analysis.",
+    "Cross-circuit clearance is a conservative centerline-distance minus pipe-radii test. The intentional chip mixing bypass is excluded from accidental-crossing counts and checked separately.",
+    "Drain connectivity does not establish hydraulic capacity, fall, air admission, complete drainability or engineered operation.",
+    "Visualization is not a construction or engineering approval."
+  ]
+}

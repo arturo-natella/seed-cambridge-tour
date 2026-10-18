@@ -1,0 +1,200 @@
+{
+  "revision": "seed-cambridge-02",
+  "reviewed_utc": "2026-10-18T22:16:22.582691+00:00",
+  "model": "tour/blender/SEED-Cambridge.blend",
+  "model_sha256": "531d43a5da1eb16957a76dea4809255b4c237297e09a254167367eae8c1909cc",
+  "measurement_sha_matches": true,
+  "blender": "5.2.1 LTS",
+  "result": "pass_with_visual_limitations",
+  "scope": "Visual review of saved final revision; not an engineering or site certification. No geometry or app source edits during this review. Four directional QA renders regenerated from saved master.",
+  "checks_passed": 29,
+  "checks_total": 29,
+  "counts": {
+    "hall": 1,
+    "batteryCabinet": 64,
+    "upsCabinet": 32,
+    "upsDistribution": 4,
+    "rackPowerDrop": 736,
+    "computeRack": 368,
+    "sparePosition": 32,
+    "coolingUnit": 32,
+    "rowBusway": 32,
+    "networkRack": 368,
+    "dryCooler": 102,
+    "pipeBridge": 3,
+    "backupChiller": 6,
+    "borehole": 1024,
+    "transformer": 3,
+    "generator": 30,
+    "fuelTank": 4
+  },
+  "images": [
+    {
+      "name": "S1",
+      "path": "tour/stills/S1.png",
+      "sha256": "664ba771aadd9c690e48fc0cfc8528e67e28199ce372bcaad056fd1b9780783c",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:09:19.992206+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior"
+    },
+    {
+      "name": "S2",
+      "path": "tour/stills/S2.png",
+      "sha256": "ec520ea2eb126d4cefe3473aad2061b4dea592dfd489603e72e50a8a75a5ba66",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:09:37.941449+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior"
+    },
+    {
+      "name": "S3",
+      "path": "tour/stills/S3.png",
+      "sha256": "49bd132907bf8af63223fe339d0ff228d8615441c857bed34d8a6357a3f3e80c",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:10:21.781130+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "section at x=-37 with full-depth geological field and interior inset"
+    },
+    {
+      "name": "S4",
+      "path": "tour/stills/S4.png",
+      "sha256": "228e6e9ad1107483d0619c446a95ba77c95ca8495281a570eaa513a8a1a20486",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:10:41.343626+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "orthographic roof-on plan"
+    },
+    {
+      "name": "S3-detail",
+      "path": "tour/stills/S3-detail.png",
+      "sha256": "1d032cf005483cd3459c0ad90db13955b88803b96c8af8c42a358482ca3dc8e0",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:10:05.477430+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-hidden interior"
+    },
+    {
+      "name": "Power-detail",
+      "path": "tour/stills/Power-detail.png",
+      "sha256": "7337f9cbdfa812652efed5bfd11c5766a83f92b584e42a90e929ee15fe378a09",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:11:12.278563+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-hidden interior"
+    },
+    {
+      "name": "QA-North",
+      "path": "tour/qa/QA-North.png",
+      "sha256": "a189ec3cf6739ededaa33c2ba24bebb926f75d35a13d39c233f537d5b5f65365",
+      "size": [
+        960,
+        540
+      ],
+      "modified_utc": "2026-10-18T22:14:38.607057+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior"
+    },
+    {
+      "name": "QA-South",
+      "path": "tour/qa/QA-South.png",
+      "sha256": "22da3ab6927f3b852f5def9c0720a32558a4f29ce240ee05695467d5ce690d23",
+      "size": [
+        960,
+        540
+      ],
+      "modified_utc": "2026-10-18T22:14:42.851453+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior"
+    },
+    {
+      "name": "QA-East",
+      "path": "tour/qa/QA-East.png",
+      "sha256": "f37f41275cf3641d17488f28264316c2ca8e4f3cd89dc4115c50bb445c9e4c93",
+      "size": [
+        960,
+        540
+      ],
+      "modified_utc": "2026-10-18T22:14:46.803004+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior"
+    },
+    {
+      "name": "QA-West",
+      "path": "tour/qa/QA-West.png",
+      "sha256": "004e77b0d4f5f119a63e8b90da72079ca268db23051865ac9567f57f57491a6e",
+      "size": [
+        960,
+        540
+      ],
+      "modified_utc": "2026-10-18T22:14:50.701345+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior"
+    }
+  ],
+  "observations": [
+    {
+      "severity": "pass",
+      "area": "Power-detail and S3-detail",
+      "finding": "Gold electrical feeds visibly connect battery cabinets, UPS/distribution and overhead row busways. Repeated drops reach rack tops. Light gray cable trays and red ceiling sprinkler pipes remain visually distinct from orange and blue floor-cooling pipes."
+    },
+    {
+      "severity": "pass",
+      "area": "S3",
+      "finding": "Section exposes the borehole field to its bottom; the highlighted front-edge loop has visible down/up direction arrows. Hall inset shows the detailed power and floor-cooling relationships."
+    },
+    {
+      "severity": "pass",
+      "area": "S4 and four directional views",
+      "finding": "Main hall, elevated ridge, chillers, thermal plant house, solar field, substation, generator yard, greenhouse, operations building and parking maintain consistent positions. No new missing wall or support condition observed in external inspection."
+    },
+    {
+      "severity": "presentation_limitation",
+      "area": "S1, QA-North and QA-West",
+      "finding": "Distant context buildings and skyline sit outside the parcel ground plane and appear suspended against the background. This is an inherited context-model presentation limitation, not a measured campus geometry change."
+    },
+    {
+      "severity": "presentation_limitation",
+      "area": "S2",
+      "finding": "Winter composition leaves a large area of empty sky; the campus and raised cooler deck remain legible but occupy less of the frame than they could."
+    },
+    {
+      "severity": "caption_precision",
+      "area": "S3",
+      "finding": "The caption says 1,024 loops while the visible section removes the part of the field on one side of x=-37. The number is the complete campus field count; adding total would make the distinction explicit."
+    },
+    {
+      "severity": "scale_limitation",
+      "area": "S3",
+      "finding": "Individual borehole U-leg separation is very small compared with 150 m depth. Dense field lines show aggregate extent; the interactive view adds a schematic to explain the single loop clearly without widening measured geometry."
+    }
+  ]
+}

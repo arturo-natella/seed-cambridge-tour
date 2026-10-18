@@ -1,0 +1,9154 @@
+{
+  "revision": "seed-cambridge-03",
+  "status": "Illustrative routes and sizes; not a pipework/drainability design",
+  "routes": [
+    {
+      "name": "chipWarm_spine",
+      "group": "spine",
+      "material": "warm",
+      "points": [
+        [
+          -102,
+          26,
+          2.8
+        ],
+        [
+          102,
+          26,
+          2.8
+        ]
+      ],
+      "radius": 0.22
+    },
+    {
+      "name": "chipCool_spine",
+      "group": "spine",
+      "material": "blue",
+      "points": [
+        [
+          -102,
+          27,
+          2.8
+        ],
+        [
+          102,
+          27,
+          2.8
+        ]
+      ],
+      "radius": 0.22
+    },
+    {
+      "name": "roomWarm_spine",
+      "group": "spine",
+      "material": "warm",
+      "points": [
+        [
+          -102,
+          28,
+          2.8
+        ],
+        [
+          102,
+          28,
+          2.8
+        ]
+      ],
+      "radius": 0.22
+    },
+    {
+      "name": "roomCool_spine",
+      "group": "spine",
+      "material": "blue",
+      "points": [
+        [
+          -102,
+          29,
+          2.8
+        ],
+        [
+          102,
+          29,
+          2.8
+        ]
+      ],
+      "radius": 0.22
+    },
+    {
+      "name": "chipWarm_main_bridge_-60",
+      "group": "bridges",
+      "material": "warm",
+      "points": [
+        [
+          -61.3,
+          26,
+          2.8
+        ],
+        [
+          -61.3,
+          26,
+          1.8
+        ],
+        [
+          -61.3,
+          30,
+          1.8
+        ],
+        [
+          -61.3,
+          30,
+          7.2
+        ],
+        [
+          -61.3,
+          36,
+          7.2
+        ],
+        [
+          -61.3,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.3
+    },
+    {
+      "name": "chipCool_main_bridge_-60",
+      "group": "bridges",
+      "material": "blue",
+      "points": [
+        [
+          -60.4,
+          27,
+          2.8
+        ],
+        [
+          -60.4,
+          27,
+          1.8
+        ],
+        [
+          -60.4,
+          30,
+          1.8
+        ],
+        [
+          -60.4,
+          30,
+          7.2
+        ],
+        [
+          -60.4,
+          36,
+          7.2
+        ],
+        [
+          -60.4,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.3
+    },
+    {
+      "name": "roomWarm_main_bridge_-60",
+      "group": "bridges",
+      "material": "warm",
+      "points": [
+        [
+          -59.5,
+          28,
+          2.8
+        ],
+        [
+          -59.5,
+          28,
+          1.8
+        ],
+        [
+          -59.5,
+          30,
+          1.8
+        ],
+        [
+          -59.5,
+          30,
+          7.2
+        ],
+        [
+          -59.5,
+          36,
+          7.2
+        ],
+        [
+          -59.5,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.2
+    },
+    {
+      "name": "roomCool_main_bridge_-60",
+      "group": "bridges",
+      "material": "blue",
+      "points": [
+        [
+          -58.75,
+          29,
+          2.8
+        ],
+        [
+          -58.75,
+          29,
+          1.8
+        ],
+        [
+          -58.75,
+          30,
+          1.8
+        ],
+        [
+          -58.75,
+          30,
+          7.2
+        ],
+        [
+          -58.75,
+          36,
+          7.2
+        ],
+        [
+          -58.75,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.2
+    },
+    {
+      "name": "chipWarm_main_bridge_0",
+      "group": "bridges",
+      "material": "warm",
+      "points": [
+        [
+          -1.3,
+          26,
+          2.8
+        ],
+        [
+          -1.3,
+          26,
+          1.8
+        ],
+        [
+          -1.3,
+          30,
+          1.8
+        ],
+        [
+          -1.3,
+          30,
+          7.2
+        ],
+        [
+          -1.3,
+          36,
+          7.2
+        ],
+        [
+          -1.3,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.3
+    },
+    {
+      "name": "chipCool_main_bridge_0",
+      "group": "bridges",
+      "material": "blue",
+      "points": [
+        [
+          -0.4,
+          27,
+          2.8
+        ],
+        [
+          -0.4,
+          27,
+          1.8
+        ],
+        [
+          -0.4,
+          30,
+          1.8
+        ],
+        [
+          -0.4,
+          30,
+          7.2
+        ],
+        [
+          -0.4,
+          36,
+          7.2
+        ],
+        [
+          -0.4,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.3
+    },
+    {
+      "name": "roomWarm_main_bridge_0",
+      "group": "bridges",
+      "material": "warm",
+      "points": [
+        [
+          0.5,
+          28,
+          2.8
+        ],
+        [
+          0.5,
+          28,
+          1.8
+        ],
+        [
+          0.5,
+          30,
+          1.8
+        ],
+        [
+          0.5,
+          30,
+          7.2
+        ],
+        [
+          0.5,
+          36,
+          7.2
+        ],
+        [
+          0.5,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.2
+    },
+    {
+      "name": "roomCool_main_bridge_0",
+      "group": "bridges",
+      "material": "blue",
+      "points": [
+        [
+          1.25,
+          29,
+          2.8
+        ],
+        [
+          1.25,
+          29,
+          1.8
+        ],
+        [
+          1.25,
+          30,
+          1.8
+        ],
+        [
+          1.25,
+          30,
+          7.2
+        ],
+        [
+          1.25,
+          36,
+          7.2
+        ],
+        [
+          1.25,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.2
+    },
+    {
+      "name": "chipWarm_main_bridge_60",
+      "group": "bridges",
+      "material": "warm",
+      "points": [
+        [
+          58.7,
+          26,
+          2.8
+        ],
+        [
+          58.7,
+          26,
+          1.8
+        ],
+        [
+          58.7,
+          30,
+          1.8
+        ],
+        [
+          58.7,
+          30,
+          7.2
+        ],
+        [
+          58.7,
+          36,
+          7.2
+        ],
+        [
+          58.7,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.3
+    },
+    {
+      "name": "chipCool_main_bridge_60",
+      "group": "bridges",
+      "material": "blue",
+      "points": [
+        [
+          59.6,
+          27,
+          2.8
+        ],
+        [
+          59.6,
+          27,
+          1.8
+        ],
+        [
+          59.6,
+          30,
+          1.8
+        ],
+        [
+          59.6,
+          30,
+          7.2
+        ],
+        [
+          59.6,
+          36,
+          7.2
+        ],
+        [
+          59.6,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.3
+    },
+    {
+      "name": "roomWarm_main_bridge_60",
+      "group": "bridges",
+      "material": "warm",
+      "points": [
+        [
+          60.5,
+          28,
+          2.8
+        ],
+        [
+          60.5,
+          28,
+          1.8
+        ],
+        [
+          60.5,
+          30,
+          1.8
+        ],
+        [
+          60.5,
+          30,
+          7.2
+        ],
+        [
+          60.5,
+          36,
+          7.2
+        ],
+        [
+          60.5,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.2
+    },
+    {
+      "name": "roomCool_main_bridge_60",
+      "group": "bridges",
+      "material": "blue",
+      "points": [
+        [
+          61.25,
+          29,
+          2.8
+        ],
+        [
+          61.25,
+          29,
+          1.8
+        ],
+        [
+          61.25,
+          30,
+          1.8
+        ],
+        [
+          61.25,
+          30,
+          7.2
+        ],
+        [
+          61.25,
+          36,
+          7.2
+        ],
+        [
+          61.25,
+          38,
+          7.2
+        ]
+      ],
+      "radius": 0.2
+    },
+    {
+      "name": "fresh_air_condensate",
+      "group": "freshAir",
+      "material": "silver",
+      "points": [
+        [
+          77.7,
+          23.1,
+          0.45
+        ],
+        [
+          78.4,
+          23.1,
+          0.45
+        ],
+        [
+          78.4,
+          23.1,
+          0.15
+        ],
+        [
+          78.4,
+          24.2,
+          0.15
+        ]
+      ],
+      "radius": 0.025
+    },
+    {
+      "name": "chip_bypass",
+      "group": "bypass",
+      "material": "warm",
+      "points": [
+        [
+          -1.3,
+          35,
+          7.2
+        ],
+        [
+          -1.3,
+          35,
+          8.3
+        ],
+        [
+          -0.4,
+          35,
+          8.3
+        ],
+        [
+          -0.4,
+          35,
+          7.2
+        ]
+      ],
+      "radius": 0.18
+    },
+    {
+      "name": "chipWarm_crossfeed",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -61.3,
+          31.0,
+          5.1
+        ],
+        [
+          58.7,
+          31.0,
+          5.1
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "chipWarm_north_trunk",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -1.3,
+          31.0,
+          5.1
+        ],
+        [
+          -1.3,
+          61,
+          5.1
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "chipWarm_bridge_-60",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -61.3,
+          36,
+          7.2
+        ],
+        [
+          -61.3,
+          31.0,
+          7.2
+        ],
+        [
+          -61.3,
+          31.0,
+          5.1
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "chipWarm_bridge_0",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -1.3,
+          36,
+          7.2
+        ],
+        [
+          -1.3,
+          31.0,
+          7.2
+        ],
+        [
+          -1.3,
+          31.0,
+          5.1
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "chipWarm_bridge_60",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          58.7,
+          36,
+          7.2
+        ],
+        [
+          58.7,
+          31.0,
+          7.2
+        ],
+        [
+          58.7,
+          31.0,
+          5.1
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "chipCool_crossfeed",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -60.4,
+          31.7,
+          4.7
+        ],
+        [
+          59.6,
+          31.7,
+          4.7
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "chipCool_north_trunk",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -0.4,
+          31.7,
+          4.7
+        ],
+        [
+          -0.4,
+          61,
+          4.7
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "chipCool_bridge_-60",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -60.4,
+          36,
+          7.2
+        ],
+        [
+          -60.4,
+          31.7,
+          7.2
+        ],
+        [
+          -60.4,
+          31.7,
+          4.7
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "chipCool_bridge_0",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -0.4,
+          36,
+          7.2
+        ],
+        [
+          -0.4,
+          31.7,
+          7.2
+        ],
+        [
+          -0.4,
+          31.7,
+          4.7
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "chipCool_bridge_60",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          59.6,
+          36,
+          7.2
+        ],
+        [
+          59.6,
+          31.7,
+          7.2
+        ],
+        [
+          59.6,
+          31.7,
+          4.7
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "roomWarm_crossfeed",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -59.5,
+          32.4,
+          4.2
+        ],
+        [
+          60.5,
+          32.4,
+          4.2
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "roomWarm_north_trunk",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          0.5,
+          32.4,
+          4.2
+        ],
+        [
+          0.5,
+          61,
+          4.2
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "roomWarm_bridge_-60",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -59.5,
+          36,
+          7.2
+        ],
+        [
+          -59.5,
+          32.4,
+          7.2
+        ],
+        [
+          -59.5,
+          32.4,
+          4.2
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "roomWarm_bridge_0",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          0.5,
+          36,
+          7.2
+        ],
+        [
+          0.5,
+          32.4,
+          7.2
+        ],
+        [
+          0.5,
+          32.4,
+          4.2
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "roomWarm_bridge_60",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          60.5,
+          36,
+          7.2
+        ],
+        [
+          60.5,
+          32.4,
+          7.2
+        ],
+        [
+          60.5,
+          32.4,
+          4.2
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "roomCool_crossfeed",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -58.75,
+          33.1,
+          3.8
+        ],
+        [
+          61.25,
+          33.1,
+          3.8
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "roomCool_north_trunk",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          1.25,
+          33.1,
+          3.8
+        ],
+        [
+          1.25,
+          61,
+          3.8
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "roomCool_bridge_-60",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -58.75,
+          36,
+          7.2
+        ],
+        [
+          -58.75,
+          33.1,
+          7.2
+        ],
+        [
+          -58.75,
+          33.1,
+          3.8
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "roomCool_bridge_0",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          1.25,
+          36,
+          7.2
+        ],
+        [
+          1.25,
+          33.1,
+          7.2
+        ],
+        [
+          1.25,
+          33.1,
+          3.8
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "roomCool_bridge_60",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          61.25,
+          36,
+          7.2
+        ],
+        [
+          61.25,
+          33.1,
+          7.2
+        ],
+        [
+          61.25,
+          33.1,
+          3.8
+        ]
+      ],
+      "radius": 0.16
+    },
+    {
+      "name": "chipWarm_row_0",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          39.02,
+          5.1
+        ],
+        [
+          103.0,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "chipCool_row_0",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          39.35,
+          4.7
+        ],
+        [
+          95.0,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "chipWarm_row_1",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          43.120000000000005,
+          5.1
+        ],
+        [
+          103.0,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "chipCool_row_1",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          43.45,
+          4.7
+        ],
+        [
+          95.0,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "chipWarm_row_2",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          47.22,
+          5.1
+        ],
+        [
+          103.0,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "chipCool_row_2",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          47.55,
+          4.7
+        ],
+        [
+          95.0,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "chipWarm_row_3",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          51.32,
+          5.1
+        ],
+        [
+          103.0,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "chipCool_row_3",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          51.65,
+          4.7
+        ],
+        [
+          95.0,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "chipWarm_row_4",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          55.42,
+          5.1
+        ],
+        [
+          -1.3,
+          55.42,
+          5.1
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "chipCool_row_4",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          55.75,
+          4.7
+        ],
+        [
+          -0.4,
+          55.75,
+          4.7
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "roomWarm_row_4",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -33.125,
+          56.08,
+          4.2
+        ],
+        [
+          103.0,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "roomCool_row_4",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -41.125,
+          56.4,
+          3.8
+        ],
+        [
+          95.0,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "roomWarm_row_5",
+      "group": "coolerCircuitPipes",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          60.18,
+          4.2
+        ],
+        [
+          103.0,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "roomCool_row_5",
+      "group": "coolerCircuitPipes",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          60.5,
+          3.8
+        ],
+        [
+          95.0,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.11
+    },
+    {
+      "name": "cooler_0_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -95.0,
+          39.02,
+          7.6
+        ],
+        [
+          -95.0,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_0_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -103.0,
+          39.35,
+          7.6
+        ],
+        [
+          -103.0,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_0_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          36.5,
+          7.3
+        ],
+        [
+          -99.0,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          -99.0,
+          36.300000000000004,
+          6.5828
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_1_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -82.625,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -82.625,
+          39.02,
+          7.6
+        ],
+        [
+          -82.625,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_1_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -90.625,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -90.625,
+          39.35,
+          7.6
+        ],
+        [
+          -90.625,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_1_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -86.625,
+          36.5,
+          7.3
+        ],
+        [
+          -86.625,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          -86.625,
+          36.300000000000004,
+          6.55805
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_2_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -70.25,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -70.25,
+          39.02,
+          7.6
+        ],
+        [
+          -70.25,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_2_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -78.25,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -78.25,
+          39.35,
+          7.6
+        ],
+        [
+          -78.25,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_2_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -74.25,
+          36.5,
+          7.3
+        ],
+        [
+          -74.25,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          -74.25,
+          36.300000000000004,
+          6.5333
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_3_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -57.875,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -57.875,
+          39.02,
+          7.6
+        ],
+        [
+          -57.875,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_3_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -65.875,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -65.875,
+          39.35,
+          7.6
+        ],
+        [
+          -65.875,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_3_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -61.875,
+          36.5,
+          7.3
+        ],
+        [
+          -61.875,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          -61.875,
+          36.300000000000004,
+          6.50855
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_4_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -45.5,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -45.5,
+          39.02,
+          7.6
+        ],
+        [
+          -45.5,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_4_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -53.5,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -53.5,
+          39.35,
+          7.6
+        ],
+        [
+          -53.5,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_4_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -49.5,
+          36.5,
+          7.3
+        ],
+        [
+          -49.5,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          -49.5,
+          36.300000000000004,
+          6.5186
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_5_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -33.125,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -33.125,
+          39.02,
+          7.6
+        ],
+        [
+          -33.125,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_5_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -41.125,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -41.125,
+          39.35,
+          7.6
+        ],
+        [
+          -41.125,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_5_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -37.125,
+          36.5,
+          7.3
+        ],
+        [
+          -37.125,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          -37.125,
+          36.300000000000004,
+          6.54335
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_6_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -20.75,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -20.75,
+          39.02,
+          7.6
+        ],
+        [
+          -20.75,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_6_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -28.75,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -28.75,
+          39.35,
+          7.6
+        ],
+        [
+          -28.75,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_6_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          36.5,
+          7.3
+        ],
+        [
+          -24.75,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          -24.75,
+          36.300000000000004,
+          6.5543
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_7_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -8.375,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -8.375,
+          39.02,
+          7.6
+        ],
+        [
+          -8.375,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_7_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -16.375,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -16.375,
+          39.35,
+          7.6
+        ],
+        [
+          -16.375,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_7_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -12.375,
+          36.5,
+          7.3
+        ],
+        [
+          -12.375,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          -12.375,
+          36.300000000000004,
+          6.5295499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_8_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          4.0,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          4.0,
+          39.02,
+          7.6
+        ],
+        [
+          4.0,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_8_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -4.0,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          -4.0,
+          39.35,
+          7.6
+        ],
+        [
+          -4.0,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_8_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          0.0,
+          36.5,
+          7.3
+        ],
+        [
+          0.0,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          0.0,
+          36.300000000000004,
+          6.5047999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_9_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          16.375,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          16.375,
+          39.02,
+          7.6
+        ],
+        [
+          16.375,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_9_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          8.375,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          8.375,
+          39.35,
+          7.6
+        ],
+        [
+          8.375,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_9_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          12.375,
+          36.5,
+          7.3
+        ],
+        [
+          12.375,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          12.375,
+          36.300000000000004,
+          6.522349999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_10_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          28.75,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          28.75,
+          39.02,
+          7.6
+        ],
+        [
+          28.75,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_10_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          20.75,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          20.75,
+          39.35,
+          7.6
+        ],
+        [
+          20.75,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_10_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          24.75,
+          36.5,
+          7.3
+        ],
+        [
+          24.75,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          24.75,
+          36.300000000000004,
+          6.5470999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_11_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          41.125,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          41.125,
+          39.02,
+          7.6
+        ],
+        [
+          41.125,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_11_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          33.125,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          33.125,
+          39.35,
+          7.6
+        ],
+        [
+          33.125,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_11_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          36.5,
+          7.3
+        ],
+        [
+          37.125,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          37.125,
+          36.300000000000004,
+          6.550549999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_12_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          53.5,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          53.5,
+          39.02,
+          7.6
+        ],
+        [
+          53.5,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_12_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          45.5,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          45.5,
+          39.35,
+          7.6
+        ],
+        [
+          45.5,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_12_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          49.5,
+          36.5,
+          7.3
+        ],
+        [
+          49.5,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          49.5,
+          36.300000000000004,
+          6.5258
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_13_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          65.875,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          65.875,
+          39.02,
+          7.6
+        ],
+        [
+          65.875,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_13_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          57.875,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          57.875,
+          39.35,
+          7.6
+        ],
+        [
+          57.875,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_13_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          61.875,
+          36.5,
+          7.3
+        ],
+        [
+          61.875,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          61.875,
+          36.300000000000004,
+          6.5013499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_14_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          78.25,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          78.25,
+          39.02,
+          7.6
+        ],
+        [
+          78.25,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_14_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          70.25,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          70.25,
+          39.35,
+          7.6
+        ],
+        [
+          70.25,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_14_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          74.25,
+          36.5,
+          7.3
+        ],
+        [
+          74.25,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          74.25,
+          36.300000000000004,
+          6.5261
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_15_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          90.625,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          90.625,
+          39.02,
+          7.6
+        ],
+        [
+          90.625,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_15_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          82.625,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          82.625,
+          39.35,
+          7.6
+        ],
+        [
+          82.625,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_15_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          86.625,
+          36.5,
+          7.3
+        ],
+        [
+          86.625,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          86.625,
+          36.300000000000004,
+          6.55085
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_16_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          103.0,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          103.0,
+          39.02,
+          7.6
+        ],
+        [
+          103.0,
+          39.02,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_16_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          95.0,
+          38.800000000000004,
+          7.6
+        ],
+        [
+          95.0,
+          39.35,
+          7.6
+        ],
+        [
+          95.0,
+          39.35,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_16_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          99.0,
+          36.5,
+          7.3
+        ],
+        [
+          99.0,
+          36.300000000000004,
+          7.24
+        ],
+        [
+          99.0,
+          36.300000000000004,
+          6.5756
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_17_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -95.0,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          -95.0,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_17_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -103.0,
+          43.45,
+          7.6
+        ],
+        [
+          -103.0,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_17_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          40.6,
+          7.3
+        ],
+        [
+          -99.0,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          -99.0,
+          40.400000000000006,
+          6.5992
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_18_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -82.625,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -82.625,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          -82.625,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_18_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -90.625,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -90.625,
+          43.45,
+          7.6
+        ],
+        [
+          -90.625,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_18_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -86.625,
+          40.6,
+          7.3
+        ],
+        [
+          -86.625,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          -86.625,
+          40.400000000000006,
+          6.57445
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_19_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -70.25,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -70.25,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          -70.25,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_19_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -78.25,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -78.25,
+          43.45,
+          7.6
+        ],
+        [
+          -78.25,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_19_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -74.25,
+          40.6,
+          7.3
+        ],
+        [
+          -74.25,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          -74.25,
+          40.400000000000006,
+          6.5497
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_20_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -57.875,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -57.875,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          -57.875,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_20_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -65.875,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -65.875,
+          43.45,
+          7.6
+        ],
+        [
+          -65.875,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_20_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -61.875,
+          40.6,
+          7.3
+        ],
+        [
+          -61.875,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          -61.875,
+          40.400000000000006,
+          6.52495
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_21_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -45.5,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -45.5,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          -45.5,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_21_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -53.5,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -53.5,
+          43.45,
+          7.6
+        ],
+        [
+          -53.5,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_21_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -49.5,
+          40.6,
+          7.3
+        ],
+        [
+          -49.5,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          -49.5,
+          40.400000000000006,
+          6.535
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_22_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -33.125,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -33.125,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          -33.125,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_22_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -41.125,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -41.125,
+          43.45,
+          7.6
+        ],
+        [
+          -41.125,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_22_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -37.125,
+          40.6,
+          7.3
+        ],
+        [
+          -37.125,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          -37.125,
+          40.400000000000006,
+          6.55975
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_23_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -20.75,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -20.75,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          -20.75,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_23_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -28.75,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -28.75,
+          43.45,
+          7.6
+        ],
+        [
+          -28.75,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_23_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          40.6,
+          7.3
+        ],
+        [
+          -24.75,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          -24.75,
+          40.400000000000006,
+          6.5706999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_24_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -8.375,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -8.375,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          -8.375,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_24_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -16.375,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -16.375,
+          43.45,
+          7.6
+        ],
+        [
+          -16.375,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_24_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -12.375,
+          40.6,
+          7.3
+        ],
+        [
+          -12.375,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          -12.375,
+          40.400000000000006,
+          6.5459499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_25_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          4.0,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          4.0,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          4.0,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_25_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -4.0,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          -4.0,
+          43.45,
+          7.6
+        ],
+        [
+          -4.0,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_25_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          0.0,
+          40.6,
+          7.3
+        ],
+        [
+          0.0,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          0.0,
+          40.400000000000006,
+          6.521199999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_26_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          16.375,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          16.375,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          16.375,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_26_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          8.375,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          8.375,
+          43.45,
+          7.6
+        ],
+        [
+          8.375,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_26_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          12.375,
+          40.6,
+          7.3
+        ],
+        [
+          12.375,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          12.375,
+          40.400000000000006,
+          6.538749999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_27_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          28.75,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          28.75,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          28.75,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_27_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          20.75,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          20.75,
+          43.45,
+          7.6
+        ],
+        [
+          20.75,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_27_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          24.75,
+          40.6,
+          7.3
+        ],
+        [
+          24.75,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          24.75,
+          40.400000000000006,
+          6.5634999999999994
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_28_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          41.125,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          41.125,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          41.125,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_28_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          33.125,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          33.125,
+          43.45,
+          7.6
+        ],
+        [
+          33.125,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_28_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          40.6,
+          7.3
+        ],
+        [
+          37.125,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          37.125,
+          40.400000000000006,
+          6.566949999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_29_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          53.5,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          53.5,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          53.5,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_29_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          45.5,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          45.5,
+          43.45,
+          7.6
+        ],
+        [
+          45.5,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_29_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          49.5,
+          40.6,
+          7.3
+        ],
+        [
+          49.5,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          49.5,
+          40.400000000000006,
+          6.5422
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_30_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          65.875,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          65.875,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          65.875,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_30_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          57.875,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          57.875,
+          43.45,
+          7.6
+        ],
+        [
+          57.875,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_30_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          61.875,
+          40.6,
+          7.3
+        ],
+        [
+          61.875,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          61.875,
+          40.400000000000006,
+          6.5177499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_31_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          78.25,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          78.25,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          78.25,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_31_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          70.25,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          70.25,
+          43.45,
+          7.6
+        ],
+        [
+          70.25,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_31_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          74.25,
+          40.6,
+          7.3
+        ],
+        [
+          74.25,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          74.25,
+          40.400000000000006,
+          6.5424999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_32_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          90.625,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          90.625,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          90.625,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_32_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          82.625,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          82.625,
+          43.45,
+          7.6
+        ],
+        [
+          82.625,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_32_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          86.625,
+          40.6,
+          7.3
+        ],
+        [
+          86.625,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          86.625,
+          40.400000000000006,
+          6.56725
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_33_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          103.0,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          103.0,
+          43.120000000000005,
+          7.6
+        ],
+        [
+          103.0,
+          43.120000000000005,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_33_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          95.0,
+          42.900000000000006,
+          7.6
+        ],
+        [
+          95.0,
+          43.45,
+          7.6
+        ],
+        [
+          95.0,
+          43.45,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_33_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          99.0,
+          40.6,
+          7.3
+        ],
+        [
+          99.0,
+          40.400000000000006,
+          7.24
+        ],
+        [
+          99.0,
+          40.400000000000006,
+          6.592
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_34_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          47.0,
+          7.6
+        ],
+        [
+          -95.0,
+          47.22,
+          7.6
+        ],
+        [
+          -95.0,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_34_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          47.0,
+          7.6
+        ],
+        [
+          -103.0,
+          47.55,
+          7.6
+        ],
+        [
+          -103.0,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_34_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          -99.0,
+          44.5,
+          7.24
+        ],
+        [
+          -99.0,
+          44.5,
+          6.6156
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_35_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -82.625,
+          47.0,
+          7.6
+        ],
+        [
+          -82.625,
+          47.22,
+          7.6
+        ],
+        [
+          -82.625,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_35_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -90.625,
+          47.0,
+          7.6
+        ],
+        [
+          -90.625,
+          47.55,
+          7.6
+        ],
+        [
+          -90.625,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_35_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -86.625,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          -86.625,
+          44.5,
+          7.24
+        ],
+        [
+          -86.625,
+          44.5,
+          6.59085
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_36_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -70.25,
+          47.0,
+          7.6
+        ],
+        [
+          -70.25,
+          47.22,
+          7.6
+        ],
+        [
+          -70.25,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_36_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -78.25,
+          47.0,
+          7.6
+        ],
+        [
+          -78.25,
+          47.55,
+          7.6
+        ],
+        [
+          -78.25,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_36_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -74.25,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          -74.25,
+          44.5,
+          7.24
+        ],
+        [
+          -74.25,
+          44.5,
+          6.5661
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_37_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -57.875,
+          47.0,
+          7.6
+        ],
+        [
+          -57.875,
+          47.22,
+          7.6
+        ],
+        [
+          -57.875,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_37_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -65.875,
+          47.0,
+          7.6
+        ],
+        [
+          -65.875,
+          47.55,
+          7.6
+        ],
+        [
+          -65.875,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_37_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -61.875,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          -61.875,
+          44.5,
+          7.24
+        ],
+        [
+          -61.875,
+          44.5,
+          6.5413499999999996
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_38_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -45.5,
+          47.0,
+          7.6
+        ],
+        [
+          -45.5,
+          47.22,
+          7.6
+        ],
+        [
+          -45.5,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_38_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -53.5,
+          47.0,
+          7.6
+        ],
+        [
+          -53.5,
+          47.55,
+          7.6
+        ],
+        [
+          -53.5,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_38_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -49.5,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          -49.5,
+          44.5,
+          7.24
+        ],
+        [
+          -49.5,
+          44.5,
+          6.5514
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_39_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -33.125,
+          47.0,
+          7.6
+        ],
+        [
+          -33.125,
+          47.22,
+          7.6
+        ],
+        [
+          -33.125,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_39_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -41.125,
+          47.0,
+          7.6
+        ],
+        [
+          -41.125,
+          47.55,
+          7.6
+        ],
+        [
+          -41.125,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_39_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -37.125,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          -37.125,
+          44.5,
+          7.24
+        ],
+        [
+          -37.125,
+          44.5,
+          6.57615
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_40_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -20.75,
+          47.0,
+          7.6
+        ],
+        [
+          -20.75,
+          47.22,
+          7.6
+        ],
+        [
+          -20.75,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_40_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -28.75,
+          47.0,
+          7.6
+        ],
+        [
+          -28.75,
+          47.55,
+          7.6
+        ],
+        [
+          -28.75,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_40_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          -24.75,
+          44.5,
+          7.24
+        ],
+        [
+          -24.75,
+          44.5,
+          6.5870999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_41_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -8.375,
+          47.0,
+          7.6
+        ],
+        [
+          -8.375,
+          47.22,
+          7.6
+        ],
+        [
+          -8.375,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_41_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -16.375,
+          47.0,
+          7.6
+        ],
+        [
+          -16.375,
+          47.55,
+          7.6
+        ],
+        [
+          -16.375,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_41_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -12.375,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          -12.375,
+          44.5,
+          7.24
+        ],
+        [
+          -12.375,
+          44.5,
+          6.5623499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_42_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          4.0,
+          47.0,
+          7.6
+        ],
+        [
+          4.0,
+          47.22,
+          7.6
+        ],
+        [
+          4.0,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_42_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -4.0,
+          47.0,
+          7.6
+        ],
+        [
+          -4.0,
+          47.55,
+          7.6
+        ],
+        [
+          -4.0,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_42_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          0.0,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          0.0,
+          44.5,
+          7.24
+        ],
+        [
+          0.0,
+          44.5,
+          6.537599999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_43_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          16.375,
+          47.0,
+          7.6
+        ],
+        [
+          16.375,
+          47.22,
+          7.6
+        ],
+        [
+          16.375,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_43_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          8.375,
+          47.0,
+          7.6
+        ],
+        [
+          8.375,
+          47.55,
+          7.6
+        ],
+        [
+          8.375,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_43_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          12.375,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          12.375,
+          44.5,
+          7.24
+        ],
+        [
+          12.375,
+          44.5,
+          6.555149999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_44_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          28.75,
+          47.0,
+          7.6
+        ],
+        [
+          28.75,
+          47.22,
+          7.6
+        ],
+        [
+          28.75,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_44_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          20.75,
+          47.0,
+          7.6
+        ],
+        [
+          20.75,
+          47.55,
+          7.6
+        ],
+        [
+          20.75,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_44_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          24.75,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          24.75,
+          44.5,
+          7.24
+        ],
+        [
+          24.75,
+          44.5,
+          6.579899999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_45_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          41.125,
+          47.0,
+          7.6
+        ],
+        [
+          41.125,
+          47.22,
+          7.6
+        ],
+        [
+          41.125,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_45_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          33.125,
+          47.0,
+          7.6
+        ],
+        [
+          33.125,
+          47.55,
+          7.6
+        ],
+        [
+          33.125,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_45_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          37.125,
+          44.5,
+          7.24
+        ],
+        [
+          37.125,
+          44.5,
+          6.583349999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_46_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          53.5,
+          47.0,
+          7.6
+        ],
+        [
+          53.5,
+          47.22,
+          7.6
+        ],
+        [
+          53.5,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_46_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          45.5,
+          47.0,
+          7.6
+        ],
+        [
+          45.5,
+          47.55,
+          7.6
+        ],
+        [
+          45.5,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_46_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          49.5,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          49.5,
+          44.5,
+          7.24
+        ],
+        [
+          49.5,
+          44.5,
+          6.5586
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_47_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          65.875,
+          47.0,
+          7.6
+        ],
+        [
+          65.875,
+          47.22,
+          7.6
+        ],
+        [
+          65.875,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_47_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          57.875,
+          47.0,
+          7.6
+        ],
+        [
+          57.875,
+          47.55,
+          7.6
+        ],
+        [
+          57.875,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_47_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          61.875,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          61.875,
+          44.5,
+          7.24
+        ],
+        [
+          61.875,
+          44.5,
+          6.5341499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_48_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          78.25,
+          47.0,
+          7.6
+        ],
+        [
+          78.25,
+          47.22,
+          7.6
+        ],
+        [
+          78.25,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_48_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          70.25,
+          47.0,
+          7.6
+        ],
+        [
+          70.25,
+          47.55,
+          7.6
+        ],
+        [
+          70.25,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_48_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          74.25,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          74.25,
+          44.5,
+          7.24
+        ],
+        [
+          74.25,
+          44.5,
+          6.5588999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_49_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          90.625,
+          47.0,
+          7.6
+        ],
+        [
+          90.625,
+          47.22,
+          7.6
+        ],
+        [
+          90.625,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_49_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          82.625,
+          47.0,
+          7.6
+        ],
+        [
+          82.625,
+          47.55,
+          7.6
+        ],
+        [
+          82.625,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_49_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          86.625,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          86.625,
+          44.5,
+          7.24
+        ],
+        [
+          86.625,
+          44.5,
+          6.58365
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_50_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          103.0,
+          47.0,
+          7.6
+        ],
+        [
+          103.0,
+          47.22,
+          7.6
+        ],
+        [
+          103.0,
+          47.22,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_50_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          95.0,
+          47.0,
+          7.6
+        ],
+        [
+          95.0,
+          47.55,
+          7.6
+        ],
+        [
+          95.0,
+          47.55,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_50_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          99.0,
+          44.699999999999996,
+          7.3
+        ],
+        [
+          99.0,
+          44.5,
+          7.24
+        ],
+        [
+          99.0,
+          44.5,
+          6.6084
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_51_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          51.1,
+          7.6
+        ],
+        [
+          -95.0,
+          51.32,
+          7.6
+        ],
+        [
+          -95.0,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_51_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          51.1,
+          7.6
+        ],
+        [
+          -103.0,
+          51.65,
+          7.6
+        ],
+        [
+          -103.0,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_51_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          48.8,
+          7.3
+        ],
+        [
+          -99.0,
+          48.6,
+          7.24
+        ],
+        [
+          -99.0,
+          48.6,
+          6.632
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_52_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -82.625,
+          51.1,
+          7.6
+        ],
+        [
+          -82.625,
+          51.32,
+          7.6
+        ],
+        [
+          -82.625,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_52_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -90.625,
+          51.1,
+          7.6
+        ],
+        [
+          -90.625,
+          51.65,
+          7.6
+        ],
+        [
+          -90.625,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_52_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -86.625,
+          48.8,
+          7.3
+        ],
+        [
+          -86.625,
+          48.6,
+          7.24
+        ],
+        [
+          -86.625,
+          48.6,
+          6.60725
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_53_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -70.25,
+          51.1,
+          7.6
+        ],
+        [
+          -70.25,
+          51.32,
+          7.6
+        ],
+        [
+          -70.25,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_53_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -78.25,
+          51.1,
+          7.6
+        ],
+        [
+          -78.25,
+          51.65,
+          7.6
+        ],
+        [
+          -78.25,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_53_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -74.25,
+          48.8,
+          7.3
+        ],
+        [
+          -74.25,
+          48.6,
+          7.24
+        ],
+        [
+          -74.25,
+          48.6,
+          6.5825
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_54_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -57.875,
+          51.1,
+          7.6
+        ],
+        [
+          -57.875,
+          51.32,
+          7.6
+        ],
+        [
+          -57.875,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_54_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -65.875,
+          51.1,
+          7.6
+        ],
+        [
+          -65.875,
+          51.65,
+          7.6
+        ],
+        [
+          -65.875,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_54_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -61.875,
+          48.8,
+          7.3
+        ],
+        [
+          -61.875,
+          48.6,
+          7.24
+        ],
+        [
+          -61.875,
+          48.6,
+          6.5577499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_55_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -45.5,
+          51.1,
+          7.6
+        ],
+        [
+          -45.5,
+          51.32,
+          7.6
+        ],
+        [
+          -45.5,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_55_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -53.5,
+          51.1,
+          7.6
+        ],
+        [
+          -53.5,
+          51.65,
+          7.6
+        ],
+        [
+          -53.5,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_55_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -49.5,
+          48.8,
+          7.3
+        ],
+        [
+          -49.5,
+          48.6,
+          7.24
+        ],
+        [
+          -49.5,
+          48.6,
+          6.5678
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_56_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -33.125,
+          51.1,
+          7.6
+        ],
+        [
+          -33.125,
+          51.32,
+          7.6
+        ],
+        [
+          -33.125,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_56_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -41.125,
+          51.1,
+          7.6
+        ],
+        [
+          -41.125,
+          51.65,
+          7.6
+        ],
+        [
+          -41.125,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_56_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -37.125,
+          48.8,
+          7.3
+        ],
+        [
+          -37.125,
+          48.6,
+          7.24
+        ],
+        [
+          -37.125,
+          48.6,
+          6.59255
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_57_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -20.75,
+          51.1,
+          7.6
+        ],
+        [
+          -20.75,
+          51.32,
+          7.6
+        ],
+        [
+          -20.75,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_57_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -28.75,
+          51.1,
+          7.6
+        ],
+        [
+          -28.75,
+          51.65,
+          7.6
+        ],
+        [
+          -28.75,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_57_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          48.8,
+          7.3
+        ],
+        [
+          -24.75,
+          48.6,
+          7.24
+        ],
+        [
+          -24.75,
+          48.6,
+          6.6034999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_58_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -8.375,
+          51.1,
+          7.6
+        ],
+        [
+          -8.375,
+          51.32,
+          7.6
+        ],
+        [
+          -8.375,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_58_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -16.375,
+          51.1,
+          7.6
+        ],
+        [
+          -16.375,
+          51.65,
+          7.6
+        ],
+        [
+          -16.375,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_58_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -12.375,
+          48.8,
+          7.3
+        ],
+        [
+          -12.375,
+          48.6,
+          7.24
+        ],
+        [
+          -12.375,
+          48.6,
+          6.578749999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_59_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          4.0,
+          51.1,
+          7.6
+        ],
+        [
+          4.0,
+          51.32,
+          7.6
+        ],
+        [
+          4.0,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_59_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -4.0,
+          51.1,
+          7.6
+        ],
+        [
+          -4.0,
+          51.65,
+          7.6
+        ],
+        [
+          -4.0,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_59_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          0.0,
+          48.8,
+          7.3
+        ],
+        [
+          0.0,
+          48.6,
+          7.24
+        ],
+        [
+          0.0,
+          48.6,
+          6.553999999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_60_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          16.375,
+          51.1,
+          7.6
+        ],
+        [
+          16.375,
+          51.32,
+          7.6
+        ],
+        [
+          16.375,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_60_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          8.375,
+          51.1,
+          7.6
+        ],
+        [
+          8.375,
+          51.65,
+          7.6
+        ],
+        [
+          8.375,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_60_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          12.375,
+          48.8,
+          7.3
+        ],
+        [
+          12.375,
+          48.6,
+          7.24
+        ],
+        [
+          12.375,
+          48.6,
+          6.571549999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_61_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          28.75,
+          51.1,
+          7.6
+        ],
+        [
+          28.75,
+          51.32,
+          7.6
+        ],
+        [
+          28.75,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_61_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          20.75,
+          51.1,
+          7.6
+        ],
+        [
+          20.75,
+          51.65,
+          7.6
+        ],
+        [
+          20.75,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_61_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          24.75,
+          48.8,
+          7.3
+        ],
+        [
+          24.75,
+          48.6,
+          7.24
+        ],
+        [
+          24.75,
+          48.6,
+          6.596299999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_62_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          41.125,
+          51.1,
+          7.6
+        ],
+        [
+          41.125,
+          51.32,
+          7.6
+        ],
+        [
+          41.125,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_62_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          33.125,
+          51.1,
+          7.6
+        ],
+        [
+          33.125,
+          51.65,
+          7.6
+        ],
+        [
+          33.125,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_62_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          48.8,
+          7.3
+        ],
+        [
+          37.125,
+          48.6,
+          7.24
+        ],
+        [
+          37.125,
+          48.6,
+          6.599749999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_63_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          53.5,
+          51.1,
+          7.6
+        ],
+        [
+          53.5,
+          51.32,
+          7.6
+        ],
+        [
+          53.5,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_63_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          45.5,
+          51.1,
+          7.6
+        ],
+        [
+          45.5,
+          51.65,
+          7.6
+        ],
+        [
+          45.5,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_63_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          49.5,
+          48.8,
+          7.3
+        ],
+        [
+          49.5,
+          48.6,
+          7.24
+        ],
+        [
+          49.5,
+          48.6,
+          6.575
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_64_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          65.875,
+          51.1,
+          7.6
+        ],
+        [
+          65.875,
+          51.32,
+          7.6
+        ],
+        [
+          65.875,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_64_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          57.875,
+          51.1,
+          7.6
+        ],
+        [
+          57.875,
+          51.65,
+          7.6
+        ],
+        [
+          57.875,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_64_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          61.875,
+          48.8,
+          7.3
+        ],
+        [
+          61.875,
+          48.6,
+          7.24
+        ],
+        [
+          61.875,
+          48.6,
+          6.550549999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_65_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          78.25,
+          51.1,
+          7.6
+        ],
+        [
+          78.25,
+          51.32,
+          7.6
+        ],
+        [
+          78.25,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_65_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          70.25,
+          51.1,
+          7.6
+        ],
+        [
+          70.25,
+          51.65,
+          7.6
+        ],
+        [
+          70.25,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_65_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          74.25,
+          48.8,
+          7.3
+        ],
+        [
+          74.25,
+          48.6,
+          7.24
+        ],
+        [
+          74.25,
+          48.6,
+          6.5752999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_66_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          90.625,
+          51.1,
+          7.6
+        ],
+        [
+          90.625,
+          51.32,
+          7.6
+        ],
+        [
+          90.625,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_66_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          82.625,
+          51.1,
+          7.6
+        ],
+        [
+          82.625,
+          51.65,
+          7.6
+        ],
+        [
+          82.625,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_66_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          86.625,
+          48.8,
+          7.3
+        ],
+        [
+          86.625,
+          48.6,
+          7.24
+        ],
+        [
+          86.625,
+          48.6,
+          6.6000499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_67_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          103.0,
+          51.1,
+          7.6
+        ],
+        [
+          103.0,
+          51.32,
+          7.6
+        ],
+        [
+          103.0,
+          51.32,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_67_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          95.0,
+          51.1,
+          7.6
+        ],
+        [
+          95.0,
+          51.65,
+          7.6
+        ],
+        [
+          95.0,
+          51.65,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_67_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          99.0,
+          48.8,
+          7.3
+        ],
+        [
+          99.0,
+          48.6,
+          7.24
+        ],
+        [
+          99.0,
+          48.6,
+          6.6248
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_68_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          55.2,
+          7.6
+        ],
+        [
+          -95.0,
+          55.42,
+          7.6
+        ],
+        [
+          -95.0,
+          55.42,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_68_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          55.2,
+          7.6
+        ],
+        [
+          -103.0,
+          55.75,
+          7.6
+        ],
+        [
+          -103.0,
+          55.75,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_68_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          52.9,
+          7.3
+        ],
+        [
+          -99.0,
+          52.7,
+          7.24
+        ],
+        [
+          -99.0,
+          52.7,
+          6.6484
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_69_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -82.625,
+          55.2,
+          7.6
+        ],
+        [
+          -82.625,
+          55.42,
+          7.6
+        ],
+        [
+          -82.625,
+          55.42,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_69_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -90.625,
+          55.2,
+          7.6
+        ],
+        [
+          -90.625,
+          55.75,
+          7.6
+        ],
+        [
+          -90.625,
+          55.75,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_69_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -86.625,
+          52.9,
+          7.3
+        ],
+        [
+          -86.625,
+          52.7,
+          7.24
+        ],
+        [
+          -86.625,
+          52.7,
+          6.62365
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_70_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -70.25,
+          55.2,
+          7.6
+        ],
+        [
+          -70.25,
+          55.42,
+          7.6
+        ],
+        [
+          -70.25,
+          55.42,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_70_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -78.25,
+          55.2,
+          7.6
+        ],
+        [
+          -78.25,
+          55.75,
+          7.6
+        ],
+        [
+          -78.25,
+          55.75,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_70_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -74.25,
+          52.9,
+          7.3
+        ],
+        [
+          -74.25,
+          52.7,
+          7.24
+        ],
+        [
+          -74.25,
+          52.7,
+          6.5988999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_71_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -57.875,
+          55.2,
+          7.6
+        ],
+        [
+          -57.875,
+          55.42,
+          7.6
+        ],
+        [
+          -57.875,
+          55.42,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_71_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -65.875,
+          55.2,
+          7.6
+        ],
+        [
+          -65.875,
+          55.75,
+          7.6
+        ],
+        [
+          -65.875,
+          55.75,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_71_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -61.875,
+          52.9,
+          7.3
+        ],
+        [
+          -61.875,
+          52.7,
+          7.24
+        ],
+        [
+          -61.875,
+          52.7,
+          6.5741499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_72_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -45.5,
+          55.2,
+          7.6
+        ],
+        [
+          -45.5,
+          55.42,
+          7.6
+        ],
+        [
+          -45.5,
+          55.42,
+          5.1
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_72_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -53.5,
+          55.2,
+          7.6
+        ],
+        [
+          -53.5,
+          55.75,
+          7.6
+        ],
+        [
+          -53.5,
+          55.75,
+          4.7
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_72_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -49.5,
+          52.9,
+          7.3
+        ],
+        [
+          -49.5,
+          52.7,
+          7.24
+        ],
+        [
+          -49.5,
+          52.7,
+          6.5842
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_73_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -33.125,
+          55.2,
+          7.6
+        ],
+        [
+          -33.125,
+          56.08,
+          7.6
+        ],
+        [
+          -33.125,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_73_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -41.125,
+          55.2,
+          7.6
+        ],
+        [
+          -41.125,
+          56.4,
+          7.6
+        ],
+        [
+          -41.125,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_73_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -37.125,
+          52.9,
+          7.3
+        ],
+        [
+          -37.125,
+          52.7,
+          7.24
+        ],
+        [
+          -37.125,
+          52.7,
+          6.60895
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_74_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -20.75,
+          55.2,
+          7.6
+        ],
+        [
+          -20.75,
+          56.08,
+          7.6
+        ],
+        [
+          -20.75,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_74_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -28.75,
+          55.2,
+          7.6
+        ],
+        [
+          -28.75,
+          56.4,
+          7.6
+        ],
+        [
+          -28.75,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_74_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          52.9,
+          7.3
+        ],
+        [
+          -24.75,
+          52.7,
+          7.24
+        ],
+        [
+          -24.75,
+          52.7,
+          6.6198999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_75_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -8.375,
+          55.2,
+          7.6
+        ],
+        [
+          -8.375,
+          56.08,
+          7.6
+        ],
+        [
+          -8.375,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_75_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -16.375,
+          55.2,
+          7.6
+        ],
+        [
+          -16.375,
+          56.4,
+          7.6
+        ],
+        [
+          -16.375,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_75_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -12.375,
+          52.9,
+          7.3
+        ],
+        [
+          -12.375,
+          52.7,
+          7.24
+        ],
+        [
+          -12.375,
+          52.7,
+          6.595149999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_76_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          4.0,
+          55.2,
+          7.6
+        ],
+        [
+          4.0,
+          56.08,
+          7.6
+        ],
+        [
+          4.0,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_76_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -4.0,
+          55.2,
+          7.6
+        ],
+        [
+          -4.0,
+          56.4,
+          7.6
+        ],
+        [
+          -4.0,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_76_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          0.0,
+          52.9,
+          7.3
+        ],
+        [
+          0.0,
+          52.7,
+          7.24
+        ],
+        [
+          0.0,
+          52.7,
+          6.570399999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_77_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          16.375,
+          55.2,
+          7.6
+        ],
+        [
+          16.375,
+          56.08,
+          7.6
+        ],
+        [
+          16.375,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_77_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          8.375,
+          55.2,
+          7.6
+        ],
+        [
+          8.375,
+          56.4,
+          7.6
+        ],
+        [
+          8.375,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_77_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          12.375,
+          52.9,
+          7.3
+        ],
+        [
+          12.375,
+          52.7,
+          7.24
+        ],
+        [
+          12.375,
+          52.7,
+          6.587949999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_78_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          28.75,
+          55.2,
+          7.6
+        ],
+        [
+          28.75,
+          56.08,
+          7.6
+        ],
+        [
+          28.75,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_78_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          20.75,
+          55.2,
+          7.6
+        ],
+        [
+          20.75,
+          56.4,
+          7.6
+        ],
+        [
+          20.75,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_78_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          24.75,
+          52.9,
+          7.3
+        ],
+        [
+          24.75,
+          52.7,
+          7.24
+        ],
+        [
+          24.75,
+          52.7,
+          6.612699999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_79_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          41.125,
+          55.2,
+          7.6
+        ],
+        [
+          41.125,
+          56.08,
+          7.6
+        ],
+        [
+          41.125,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_79_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          33.125,
+          55.2,
+          7.6
+        ],
+        [
+          33.125,
+          56.4,
+          7.6
+        ],
+        [
+          33.125,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_79_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          52.9,
+          7.3
+        ],
+        [
+          37.125,
+          52.7,
+          7.24
+        ],
+        [
+          37.125,
+          52.7,
+          6.616149999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_80_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          53.5,
+          55.2,
+          7.6
+        ],
+        [
+          53.5,
+          56.08,
+          7.6
+        ],
+        [
+          53.5,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_80_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          45.5,
+          55.2,
+          7.6
+        ],
+        [
+          45.5,
+          56.4,
+          7.6
+        ],
+        [
+          45.5,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_80_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          49.5,
+          52.9,
+          7.3
+        ],
+        [
+          49.5,
+          52.7,
+          7.24
+        ],
+        [
+          49.5,
+          52.7,
+          6.5914
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_81_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          65.875,
+          55.2,
+          7.6
+        ],
+        [
+          65.875,
+          56.08,
+          7.6
+        ],
+        [
+          65.875,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_81_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          57.875,
+          55.2,
+          7.6
+        ],
+        [
+          57.875,
+          56.4,
+          7.6
+        ],
+        [
+          57.875,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_81_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          61.875,
+          52.9,
+          7.3
+        ],
+        [
+          61.875,
+          52.7,
+          7.24
+        ],
+        [
+          61.875,
+          52.7,
+          6.566949999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_82_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          78.25,
+          55.2,
+          7.6
+        ],
+        [
+          78.25,
+          56.08,
+          7.6
+        ],
+        [
+          78.25,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_82_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          70.25,
+          55.2,
+          7.6
+        ],
+        [
+          70.25,
+          56.4,
+          7.6
+        ],
+        [
+          70.25,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_82_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          74.25,
+          52.9,
+          7.3
+        ],
+        [
+          74.25,
+          52.7,
+          7.24
+        ],
+        [
+          74.25,
+          52.7,
+          6.5916999999999994
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_83_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          90.625,
+          55.2,
+          7.6
+        ],
+        [
+          90.625,
+          56.08,
+          7.6
+        ],
+        [
+          90.625,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_83_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          82.625,
+          55.2,
+          7.6
+        ],
+        [
+          82.625,
+          56.4,
+          7.6
+        ],
+        [
+          82.625,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_83_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          86.625,
+          52.9,
+          7.3
+        ],
+        [
+          86.625,
+          52.7,
+          7.24
+        ],
+        [
+          86.625,
+          52.7,
+          6.6164499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_84_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          103.0,
+          55.2,
+          7.6
+        ],
+        [
+          103.0,
+          56.08,
+          7.6
+        ],
+        [
+          103.0,
+          56.08,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_84_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          95.0,
+          55.2,
+          7.6
+        ],
+        [
+          95.0,
+          56.4,
+          7.6
+        ],
+        [
+          95.0,
+          56.4,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_84_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          99.0,
+          52.9,
+          7.3
+        ],
+        [
+          99.0,
+          52.7,
+          7.24
+        ],
+        [
+          99.0,
+          52.7,
+          6.6411999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_85_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -95.0,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -95.0,
+          60.18,
+          7.6
+        ],
+        [
+          -95.0,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_85_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -103.0,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -103.0,
+          60.5,
+          7.6
+        ],
+        [
+          -103.0,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_85_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          57.0,
+          7.3
+        ],
+        [
+          -99.0,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          -99.0,
+          56.800000000000004,
+          6.6648
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_86_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -82.625,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -82.625,
+          60.18,
+          7.6
+        ],
+        [
+          -82.625,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_86_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -90.625,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -90.625,
+          60.5,
+          7.6
+        ],
+        [
+          -90.625,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_86_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -86.625,
+          57.0,
+          7.3
+        ],
+        [
+          -86.625,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          -86.625,
+          56.800000000000004,
+          6.64005
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_87_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -70.25,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -70.25,
+          60.18,
+          7.6
+        ],
+        [
+          -70.25,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_87_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -78.25,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -78.25,
+          60.5,
+          7.6
+        ],
+        [
+          -78.25,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_87_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -74.25,
+          57.0,
+          7.3
+        ],
+        [
+          -74.25,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          -74.25,
+          56.800000000000004,
+          6.6152999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_88_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -57.875,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -57.875,
+          60.18,
+          7.6
+        ],
+        [
+          -57.875,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_88_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -65.875,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -65.875,
+          60.5,
+          7.6
+        ],
+        [
+          -65.875,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_88_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -61.875,
+          57.0,
+          7.3
+        ],
+        [
+          -61.875,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          -61.875,
+          56.800000000000004,
+          6.5905499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_89_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -45.5,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -45.5,
+          60.18,
+          7.6
+        ],
+        [
+          -45.5,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_89_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -53.5,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -53.5,
+          60.5,
+          7.6
+        ],
+        [
+          -53.5,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_89_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -49.5,
+          57.0,
+          7.3
+        ],
+        [
+          -49.5,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          -49.5,
+          56.800000000000004,
+          6.6006
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_90_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -33.125,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -33.125,
+          60.18,
+          7.6
+        ],
+        [
+          -33.125,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_90_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -41.125,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -41.125,
+          60.5,
+          7.6
+        ],
+        [
+          -41.125,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_90_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -37.125,
+          57.0,
+          7.3
+        ],
+        [
+          -37.125,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          -37.125,
+          56.800000000000004,
+          6.62535
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_91_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -20.75,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -20.75,
+          60.18,
+          7.6
+        ],
+        [
+          -20.75,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_91_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -28.75,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -28.75,
+          60.5,
+          7.6
+        ],
+        [
+          -28.75,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_91_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          57.0,
+          7.3
+        ],
+        [
+          -24.75,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          -24.75,
+          56.800000000000004,
+          6.636299999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_92_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          -8.375,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -8.375,
+          60.18,
+          7.6
+        ],
+        [
+          -8.375,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_92_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -16.375,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -16.375,
+          60.5,
+          7.6
+        ],
+        [
+          -16.375,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_92_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -12.375,
+          57.0,
+          7.3
+        ],
+        [
+          -12.375,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          -12.375,
+          56.800000000000004,
+          6.611549999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_93_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          4.0,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          4.0,
+          60.18,
+          7.6
+        ],
+        [
+          4.0,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_93_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          -4.0,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          -4.0,
+          60.5,
+          7.6
+        ],
+        [
+          -4.0,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_93_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          0.0,
+          57.0,
+          7.3
+        ],
+        [
+          0.0,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          0.0,
+          56.800000000000004,
+          6.586799999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_94_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          16.375,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          16.375,
+          60.18,
+          7.6
+        ],
+        [
+          16.375,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_94_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          8.375,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          8.375,
+          60.5,
+          7.6
+        ],
+        [
+          8.375,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_94_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          12.375,
+          57.0,
+          7.3
+        ],
+        [
+          12.375,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          12.375,
+          56.800000000000004,
+          6.604349999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_95_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          28.75,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          28.75,
+          60.18,
+          7.6
+        ],
+        [
+          28.75,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_95_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          20.75,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          20.75,
+          60.5,
+          7.6
+        ],
+        [
+          20.75,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_95_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          24.75,
+          57.0,
+          7.3
+        ],
+        [
+          24.75,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          24.75,
+          56.800000000000004,
+          6.629099999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_96_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          41.125,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          41.125,
+          60.18,
+          7.6
+        ],
+        [
+          41.125,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_96_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          33.125,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          33.125,
+          60.5,
+          7.6
+        ],
+        [
+          33.125,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_96_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          57.0,
+          7.3
+        ],
+        [
+          37.125,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          37.125,
+          56.800000000000004,
+          6.632549999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_97_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          53.5,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          53.5,
+          60.18,
+          7.6
+        ],
+        [
+          53.5,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_97_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          45.5,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          45.5,
+          60.5,
+          7.6
+        ],
+        [
+          45.5,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_97_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          49.5,
+          57.0,
+          7.3
+        ],
+        [
+          49.5,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          49.5,
+          56.800000000000004,
+          6.6078
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_98_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          65.875,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          65.875,
+          60.18,
+          7.6
+        ],
+        [
+          65.875,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_98_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          57.875,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          57.875,
+          60.5,
+          7.6
+        ],
+        [
+          57.875,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_98_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          61.875,
+          57.0,
+          7.3
+        ],
+        [
+          61.875,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          61.875,
+          56.800000000000004,
+          6.583349999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_99_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          78.25,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          78.25,
+          60.18,
+          7.6
+        ],
+        [
+          78.25,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_99_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          70.25,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          70.25,
+          60.5,
+          7.6
+        ],
+        [
+          70.25,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_99_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          74.25,
+          57.0,
+          7.3
+        ],
+        [
+          74.25,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          74.25,
+          56.800000000000004,
+          6.608099999999999
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_100_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          90.625,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          90.625,
+          60.18,
+          7.6
+        ],
+        [
+          90.625,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_100_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          82.625,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          82.625,
+          60.5,
+          7.6
+        ],
+        [
+          82.625,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_100_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          86.625,
+          57.0,
+          7.3
+        ],
+        [
+          86.625,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          86.625,
+          56.800000000000004,
+          6.6328499999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "cooler_101_Warm",
+      "group": "freezeProtection",
+      "material": "warm",
+      "points": [
+        [
+          103.0,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          103.0,
+          60.18,
+          7.6
+        ],
+        [
+          103.0,
+          60.18,
+          4.2
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_101_Cool",
+      "group": "freezeProtection",
+      "material": "blue",
+      "points": [
+        [
+          95.0,
+          59.300000000000004,
+          7.6
+        ],
+        [
+          95.0,
+          60.5,
+          7.6
+        ],
+        [
+          95.0,
+          60.5,
+          3.8
+        ]
+      ],
+      "radius": 0.095
+    },
+    {
+      "name": "cooler_101_drain",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          99.0,
+          57.0,
+          7.3
+        ],
+        [
+          99.0,
+          56.800000000000004,
+          7.24
+        ],
+        [
+          99.0,
+          56.800000000000004,
+          6.6575999999999995
+        ]
+      ],
+      "radius": 0.065
+    },
+    {
+      "name": "drain_row_0_-58.2",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          36.300000000000004,
+          6.5828
+        ],
+        [
+          -58.2,
+          36.300000000000004,
+          6.5012
+        ],
+        [
+          -37.125,
+          36.300000000000004,
+          6.54335
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_0_1.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          36.300000000000004,
+          6.5543
+        ],
+        [
+          1.8,
+          36.300000000000004,
+          6.5012
+        ],
+        [
+          24.75,
+          36.300000000000004,
+          6.5470999999999995
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_0_61.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          36.300000000000004,
+          6.550549999999999
+        ],
+        [
+          61.8,
+          36.300000000000004,
+          6.5012
+        ],
+        [
+          99.0,
+          36.300000000000004,
+          6.5756
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_1_-58.2",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          40.400000000000006,
+          6.5992
+        ],
+        [
+          -58.2,
+          40.400000000000006,
+          6.5176
+        ],
+        [
+          -37.125,
+          40.400000000000006,
+          6.55975
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_1_1.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          40.400000000000006,
+          6.5706999999999995
+        ],
+        [
+          1.8,
+          40.400000000000006,
+          6.5176
+        ],
+        [
+          24.75,
+          40.400000000000006,
+          6.5634999999999994
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_1_61.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          40.400000000000006,
+          6.566949999999999
+        ],
+        [
+          61.8,
+          40.400000000000006,
+          6.5176
+        ],
+        [
+          99.0,
+          40.400000000000006,
+          6.592
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_2_-58.2",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          44.5,
+          6.6156
+        ],
+        [
+          -58.2,
+          44.5,
+          6.534
+        ],
+        [
+          -37.125,
+          44.5,
+          6.57615
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_2_1.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          44.5,
+          6.5870999999999995
+        ],
+        [
+          1.8,
+          44.5,
+          6.534
+        ],
+        [
+          24.75,
+          44.5,
+          6.579899999999999
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_2_61.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          44.5,
+          6.583349999999999
+        ],
+        [
+          61.8,
+          44.5,
+          6.534
+        ],
+        [
+          99.0,
+          44.5,
+          6.6084
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_3_-58.2",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          48.6,
+          6.632
+        ],
+        [
+          -58.2,
+          48.6,
+          6.5504
+        ],
+        [
+          -37.125,
+          48.6,
+          6.59255
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_3_1.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          48.6,
+          6.6034999999999995
+        ],
+        [
+          1.8,
+          48.6,
+          6.5504
+        ],
+        [
+          24.75,
+          48.6,
+          6.596299999999999
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_3_61.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          48.6,
+          6.599749999999999
+        ],
+        [
+          61.8,
+          48.6,
+          6.5504
+        ],
+        [
+          99.0,
+          48.6,
+          6.6248
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_4_-58.2",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          52.7,
+          6.6484
+        ],
+        [
+          -58.2,
+          52.7,
+          6.5668
+        ],
+        [
+          -37.125,
+          52.7,
+          6.60895
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_4_1.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          52.7,
+          6.6198999999999995
+        ],
+        [
+          1.8,
+          52.7,
+          6.5668
+        ],
+        [
+          24.75,
+          52.7,
+          6.612699999999999
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_4_61.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          52.7,
+          6.616149999999999
+        ],
+        [
+          61.8,
+          52.7,
+          6.5668
+        ],
+        [
+          99.0,
+          52.7,
+          6.6411999999999995
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_5_-58.2",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -99.0,
+          56.800000000000004,
+          6.6648
+        ],
+        [
+          -58.2,
+          56.800000000000004,
+          6.5832
+        ],
+        [
+          -37.125,
+          56.800000000000004,
+          6.62535
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_5_1.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -24.75,
+          56.800000000000004,
+          6.636299999999999
+        ],
+        [
+          1.8,
+          56.800000000000004,
+          6.5832
+        ],
+        [
+          24.75,
+          56.800000000000004,
+          6.629099999999999
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_row_5_61.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          37.125,
+          56.800000000000004,
+          6.632549999999999
+        ],
+        [
+          61.8,
+          56.800000000000004,
+          6.5832
+        ],
+        [
+          99.0,
+          56.800000000000004,
+          6.6575999999999995
+        ]
+      ],
+      "radius": 0.075
+    },
+    {
+      "name": "drain_to_tanks_-58.2",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -58.2,
+          56.8,
+          6.5832
+        ],
+        [
+          -58.2,
+          36,
+          6.5
+        ],
+        [
+          -58.2,
+          30.5,
+          6.48
+        ],
+        [
+          -58.2,
+          30.5,
+          4.736800000000001
+        ],
+        [
+          -58.2,
+          25.2,
+          4.436800000000001
+        ]
+      ],
+      "radius": 0.085
+    },
+    {
+      "name": "drain_to_tanks_1.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          1.8,
+          56.8,
+          6.5832
+        ],
+        [
+          1.8,
+          36,
+          6.5
+        ],
+        [
+          1.8,
+          30.5,
+          6.48
+        ],
+        [
+          1.8,
+          30.5,
+          4.7968
+        ],
+        [
+          1.8,
+          25.2,
+          4.4968
+        ]
+      ],
+      "radius": 0.085
+    },
+    {
+      "name": "drain_to_tanks_61.8",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          61.8,
+          56.8,
+          6.5832
+        ],
+        [
+          61.8,
+          36,
+          6.5
+        ],
+        [
+          61.8,
+          30.5,
+          6.48
+        ],
+        [
+          61.8,
+          30.5,
+          4.8568
+        ],
+        [
+          61.8,
+          25.2,
+          4.5568
+        ]
+      ],
+      "radius": 0.085
+    },
+    {
+      "name": "indoor_drain_manifold",
+      "group": "drainLines",
+      "material": "drainJacket",
+      "points": [
+        [
+          -95,
+          25.2,
+          4.4
+        ],
+        [
+          61.8,
+          25.2,
+          4.5568
+        ]
+      ],
+      "radius": 0.12
+    },
+    {
+      "name": "tank_inlet_-95",
+      "group": "drainTanks",
+      "material": "drainJacket",
+      "points": [
+        [
+          -95,
+          25.2,
+          4.4
+        ],
+        [
+          -95,
+          23,
+          4.4
+        ],
+        [
+          -95,
+          23,
+          3.35
+        ]
+      ],
+      "radius": 0.12
+    },
+    {
+      "name": "tank_inlet_-81",
+      "group": "drainTanks",
+      "material": "drainJacket",
+      "points": [
+        [
+          -81,
+          25.2,
+          4.414000000000001
+        ],
+        [
+          -81,
+          23,
+          4.4
+        ],
+        [
+          -81,
+          23,
+          3.35
+        ]
+      ],
+      "radius": 0.12
+    },
+    {
+      "name": "expansion_manifold",
+      "group": "drainTanks",
+      "material": "drainJacket",
+      "points": [
+        [
+          -81,
+          25.2,
+          4.414
+        ],
+        [
+          -66,
+          25.2,
+          4.414
+        ],
+        [
+          -66,
+          23,
+          2.7
+        ],
+        [
+          -69,
+          23,
+          2.7
+        ],
+        [
+          -63,
+          23,
+          2.7
+        ]
+      ],
+      "radius": 0.055
+    },
+    {
+      "name": "expansion_-69",
+      "group": "drainTanks",
+      "material": "drainJacket",
+      "points": [
+        [
+          -69,
+          23,
+          2.7
+        ],
+        [
+          -69,
+          23,
+          2.4
+        ]
+      ],
+      "radius": 0.055
+    },
+    {
+      "name": "expansion_-67",
+      "group": "drainTanks",
+      "material": "drainJacket",
+      "points": [
+        [
+          -67,
+          23,
+          2.7
+        ],
+        [
+          -67,
+          23,
+          2.4
+        ]
+      ],
+      "radius": 0.055
+    },
+    {
+      "name": "expansion_-65",
+      "group": "drainTanks",
+      "material": "drainJacket",
+      "points": [
+        [
+          -65,
+          23,
+          2.7
+        ],
+        [
+          -65,
+          23,
+          2.4
+        ]
+      ],
+      "radius": 0.055
+    },
+    {
+      "name": "expansion_-63",
+      "group": "drainTanks",
+      "material": "drainJacket",
+      "points": [
+        [
+          -63,
+          23,
+          2.7
+        ],
+        [
+          -63,
+          23,
+          2.4
+        ]
+      ],
+      "radius": 0.055
+    },
+    {
+      "name": "ground_house_blue",
+      "group": "groundHeaders",
+      "material": "blue",
+      "points": [
+        [
+          0.6,
+          -62,
+          -1.8
+        ],
+        [
+          0.6,
+          -48.5,
+          -1.8
+        ],
+        [
+          0.6,
+          -48.5,
+          1.2
+        ],
+        [
+          3,
+          -48.5,
+          1.2
+        ],
+        [
+          3,
+          -48.5,
+          -2
+        ],
+        [
+          -111.5,
+          -48.5,
+          -2
+        ],
+        [
+          -111.5,
+          29,
+          -2
+        ],
+        [
+          -111.5,
+          29,
+          2.8
+        ],
+        [
+          -102,
+          29,
+          2.8
+        ]
+      ],
+      "radius": 0.18
+    },
+    {
+      "name": "cold_insulation_blue",
+      "group": "coldInsulation",
+      "material": "coldJacket",
+      "points": [
+        [
+          0.6,
+          -62,
+          -1.8
+        ],
+        [
+          0.6,
+          -48.5,
+          -1.8
+        ],
+        [
+          0.6,
+          -48.5,
+          1.2
+        ],
+        [
+          3,
+          -48.5,
+          1.2
+        ],
+        [
+          3,
+          -48.5,
+          -2
+        ]
+      ],
+      "radius": 0.29
+    },
+    {
+      "name": "ground_house_warm",
+      "group": "groundHeaders",
+      "material": "warm",
+      "points": [
+        [
+          -0.6,
+          -61,
+          -1
+        ],
+        [
+          -0.6,
+          -47,
+          -1
+        ],
+        [
+          -0.6,
+          -47,
+          1.2
+        ],
+        [
+          -3,
+          -47,
+          1.2
+        ],
+        [
+          -3,
+          -47,
+          -0.7
+        ],
+        [
+          -110,
+          -47,
+          -0.7
+        ],
+        [
+          -110,
+          28,
+          -0.7
+        ],
+        [
+          -110,
+          28,
+          2.8
+        ],
+        [
+          -102,
+          28,
+          2.8
+        ]
+      ],
+      "radius": 0.18
+    },
+    {
+      "name": "cold_insulation_warm",
+      "group": "coldInsulation",
+      "material": "coldJacket",
+      "points": [
+        [
+          -0.6,
+          -61,
+          -1
+        ],
+        [
+          -0.6,
+          -47,
+          -1
+        ],
+        [
+          -0.6,
+          -47,
+          1.2
+        ],
+        [
+          -3,
+          -47,
+          1.2
+        ],
+        [
+          -3,
+          -47,
+          -0.7
+        ]
+      ],
+      "radius": 0.29
+    }
+  ]
+}

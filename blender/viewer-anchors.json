@@ -1,0 +1,119 @@
+{
+  "revision": "seed-cambridge-03",
+  "coordinate_system": "Blender XYZ, meters, Z up",
+  "anchors": {
+    "dewpoint": [
+      -49.82,
+      8,
+      1.8
+    ],
+    "freshAir": [
+      75,
+      23.2,
+      1.45
+    ],
+    "airlock": [
+      102,
+      -2,
+      2.5
+    ],
+    "bypass": [
+      -0.85,
+      35,
+      8.9
+    ],
+    "freezeProtection": [
+      0,
+      39.35,
+      7.72
+    ],
+    "drainTanks": [
+      -88,
+      23,
+      1.85
+    ],
+    "coldInsulation": [
+      0,
+      -47.75,
+      1.2
+    ]
+  },
+  "rotors": {
+    "coolerRotor0": [
+      -5.2,
+      37.6,
+      9.99
+    ],
+    "coolerRotor1": [
+      -3.72,
+      37.6,
+      9.99
+    ],
+    "coolerRotor2": [
+      -2.24,
+      37.6,
+      9.99
+    ],
+    "coolerRotor3": [
+      -0.7600000000000007,
+      37.6,
+      9.99
+    ],
+    "coolerRotor4": [
+      0.7199999999999998,
+      37.6,
+      9.99
+    ],
+    "coolerRotor5": [
+      2.2,
+      37.6,
+      9.99
+    ],
+    "coolerRotor6": [
+      3.679999999999999,
+      37.6,
+      9.99
+    ],
+    "coolerRotor7": [
+      5.159999999999999,
+      37.6,
+      9.99
+    ]
+  },
+  "rotor_axis": "local Blender Z (local glTF Y after export)",
+  "bypass_material": "bypassYellow",
+  "circuits": {
+    "chipWarm": [
+      -1.3,
+      5.1,
+      "warm"
+    ],
+    "chipCool": [
+      -0.4,
+      4.7,
+      "blue"
+    ],
+    "roomWarm": [
+      0.5,
+      4.2,
+      "warm"
+    ],
+    "roomCool": [
+      1.25,
+      3.8,
+      "blue"
+    ]
+  },
+  "crossfeed_y": {
+    "chipWarm": 31.0,
+    "chipCool": 31.7,
+    "roomWarm": 32.4,
+    "roomCool": 33.1
+  },
+  "row_offsets": {
+    "chipWarm": 1.42,
+    "chipCool": 1.75,
+    "roomWarm": 2.08,
+    "roomCool": 2.4
+  }
+}

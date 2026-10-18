@@ -1,0 +1,254 @@
+{
+  "revision": "seed-cambridge-03",
+  "units": "meters",
+  "origin": "center of main hall at ground level",
+  "axes": {
+    "x": "east",
+    "y": "north",
+    "z": "up"
+  },
+  "dimension_status": "approved-design, not a surveyed parcel",
+  "source": "HANDOFF-2026-10-18-SEED-datacenter.md section 7",
+  "hall": {
+    "bounds": [
+      -105,
+      105,
+      -30,
+      30
+    ],
+    "roof_south": 8,
+    "roof_north": 9.5,
+    "pods": [
+      -95,
+      -50,
+      -5,
+      40
+    ],
+    "compute_positions_per_row": 25,
+    "active_per_row": 23,
+    "network_per_row": 23
+  },
+  "ridge": {
+    "bounds": [
+      -105,
+      105,
+      36,
+      60
+    ],
+    "deck": 6,
+    "rows": 6,
+    "columns": 17,
+    "module": [
+      12,
+      2.4,
+      2.6
+    ],
+    "legs": 1.3
+  },
+  "boreholes": {
+    "columns": 32,
+    "rows": 32,
+    "spacing": 5,
+    "start": [
+      -80,
+      -220
+    ],
+    "depth": 150
+  },
+  "chillers": {
+    "count": 6,
+    "bounds": [
+      108,
+      138,
+      34,
+      62
+    ]
+  },
+  "generators": {
+    "rows": 5,
+    "columns": 6,
+    "bounds": [
+      150,
+      270,
+      70,
+      170
+    ]
+  },
+  "fuel": {
+    "count": 4,
+    "length": 29,
+    "diameter": 3.5
+  },
+  "house": {
+    "bounds": [
+      -185,
+      -135,
+      -10,
+      15
+    ],
+    "height": 9
+  },
+  "greenhouse": {
+    "bounds": [
+      -185,
+      -125,
+      -50,
+      -20
+    ],
+    "ridge": 8
+  },
+  "parcel": {
+    "bounds": [
+      -350,
+      300,
+      -330,
+      200
+    ]
+  },
+  "visual_assumptions": [
+    "Illustrative Cambridge parcel and surrounding city, not a real surveyed site.",
+    "Landscaping, cars, furniture and equipment finish are illustrative.",
+    "Ground cutaway exposes the borehole field; it is a display state of the same model.",
+    "Coolers are oriented east-west in six north-south rows; 17 modules per row.",
+    "S3 includes a detailed hall inset so small pipe and rack features remain readable beside the 150 m ground section.",
+    "Amber indicates electrical power in the explanatory model. Battery cabinets connect through UPS equipment and distribution, then overhead busways and rack drops. Cable routes and cabinet arrangements are illustrative, not an engineered electrical one-line.",
+    "Red ceiling lines and heads depict fire sprinklers; their hydraulic arrangement is illustrative. Orange and blue below-floor lines depict warm and cool coolant.",
+    "All 1024 boreholes remain modeled; a front-edge loop is colored to show the 150 m U-shaped path clearly. The other loops are neutral gray. Surface lids mark drilling locations.",
+    "Freeze-protection tanks, drain pipe diameters, illustrative falls, valve sizes and tank capacity are not hydraulic sizing or a drainage-performance claim.",
+    "Tank centers at x -95 and -81 preserve the existing CDU line and four service headers; their combined bounds extend x -101 to -75.",
+    "Fresh-air coil duty, air delivery duct design, condensate disposal and humidity controls remain engineering assumptions.",
+    "Only eight fans on the middle front cooler have separate rotors for a representative control animation; all 816 fans are drawn.",
+    "White insulated drain lines with purple identification bands are separate from orange/blue operating coolant and gold electrical power."
+  ],
+  "unresolved": [
+    "Site and grid connection",
+    "Ground thermal response test",
+    "Vendor engineering and equipment selection",
+    "Drain-down volume, tank capacity, drain slopes, air admission and complete drainability including outdoor connecting pipework",
+    "Freeze-control commissioning, isolation sequencing, valve fail positions and restart after slush",
+    "Fresh-air/dehumidification coil duty and condensate disposal",
+    "Airlock pressure/interlock details and delivered-rack acclimation procedure"
+  ],
+  "electrical_visualization": {
+    "status": "illustrative routing and cabinet arrangement, pending electrical engineering",
+    "row_busway_z": 4.8,
+    "cross_feed_y": 18,
+    "cabinet_groups": [
+      "battery cabinets",
+      "UPS conversion",
+      "UPS output and distribution"
+    ],
+    "rack_drops": 736,
+    "source": "Handoff section 7: power above, cooling pipes below; section 5: UPS supports computers, pumps and controls"
+  },
+  "freeze_protection": {
+    "status": "illustrative physical routing and equipment envelopes; hydraulic and control engineering unresolved",
+    "source": "Revised handoff section 7: condensation control and freeze protection",
+    "dewpoint_sensors_per_hall": 2,
+    "fresh_air_unit": {
+      "center": [
+        75,
+        23.2,
+        1.45
+      ],
+      "dimensions": [
+        6,
+        2.5,
+        2.5
+      ]
+    },
+    "drain_tanks": [
+      {
+        "center": [
+          -95,
+          23,
+          1.85
+        ],
+        "dimensions": [
+          12,
+          3,
+          3
+        ]
+      },
+      {
+        "center": [
+          -81,
+          23,
+          1.85
+        ],
+        "dimensions": [
+          12,
+          3,
+          3
+        ]
+      }
+    ],
+    "expansion_tanks": {
+      "centers": [
+        [
+          -69,
+          23,
+          1.3
+        ],
+        [
+          -67,
+          23,
+          1.3
+        ],
+        [
+          -65,
+          23,
+          1.3
+        ],
+        [
+          -63,
+          23,
+          1.3
+        ]
+      ],
+      "dimensions": [
+        1,
+        1,
+        2.2
+      ]
+    },
+    "bypass_center": [
+      -0.85,
+      35,
+      8.3
+    ],
+    "drain_bridge_x": [
+      -58.2,
+      1.8,
+      61.8
+    ],
+    "chip_coolers": 73,
+    "room_air_coolers": 29,
+    "airlocks": {
+      "centers": [
+        [
+          102,
+          -18,
+          2.5
+        ],
+        [
+          102,
+          -2,
+          2.5
+        ],
+        [
+          102,
+          14,
+          2.5
+        ]
+      ],
+      "dimensions": [
+        6,
+        4.8,
+        5
+      ]
+    },
+    "insulation": "White vapor-sealed jacket; buried trunk and Cold Battery House routes; colored identification bands",
+    "representative_animated_fans": 8
+  }
+}

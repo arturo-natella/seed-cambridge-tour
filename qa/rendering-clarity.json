@@ -1,0 +1,710 @@
+{
+  "errors": [],
+  "views": [
+    {
+      "name": "desktop",
+      "view": "hall",
+      "index": 3,
+      "xray": true,
+      "ground": false,
+      "powerFocus": false,
+      "labels": [
+        {
+          "text": "Power busway · gold",
+          "rect": {
+            "x": 1186.34375,
+            "y": 338.15625,
+            "width": 132.375,
+            "height": 32.296875,
+            "top": 338.15625,
+            "right": 1318.71875,
+            "bottom": 370.453125,
+            "left": 1186.34375
+          }
+        },
+        {
+          "text": "Fire sprinklers · red",
+          "rect": {
+            "x": 1166.9453125,
+            "y": 160.8125,
+            "width": 123.703125,
+            "height": 32.296875,
+            "top": 160.8125,
+            "right": 1290.6484375,
+            "bottom": 193.109375,
+            "left": 1166.9453125
+          }
+        },
+        {
+          "text": "Compute racks",
+          "rect": {
+            "x": 1244.8984375,
+            "y": 558.4375,
+            "width": 100.265625,
+            "height": 32.296875,
+            "top": 558.4375,
+            "right": 1345.1640625,
+            "bottom": 590.734375,
+            "left": 1244.8984375
+          }
+        },
+        {
+          "text": "Cooling in floor trench",
+          "rect": {
+            "x": 1022.6640625,
+            "y": 795.25,
+            "width": 140.796875,
+            "height": 32.296875,
+            "top": 795.25,
+            "right": 1163.4609375,
+            "bottom": 827.546875,
+            "left": 1022.6640625
+          }
+        },
+        {
+          "text": "Network rack + rear-door coil",
+          "rect": {
+            "x": 980.875,
+            "y": 489.5625,
+            "width": 173.53125,
+            "height": 32.296875,
+            "top": 489.5625,
+            "right": 1154.40625,
+            "bottom": 521.859375,
+            "left": 980.875
+          }
+        }
+      ],
+      "keyVisible": true,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "view": "power",
+      "index": 3,
+      "xray": true,
+      "ground": false,
+      "powerFocus": true,
+      "labels": [
+        {
+          "text": "Battery cabinets",
+          "rect": {
+            "x": 1138.90625,
+            "y": 625.953125,
+            "width": 108.78125,
+            "height": 32.296875,
+            "top": 625.953125,
+            "right": 1247.6875,
+            "bottom": 658.25,
+            "left": 1138.90625
+          }
+        },
+        {
+          "text": "UPS + distribution",
+          "rect": {
+            "x": 1523.8046875,
+            "y": 536.859375,
+            "width": 119.390625,
+            "height": 32.296875,
+            "top": 536.859375,
+            "right": 1643.1953125,
+            "bottom": 569.15625,
+            "left": 1523.8046875
+          }
+        },
+        {
+          "text": "Power busway · gold",
+          "rect": {
+            "x": 1142.234375,
+            "y": 372.84375,
+            "width": 132.375,
+            "height": 32.296875,
+            "top": 372.84375,
+            "right": 1274.609375,
+            "bottom": 405.140625,
+            "left": 1142.234375
+          }
+        },
+        {
+          "text": "Power drops to each rack",
+          "rect": {
+            "x": 940.0625,
+            "y": 506.140625,
+            "width": 155,
+            "height": 32.296875,
+            "top": 506.140625,
+            "right": 1095.0625,
+            "bottom": 538.4375,
+            "left": 940.0625
+          }
+        }
+      ],
+      "keyVisible": true,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "view": "boreholes",
+      "index": 6,
+      "xray": false,
+      "ground": true,
+      "powerFocus": false,
+      "labels": [
+        {
+          "text": "Highlighted U-loop · 150 m deep",
+          "rect": {
+            "x": 965.46875,
+            "y": 615.515625,
+            "width": 195.5625,
+            "height": 32.296875,
+            "top": 615.515625,
+            "right": 1161.03125,
+            "bottom": 647.8125,
+            "left": 965.46875
+          }
+        }
+      ],
+      "keyVisible": true,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": true
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": true
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": true
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": false
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "view": "surface",
+      "index": 2,
+      "xray": false,
+      "ground": false,
+      "powerFocus": false,
+      "labels": [
+        {
+          "text": "Boreholes below this meadow · Show",
+          "rect": {
+            "x": 1272.0234375,
+            "y": 463.734375,
+            "width": 217.546875,
+            "height": 32.296875,
+            "top": 463.734375,
+            "right": 1489.5703125,
+            "bottom": 496.03125,
+            "left": 1272.0234375
+          }
+        }
+      ],
+      "keyVisible": false,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "laptop",
+      "view": "hall",
+      "index": 3,
+      "xray": true,
+      "ground": false,
+      "powerFocus": false,
+      "labels": [
+        {
+          "text": "Power busway · gold",
+          "rect": {
+            "x": 796.921875,
+            "y": 227.09375,
+            "width": 132.375,
+            "height": 32.296875,
+            "top": 227.09375,
+            "right": 929.296875,
+            "bottom": 259.390625,
+            "left": 796.921875
+          }
+        },
+        {
+          "text": "Fire sprinklers · red",
+          "rect": {
+            "x": 784.3828125,
+            "y": 100.984375,
+            "width": 123.703125,
+            "height": 32.296875,
+            "top": 100.984375,
+            "right": 908.0859375,
+            "bottom": 133.28125,
+            "left": 784.3828125
+          }
+        },
+        {
+          "text": "Compute racks",
+          "rect": {
+            "x": 815.2109375,
+            "y": 383.734375,
+            "width": 100.265625,
+            "height": 32.296875,
+            "top": 383.734375,
+            "right": 915.4765625,
+            "bottom": 416.03125,
+            "left": 815.2109375
+          }
+        },
+        {
+          "text": "Cooling in floor trench",
+          "rect": {
+            "x": 707.3046875,
+            "y": 552.125,
+            "width": 140.796875,
+            "height": 32.296875,
+            "top": 552.125,
+            "right": 848.1015625,
+            "bottom": 584.421875,
+            "left": 707.3046875
+          }
+        },
+        {
+          "text": "Network rack + rear-door coil",
+          "rect": {
+            "x": 616.875,
+            "y": 334.75,
+            "width": 173.53125,
+            "height": 32.296875,
+            "top": 334.75,
+            "right": 790.40625,
+            "bottom": 367.046875,
+            "left": 616.875
+          }
+        }
+      ],
+      "keyVisible": true,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "laptop",
+      "view": "power",
+      "index": 3,
+      "xray": true,
+      "ground": false,
+      "powerFocus": true,
+      "labels": [
+        {
+          "text": "Battery cabinets",
+          "rect": {
+            "x": 794.59375,
+            "y": 431.75,
+            "width": 108.78125,
+            "height": 32.296875,
+            "top": 431.75,
+            "right": 903.375,
+            "bottom": 464.046875,
+            "left": 794.59375
+          }
+        },
+        {
+          "text": "UPS + distribution",
+          "rect": {
+            "x": 1038.7734375,
+            "y": 368.390625,
+            "width": 119.390625,
+            "height": 32.296875,
+            "top": 368.390625,
+            "right": 1158.1640625,
+            "bottom": 400.6875,
+            "left": 1038.7734375
+          }
+        },
+        {
+          "text": "Power busway · gold",
+          "rect": {
+            "x": 793.5625,
+            "y": 251.765625,
+            "width": 132.375,
+            "height": 32.296875,
+            "top": 251.765625,
+            "right": 925.9375,
+            "bottom": 284.0625,
+            "left": 793.5625
+          }
+        },
+        {
+          "text": "Power drops to each rack",
+          "rect": {
+            "x": 646.53125,
+            "y": 346.546875,
+            "width": 155,
+            "height": 32.296875,
+            "top": 346.546875,
+            "right": 801.53125,
+            "bottom": 378.84375,
+            "left": 646.53125
+          }
+        }
+      ],
+      "keyVisible": true,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "laptop",
+      "view": "boreholes",
+      "index": 6,
+      "xray": false,
+      "ground": true,
+      "powerFocus": false,
+      "labels": [
+        {
+          "text": "Highlighted U-loop · 150 m deep",
+          "rect": {
+            "x": 658.734375,
+            "y": 424.328125,
+            "width": 195.5625,
+            "height": 32.296875,
+            "top": 424.328125,
+            "right": 854.296875,
+            "bottom": 456.625,
+            "left": 658.734375
+          }
+        }
+      ],
+      "keyVisible": true,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": true
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": true
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": true
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": false
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "laptop",
+      "view": "surface",
+      "index": 2,
+      "xray": false,
+      "ground": false,
+      "powerFocus": false,
+      "labels": [
+        {
+          "text": "Boreholes below this meadow · Show",
+          "rect": {
+            "x": 873.5546875,
+            "y": 316.390625,
+            "width": 217.546875,
+            "height": 32.296875,
+            "top": 316.390625,
+            "right": 1091.1015625,
+            "bottom": 348.6875,
+            "left": 873.5546875
+          }
+        }
+      ],
+      "keyVisible": false,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "phone",
+      "view": "hall",
+      "index": 3,
+      "xray": true,
+      "ground": false,
+      "powerFocus": false,
+      "labels": [
+        {
+          "text": "Power busway · gold",
+          "rect": {
+            "x": 154.1484375,
+            "y": 257.4375,
+            "width": 118.796875,
+            "height": 29,
+            "top": 257.4375,
+            "right": 272.9453125,
+            "bottom": 286.4375,
+            "left": 154.1484375
+          }
+        }
+      ],
+      "keyVisible": false,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "phone",
+      "view": "power",
+      "index": 3,
+      "xray": true,
+      "ground": false,
+      "powerFocus": true,
+      "labels": [],
+      "keyVisible": false,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "phone",
+      "view": "boreholes",
+      "index": 6,
+      "xray": false,
+      "ground": true,
+      "powerFocus": false,
+      "labels": [],
+      "keyVisible": false,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": true
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": true
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": true
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": false
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "phone",
+      "view": "surface",
+      "index": 2,
+      "xray": false,
+      "ground": false,
+      "powerFocus": false,
+      "labels": [],
+      "keyVisible": false,
+      "groups": [
+        {
+          "key": "boreholes",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeFocus",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "groundHeaders",
+          "exists": true,
+          "visible": false
+        },
+        {
+          "key": "boreholeSurface",
+          "exists": true,
+          "visible": true
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "passed": true
+}

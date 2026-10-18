@@ -1,0 +1,6197 @@
+{
+  "revision": "seed-cambridge-03",
+  "sha256": "73c6ed51fef690c5b2fccd7a175d31b887e0a55a676b597917130b70a1d77152",
+  "route_count": 391,
+  "surface_evidence": [
+    {
+      "route": "chipWarm_spine",
+      "mesh": "spine_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_spine",
+      "mesh": "spine_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_spine",
+      "mesh": "spine_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_spine",
+      "mesh": "spine_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_main_bridge_-60",
+      "mesh": "bridges_warm",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_main_bridge_-60",
+      "mesh": "bridges_blue",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_main_bridge_-60",
+      "mesh": "bridges_warm",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_main_bridge_-60",
+      "mesh": "bridges_blue",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_main_bridge_0",
+      "mesh": "bridges_warm",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_main_bridge_0",
+      "mesh": "bridges_blue",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_main_bridge_0",
+      "mesh": "bridges_warm",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_main_bridge_0",
+      "mesh": "bridges_blue",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_main_bridge_60",
+      "mesh": "bridges_warm",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_main_bridge_60",
+      "mesh": "bridges_blue",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_main_bridge_60",
+      "mesh": "bridges_warm",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_main_bridge_60",
+      "mesh": "bridges_blue",
+      "samples": 11,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "fresh_air_condensate",
+      "mesh": "freshAir_silver",
+      "samples": 7,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chip_bypass",
+      "mesh": "bypass_warm",
+      "samples": 7,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_crossfeed",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_north_trunk",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_bridge_-60",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_bridge_0",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_bridge_60",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_crossfeed",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_north_trunk",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_bridge_-60",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_bridge_0",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_bridge_60",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_crossfeed",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_north_trunk",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_bridge_-60",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_bridge_0",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_bridge_60",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_crossfeed",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_north_trunk",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_bridge_-60",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_bridge_0",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_bridge_60",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_row_0",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_row_0",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_row_1",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_row_1",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_row_2",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_row_2",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_row_3",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_row_3",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipWarm_row_4",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "chipCool_row_4",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_row_4",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_row_4",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomWarm_row_5",
+      "mesh": "coolerCircuitPipes_warm",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "roomCool_row_5",
+      "mesh": "coolerCircuitPipes_blue",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_0_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_0_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_0_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_1_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_1_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_1_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_2_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_2_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_2_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_3_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_3_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_3_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_4_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_4_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_4_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_5_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_5_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_5_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_6_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_6_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_6_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_7_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_7_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_7_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_8_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_8_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_8_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 1.9371509552001953e-07
+    },
+    {
+      "route": "cooler_9_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_9_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_9_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_10_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_10_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_10_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_11_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_11_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_11_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_12_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_12_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_12_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_13_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_13_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_13_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_14_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_14_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_14_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_15_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_15_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_15_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_16_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_16_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_16_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_17_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_17_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_17_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_18_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_18_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_18_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_19_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_19_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_19_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_20_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_20_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_20_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_21_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_21_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_21_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_22_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_22_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_22_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_23_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_23_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_23_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_24_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_24_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_24_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_25_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_25_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_25_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_26_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_26_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_26_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_27_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_27_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_27_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_28_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_28_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_28_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_29_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_29_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_29_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_30_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_30_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_30_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_31_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_31_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_31_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_32_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_32_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_32_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_33_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_33_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_33_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_34_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_34_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_34_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_35_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_35_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_35_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_36_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_36_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_36_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_37_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_37_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_37_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_38_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_38_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_38_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_39_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_39_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_39_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_40_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_40_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_40_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_41_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_41_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_41_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_42_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_42_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_42_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 1.9371509552001953e-07
+    },
+    {
+      "route": "cooler_43_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_43_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_43_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_44_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_44_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_44_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_45_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_45_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_45_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_46_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_46_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_46_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_47_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_47_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_47_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_48_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_48_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_48_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_49_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_49_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_49_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_50_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_50_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_50_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_51_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_51_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_51_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_52_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_52_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_52_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_53_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_53_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_53_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_54_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_54_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_54_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_55_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_55_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_55_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_56_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_56_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_56_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_57_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_57_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_57_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_58_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_58_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_58_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_59_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_59_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_59_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 1.9371509552001953e-07
+    },
+    {
+      "route": "cooler_60_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_60_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_60_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_61_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_61_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_61_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_62_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_62_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_62_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_63_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_63_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_63_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_64_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_64_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_64_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_65_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_65_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_65_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_66_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_66_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_66_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_67_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_67_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_67_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_68_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_68_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_68_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_69_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_69_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_69_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_70_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_70_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_70_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_71_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_71_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_71_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_72_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_72_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_72_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_73_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_73_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_73_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_74_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_74_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_74_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_75_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_75_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_75_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_76_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_76_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_76_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 1.9371509552001953e-07
+    },
+    {
+      "route": "cooler_77_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_77_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_77_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_78_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_78_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_78_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_79_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_79_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_79_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_80_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_80_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_80_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_81_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_81_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_81_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_82_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_82_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_82_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_83_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_83_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_83_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_84_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_84_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_84_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_85_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_85_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_85_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_86_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_86_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_86_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_87_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_87_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_87_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_88_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_88_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_88_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_89_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_89_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_89_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_90_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_90_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_90_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_91_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_91_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_91_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_92_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_92_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_92_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_93_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_93_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_93_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 1.9371509552001953e-07
+    },
+    {
+      "route": "cooler_94_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_94_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_94_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_95_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_95_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_95_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_96_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_96_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_96_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_97_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_97_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_97_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_98_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_98_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_98_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_99_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_99_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_99_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_100_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_100_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_100_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_101_Warm",
+      "mesh": "freezeProtection_warm",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_101_Cool",
+      "mesh": "freezeProtection_blue",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "cooler_101_drain",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "drain_row_0_-58.2",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 4.76837158203125e-07
+    },
+    {
+      "route": "drain_row_0_1.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 9.5367431640625e-07
+    },
+    {
+      "route": "drain_row_0_61.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "drain_row_1_-58.2",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 4.76837158203125e-07
+    },
+    {
+      "route": "drain_row_1_1.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 9.5367431640625e-07
+    },
+    {
+      "route": "drain_row_1_61.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "drain_row_2_-58.2",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 4.76837158203125e-07
+    },
+    {
+      "route": "drain_row_2_1.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 9.5367431640625e-07
+    },
+    {
+      "route": "drain_row_2_61.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "drain_row_3_-58.2",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "drain_row_3_1.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 9.5367431640625e-07
+    },
+    {
+      "route": "drain_row_3_61.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 4.76837158203125e-07
+    },
+    {
+      "route": "drain_row_4_-58.2",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 4.76837158203125e-07
+    },
+    {
+      "route": "drain_row_4_1.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 9.5367431640625e-07
+    },
+    {
+      "route": "drain_row_4_61.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "drain_row_5_-58.2",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 4.76837158203125e-07
+    },
+    {
+      "route": "drain_row_5_1.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 9.5367431640625e-07
+    },
+    {
+      "route": "drain_row_5_61.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "drain_to_tanks_-58.2",
+      "mesh": "drainLines_drainJacket",
+      "samples": 9,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "drain_to_tanks_1.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 9,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "drain_to_tanks_61.8",
+      "mesh": "drainLines_drainJacket",
+      "samples": 9,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "indoor_drain_manifold",
+      "mesh": "drainLines_drainJacket",
+      "samples": 3,
+      "maximum_surface_gap_m": 1.9073486328125e-06
+    },
+    {
+      "route": "tank_inlet_-95",
+      "mesh": "drainTanks_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "tank_inlet_-81",
+      "mesh": "drainTanks_drainJacket",
+      "samples": 5,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "expansion_manifold",
+      "mesh": "drainTanks_drainJacket",
+      "samples": 9,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "expansion_-69",
+      "mesh": "drainTanks_drainJacket",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "expansion_-67",
+      "mesh": "drainTanks_drainJacket",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "expansion_-65",
+      "mesh": "drainTanks_drainJacket",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "expansion_-63",
+      "mesh": "drainTanks_drainJacket",
+      "samples": 3,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "ground_house_blue",
+      "mesh": "groundHeaders_blue",
+      "samples": 17,
+      "maximum_surface_gap_m": 1.1920928955078125e-07
+    },
+    {
+      "route": "cold_insulation_blue",
+      "mesh": "coldInsulation_coldJacket",
+      "samples": 9,
+      "maximum_surface_gap_m": 0.0
+    },
+    {
+      "route": "ground_house_warm",
+      "mesh": "groundHeaders_warm",
+      "samples": 17,
+      "maximum_surface_gap_m": 2.9802322387695312e-08
+    },
+    {
+      "route": "cold_insulation_warm",
+      "mesh": "coldInsulation_coldJacket",
+      "samples": 9,
+      "maximum_surface_gap_m": 2.9802322387695312e-08
+    }
+  ],
+  "drain_paths": [
+    {
+      "cooler": 0,
+      "path": [
+        "cooler_0_drain",
+        "drain_row_0_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 1,
+      "path": [
+        "cooler_1_drain",
+        "drain_row_0_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 2,
+      "path": [
+        "cooler_2_drain",
+        "drain_row_0_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 3,
+      "path": [
+        "cooler_3_drain",
+        "drain_row_0_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 4,
+      "path": [
+        "cooler_4_drain",
+        "drain_row_0_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 5,
+      "path": [
+        "cooler_5_drain",
+        "drain_row_0_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 6,
+      "path": [
+        "cooler_6_drain",
+        "drain_row_0_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 7,
+      "path": [
+        "cooler_7_drain",
+        "drain_row_0_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 8,
+      "path": [
+        "cooler_8_drain",
+        "drain_row_0_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 9,
+      "path": [
+        "cooler_9_drain",
+        "drain_row_0_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 10,
+      "path": [
+        "cooler_10_drain",
+        "drain_row_0_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 11,
+      "path": [
+        "cooler_11_drain",
+        "drain_row_0_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 12,
+      "path": [
+        "cooler_12_drain",
+        "drain_row_0_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 13,
+      "path": [
+        "cooler_13_drain",
+        "drain_row_0_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 14,
+      "path": [
+        "cooler_14_drain",
+        "drain_row_0_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 15,
+      "path": [
+        "cooler_15_drain",
+        "drain_row_0_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 16,
+      "path": [
+        "cooler_16_drain",
+        "drain_row_0_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 17,
+      "path": [
+        "cooler_17_drain",
+        "drain_row_1_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 18,
+      "path": [
+        "cooler_18_drain",
+        "drain_row_1_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 19,
+      "path": [
+        "cooler_19_drain",
+        "drain_row_1_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 20,
+      "path": [
+        "cooler_20_drain",
+        "drain_row_1_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 21,
+      "path": [
+        "cooler_21_drain",
+        "drain_row_1_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 22,
+      "path": [
+        "cooler_22_drain",
+        "drain_row_1_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 23,
+      "path": [
+        "cooler_23_drain",
+        "drain_row_1_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 24,
+      "path": [
+        "cooler_24_drain",
+        "drain_row_1_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 25,
+      "path": [
+        "cooler_25_drain",
+        "drain_row_1_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 26,
+      "path": [
+        "cooler_26_drain",
+        "drain_row_1_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 27,
+      "path": [
+        "cooler_27_drain",
+        "drain_row_1_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 28,
+      "path": [
+        "cooler_28_drain",
+        "drain_row_1_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 29,
+      "path": [
+        "cooler_29_drain",
+        "drain_row_1_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 30,
+      "path": [
+        "cooler_30_drain",
+        "drain_row_1_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 31,
+      "path": [
+        "cooler_31_drain",
+        "drain_row_1_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 32,
+      "path": [
+        "cooler_32_drain",
+        "drain_row_1_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 33,
+      "path": [
+        "cooler_33_drain",
+        "drain_row_1_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 34,
+      "path": [
+        "cooler_34_drain",
+        "drain_row_2_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 35,
+      "path": [
+        "cooler_35_drain",
+        "drain_row_2_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 36,
+      "path": [
+        "cooler_36_drain",
+        "drain_row_2_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 37,
+      "path": [
+        "cooler_37_drain",
+        "drain_row_2_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 38,
+      "path": [
+        "cooler_38_drain",
+        "drain_row_2_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 39,
+      "path": [
+        "cooler_39_drain",
+        "drain_row_2_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 40,
+      "path": [
+        "cooler_40_drain",
+        "drain_row_2_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 41,
+      "path": [
+        "cooler_41_drain",
+        "drain_row_2_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 42,
+      "path": [
+        "cooler_42_drain",
+        "drain_row_2_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 43,
+      "path": [
+        "cooler_43_drain",
+        "drain_row_2_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 44,
+      "path": [
+        "cooler_44_drain",
+        "drain_row_2_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 45,
+      "path": [
+        "cooler_45_drain",
+        "drain_row_2_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 46,
+      "path": [
+        "cooler_46_drain",
+        "drain_row_2_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 47,
+      "path": [
+        "cooler_47_drain",
+        "drain_row_2_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 48,
+      "path": [
+        "cooler_48_drain",
+        "drain_row_2_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 49,
+      "path": [
+        "cooler_49_drain",
+        "drain_row_2_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 50,
+      "path": [
+        "cooler_50_drain",
+        "drain_row_2_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 51,
+      "path": [
+        "cooler_51_drain",
+        "drain_row_3_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 52,
+      "path": [
+        "cooler_52_drain",
+        "drain_row_3_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 53,
+      "path": [
+        "cooler_53_drain",
+        "drain_row_3_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 54,
+      "path": [
+        "cooler_54_drain",
+        "drain_row_3_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 55,
+      "path": [
+        "cooler_55_drain",
+        "drain_row_3_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 56,
+      "path": [
+        "cooler_56_drain",
+        "drain_row_3_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 57,
+      "path": [
+        "cooler_57_drain",
+        "drain_row_3_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 58,
+      "path": [
+        "cooler_58_drain",
+        "drain_row_3_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 59,
+      "path": [
+        "cooler_59_drain",
+        "drain_row_3_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 60,
+      "path": [
+        "cooler_60_drain",
+        "drain_row_3_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 61,
+      "path": [
+        "cooler_61_drain",
+        "drain_row_3_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 62,
+      "path": [
+        "cooler_62_drain",
+        "drain_row_3_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 63,
+      "path": [
+        "cooler_63_drain",
+        "drain_row_3_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 64,
+      "path": [
+        "cooler_64_drain",
+        "drain_row_3_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 65,
+      "path": [
+        "cooler_65_drain",
+        "drain_row_3_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 66,
+      "path": [
+        "cooler_66_drain",
+        "drain_row_3_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 67,
+      "path": [
+        "cooler_67_drain",
+        "drain_row_3_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 68,
+      "path": [
+        "cooler_68_drain",
+        "drain_row_4_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 69,
+      "path": [
+        "cooler_69_drain",
+        "drain_row_4_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 70,
+      "path": [
+        "cooler_70_drain",
+        "drain_row_4_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 71,
+      "path": [
+        "cooler_71_drain",
+        "drain_row_4_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 72,
+      "path": [
+        "cooler_72_drain",
+        "drain_row_4_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 73,
+      "path": [
+        "cooler_73_drain",
+        "drain_row_4_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 74,
+      "path": [
+        "cooler_74_drain",
+        "drain_row_4_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 75,
+      "path": [
+        "cooler_75_drain",
+        "drain_row_4_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 76,
+      "path": [
+        "cooler_76_drain",
+        "drain_row_4_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 77,
+      "path": [
+        "cooler_77_drain",
+        "drain_row_4_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 78,
+      "path": [
+        "cooler_78_drain",
+        "drain_row_4_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 79,
+      "path": [
+        "cooler_79_drain",
+        "drain_row_4_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 80,
+      "path": [
+        "cooler_80_drain",
+        "drain_row_4_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 81,
+      "path": [
+        "cooler_81_drain",
+        "drain_row_4_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 82,
+      "path": [
+        "cooler_82_drain",
+        "drain_row_4_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 83,
+      "path": [
+        "cooler_83_drain",
+        "drain_row_4_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 84,
+      "path": [
+        "cooler_84_drain",
+        "drain_row_4_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 85,
+      "path": [
+        "cooler_85_drain",
+        "drain_row_5_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 86,
+      "path": [
+        "cooler_86_drain",
+        "drain_row_5_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 87,
+      "path": [
+        "cooler_87_drain",
+        "drain_row_5_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 88,
+      "path": [
+        "cooler_88_drain",
+        "drain_row_5_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 89,
+      "path": [
+        "cooler_89_drain",
+        "drain_row_5_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 90,
+      "path": [
+        "cooler_90_drain",
+        "drain_row_5_-58.2",
+        "drain_to_tanks_-58.2",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_-58.2"
+      ]
+    },
+    {
+      "cooler": 91,
+      "path": [
+        "cooler_91_drain",
+        "drain_row_5_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 92,
+      "path": [
+        "cooler_92_drain",
+        "drain_row_5_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 93,
+      "path": [
+        "cooler_93_drain",
+        "drain_row_5_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 94,
+      "path": [
+        "cooler_94_drain",
+        "drain_row_5_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 95,
+      "path": [
+        "cooler_95_drain",
+        "drain_row_5_1.8",
+        "drain_to_tanks_1.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_1.8"
+      ]
+    },
+    {
+      "cooler": 96,
+      "path": [
+        "cooler_96_drain",
+        "drain_row_5_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 97,
+      "path": [
+        "cooler_97_drain",
+        "drain_row_5_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 98,
+      "path": [
+        "cooler_98_drain",
+        "drain_row_5_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 99,
+      "path": [
+        "cooler_99_drain",
+        "drain_row_5_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 100,
+      "path": [
+        "cooler_100_drain",
+        "drain_row_5_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    },
+    {
+      "cooler": 101,
+      "path": [
+        "cooler_101_drain",
+        "drain_row_5_61.8",
+        "drain_to_tanks_61.8",
+        "indoor_drain_manifold",
+        "tank_inlet_-81"
+      ],
+      "bridges": [
+        "drain_to_tanks_61.8"
+      ]
+    }
+  ],
+  "operating_paths": [
+    {
+      "port": "cooler_0_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_0_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_1_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_1_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_2_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_2_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_3_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_3_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_4_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_4_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_5_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_5_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_6_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_6_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_7_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_7_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_8_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_8_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_9_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_9_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_10_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_10_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_11_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_11_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_12_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_12_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_13_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_13_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_14_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_14_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_15_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_15_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_16_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_16_Warm",
+        "chipWarm_row_0",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_17_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_17_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_18_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_18_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_19_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_19_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_20_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_20_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_21_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_21_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_22_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_22_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_23_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_23_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_24_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_24_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_25_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_25_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_26_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_26_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_27_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_27_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_28_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_28_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_29_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_29_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_30_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_30_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_31_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_31_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_32_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_32_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_33_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_33_Warm",
+        "chipWarm_row_1",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_34_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_34_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_35_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_35_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_36_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_36_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_37_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_37_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_38_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_38_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_39_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_39_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_40_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_40_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_41_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_41_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_42_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_42_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_43_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_43_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_44_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_44_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_45_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_45_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_46_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_46_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_47_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_47_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_48_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_48_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_49_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_49_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_50_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_50_Warm",
+        "chipWarm_row_2",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_51_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_51_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_52_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_52_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_53_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_53_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_54_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_54_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_55_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_55_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_56_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_56_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_57_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_57_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_58_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_58_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_59_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_59_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_60_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_60_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_61_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_61_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_62_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_62_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_63_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_63_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_64_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_64_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_65_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_65_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_66_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_66_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_67_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_67_Warm",
+        "chipWarm_row_3",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_68_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_68_Warm",
+        "chipWarm_row_4",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_69_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_69_Warm",
+        "chipWarm_row_4",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_70_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_70_Warm",
+        "chipWarm_row_4",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_71_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_71_Warm",
+        "chipWarm_row_4",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_72_Warm",
+      "circuit": "chipWarm",
+      "path": [
+        "cooler_72_Warm",
+        "chipWarm_row_4",
+        "chipWarm_north_trunk",
+        "chipWarm_bridge_0",
+        "chipWarm_main_bridge_0",
+        "chipWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_0_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_0_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_1_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_1_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_2_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_2_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_3_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_3_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_4_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_4_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_5_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_5_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_6_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_6_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_7_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_7_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_8_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_8_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_9_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_9_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_10_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_10_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_11_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_11_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_12_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_12_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_13_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_13_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_14_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_14_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_15_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_15_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_16_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_16_Cool",
+        "chipCool_row_0",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_17_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_17_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_18_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_18_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_19_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_19_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_20_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_20_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_21_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_21_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_22_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_22_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_23_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_23_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_24_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_24_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_25_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_25_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_26_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_26_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_27_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_27_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_28_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_28_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_29_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_29_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_30_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_30_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_31_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_31_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_32_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_32_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_33_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_33_Cool",
+        "chipCool_row_1",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_34_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_34_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_35_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_35_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_36_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_36_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_37_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_37_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_38_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_38_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_39_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_39_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_40_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_40_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_41_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_41_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_42_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_42_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_43_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_43_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_44_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_44_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_45_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_45_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_46_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_46_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_47_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_47_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_48_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_48_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_49_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_49_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_50_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_50_Cool",
+        "chipCool_row_2",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_51_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_51_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_52_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_52_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_53_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_53_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_54_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_54_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_55_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_55_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_56_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_56_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_57_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_57_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_58_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_58_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_59_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_59_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_60_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_60_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_61_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_61_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_62_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_62_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_63_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_63_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_64_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_64_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_65_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_65_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_66_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_66_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_67_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_67_Cool",
+        "chipCool_row_3",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_68_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_68_Cool",
+        "chipCool_row_4",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_69_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_69_Cool",
+        "chipCool_row_4",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_70_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_70_Cool",
+        "chipCool_row_4",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_71_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_71_Cool",
+        "chipCool_row_4",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_72_Cool",
+      "circuit": "chipCool",
+      "path": [
+        "cooler_72_Cool",
+        "chipCool_row_4",
+        "chipCool_north_trunk",
+        "chipCool_bridge_0",
+        "chipCool_main_bridge_0",
+        "chipCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_73_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_73_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_74_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_74_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_75_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_75_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_76_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_76_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_77_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_77_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_78_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_78_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_79_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_79_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_80_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_80_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_81_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_81_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_82_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_82_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_83_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_83_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_84_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_84_Warm",
+        "roomWarm_row_4",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_85_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_85_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_86_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_86_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_87_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_87_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_88_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_88_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_89_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_89_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_90_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_90_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_91_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_91_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_92_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_92_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_93_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_93_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_94_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_94_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_95_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_95_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_96_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_96_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_97_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_97_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_98_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_98_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_99_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_99_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_100_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_100_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_101_Warm",
+      "circuit": "roomWarm",
+      "path": [
+        "cooler_101_Warm",
+        "roomWarm_row_5",
+        "roomWarm_north_trunk",
+        "roomWarm_bridge_0",
+        "roomWarm_main_bridge_0",
+        "roomWarm_spine"
+      ]
+    },
+    {
+      "port": "cooler_73_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_73_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_74_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_74_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_75_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_75_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_76_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_76_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_77_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_77_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_78_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_78_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_79_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_79_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_80_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_80_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_81_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_81_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_82_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_82_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_83_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_83_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_84_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_84_Cool",
+        "roomCool_row_4",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_85_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_85_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_86_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_86_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_87_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_87_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_88_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_88_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_89_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_89_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_90_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_90_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_91_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_91_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_92_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_92_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_93_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_93_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_94_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_94_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_95_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_95_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_96_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_96_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_97_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_97_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_98_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_98_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_99_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_99_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_100_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_100_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    },
+    {
+      "port": "cooler_101_Cool",
+      "circuit": "roomCool",
+      "path": [
+        "cooler_101_Cool",
+        "roomCool_row_5",
+        "roomCool_north_trunk",
+        "roomCool_bridge_0",
+        "roomCool_main_bridge_0",
+        "roomCool_spine"
+      ]
+    }
+  ],
+  "unintended_intersections": [],
+  "drain_operating_intersections": [],
+  "minimum_cross_circuit_clearance_m": 0.07999986514447288,
+  "minimum_drain_operating_clearance_m": 0.03500001415610288,
+  "closest_pairs": [
+    {
+      "a": "roomWarm_north_trunk",
+      "b": "roomCool_crossfeed",
+      "clearance_m": 0.07999986514447288
+    },
+    {
+      "a": "chipWarm_north_trunk",
+      "b": "chipCool_crossfeed",
+      "clearance_m": 0.08000008868008918
+    },
+    {
+      "a": "roomWarm_row_4",
+      "b": "cooler_74_Cool",
+      "clearance_m": 0.11499969327807627
+    },
+    {
+      "a": "roomWarm_row_4",
+      "b": "cooler_75_Cool",
+      "clearance_m": 0.11499969327807627
+    },
+    {
+      "a": "roomWarm_row_4",
+      "b": "cooler_76_Cool",
+      "clearance_m": 0.11499969327807627
+    },
+    {
+      "a": "roomWarm_row_4",
+      "b": "cooler_77_Cool",
+      "clearance_m": 0.11499969327807627
+    },
+    {
+      "a": "roomWarm_row_4",
+      "b": "cooler_78_Cool",
+      "clearance_m": 0.11499969327807627
+    },
+    {
+      "a": "roomWarm_row_4",
+      "b": "cooler_79_Cool",
+      "clearance_m": 0.11499969327807627
+    },
+    {
+      "a": "roomWarm_row_4",
+      "b": "cooler_80_Cool",
+      "clearance_m": 0.11499969327807627
+    },
+    {
+      "a": "roomWarm_row_4",
+      "b": "cooler_81_Cool",
+      "clearance_m": 0.11499969327807627
+    },
+    {
+      "a": "roomWarm_row_4",
+      "b": "cooler_82_Cool",
+      "clearance_m": 0.11499969327807627
+    },
+    {
+      "a": "roomWarm_row_4",
+      "b": "cooler_83_Cool",
+      "clearance_m": 0.11499969327807627
+    }
+  ]
+}

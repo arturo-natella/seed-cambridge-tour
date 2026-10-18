@@ -1,0 +1,10 @@
+import {chromium} from 'playwright';
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1920,height:1080},deviceScaleFactor:1});
+page.on('pageerror',e=>console.log('PAGEERROR',String(e)));page.on('console',m=>{if(m.type()==='error')console.log('CONSOLE',m.text())});
+await page.goto('http://127.0.0.1:4173');await page.waitForFunction(()=>window.SEED?.ready,{timeout:90000});await page.waitForTimeout(1500);
+console.log(JSON.stringify(await page.evaluate(()=>SEED.inspect())));
+await page.screenshot({path:'qa/browser-opening.png'});
+await page.evaluate(()=>SEED.goTo(3,true));await page.waitForTimeout(900);await page.screenshot({path:'qa/browser-interior.png'});
+await page.evaluate(()=>SEED.goTo(6,true));await page.waitForTimeout(900);await page.screenshot({path:'qa/browser-ground.png'});
+await browser.close();

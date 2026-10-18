@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "files": 396,
+  "bytes": 165146961,
+  "notes": "All published files match their reviewed source bytes; output includes only static tour assets and still gallery. No environment variables or external original source documents are required."
+}

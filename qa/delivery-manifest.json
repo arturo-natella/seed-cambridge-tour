@@ -1,0 +1,281 @@
+{
+  "created_at": "2026-10-18T22:44:14.470456+00:00",
+  "scene_revision": "seed-cambridge-03",
+  "source_handoff_sha256": "c1136f68381114b5023824d4ec62c8a79f43408c747a368342c1806ecfd67478",
+  "basis_of_design_sha256": "47fa08cecd17b8dbb43b55444a2503509a6806b27d2499ce39aa0e3d9b8646a1",
+  "blender_model_sha256": "73c6ed51fef690c5b2fccd7a175d31b887e0a55a676b597917130b70a1d77152",
+  "glb_sha256": "a30095da1136779145a2ccb389a93b96cbd5a76bd354d38d56c6a95aac0a92d7",
+  "render_engine": "Blender Cycles",
+  "stills": {
+    "S1": {
+      "path": "stills/S1.png",
+      "description": "Southwest autumn campus aerial",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "832c20c845345f614ade09be7803f375c9c6364bb667f5038300850fe755ed44"
+    },
+    "S2": {
+      "path": "stills/S2.png",
+      "description": "Northeast winter campus aerial",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "1909508eae3a931f9231b023526bba4badc12ac263a0c9114b1878642ea75b1f"
+    },
+    "S3-detail": {
+      "path": "stills/S3-detail.png",
+      "description": "Hall interior detail from the same master",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "c1197c11eb95703cf6b3b4d6e2759b5970a2cec68d4d0a929c0e15d2fe6d273c"
+    },
+    "S3": {
+      "path": "stills/S3.png",
+      "description": "North-south mesh section, with 150 m borehole depth and interior inset",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "dc6323a9c0cc2514101578ffe75c3b62d4953834d2ad7488a32bd13fefde304e"
+    },
+    "S4": {
+      "path": "stills/S4.png",
+      "description": "Orthographic north-up campus plan",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "0b88ca3748a3f4024007e5b7347bcf82e34fff99bf941feb47a1f0a6ffb7a419"
+    },
+    "Power-detail": {
+      "path": "stills/Power-detail.png",
+      "description": "Battery cabinets to UPS and distribution, busways and rack drops",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "329ad5e4d23b8ed145c0ff6aafc492b8479b2c70e846e1695c12d0902add1c1f"
+    },
+    "Freeze-detail": {
+      "path": "stills/Freeze-detail.png",
+      "description": "Warm-fluid bypass and distinct indoor drain route",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "f3b20b4241604a254a03d94b5592e8ca5842db95f647197fe640dc31bc3da4ab"
+    },
+    "Cooler-detail": {
+      "path": "stills/Cooler-detail.png",
+      "description": "Inlet and outlet isolation valves and outlet freeze sensor",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "a5175d94d983830e5d3f93e84b59c354b5aa1b28d8ed3cd46d5c87dddcbd8aa8"
+    },
+    "Drain-detail": {
+      "path": "stills/Drain-detail.png",
+      "description": "Two indoor drain-down tanks and four expansion tanks",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "52dc34e676517c6d1c47961309496d2ab6ad0d2b8ccf436cebd40caf51dfcae1"
+    },
+    "FreshAir-detail": {
+      "path": "stills/FreshAir-detail.png",
+      "description": "Fresh-air drying coil, pan and condensate drain",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "0f7b30c83ed06fc360ca9d2d06f915ab48781f63646c95934b9efbb61795c17d"
+    }
+  },
+  "web_source_notes": "Original handoff and basis of design imported locally, then superseded in affected sections by the user-approved top-model-for-every-request requirement. The opening, compute, grid, capacity, budget and comparison cards include the revised figures and in-card assumptions. Llama 3.1 405B is a provisional heavy reference. Original analysis files remain unchanged; assets/top-model-sizing.json records their hashes and the revised direct chip-to-rack calculation. The existing Blender campus and its thermal design remain the six-site concept, not an engineered expansion. Clean view and the information-card carousel remain available. The approved red Amaru logo appears in the tour header and still gallery. Static Vercel output is assembled by scripts/build-site.mjs.",
+  "web_assets_sha256": {
+    "index.html": "df3fb970562c681c871109d6c26f0a36cfa2f92108331216c59e6ee4d349c21e",
+    "src/app.js": "f979f5098b48baf0482d7c7d9d3c53bf79f901cc7563a9f5790770dd4579beb9",
+    "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
+    "assets/content.json": "2bb14dc1557cc7c7bfd0bb478e919eaf150b15ba5e8b5f4e145b6badf28b65f3",
+    "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
+    "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
+    "README.md": "90e0dca09395a3807038ad053d9e4e4549bd42d0b4b4a29f81b86cc9fa71a377",
+    "assets/top-model-sizing.json": "2cf6cc0c570fbe7e6862dffdeb7f833e9191e83c3285c47e4f1530ea5600e33e",
+    "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
+  },
+  "authoring_sha256": {
+    "blender/build_scene.py": "c226ffe26d3024dce0ef6265fd7f692bb525b74fb50c18c9cc757aede7daab1b",
+    "blender/layout.json": "6e8d4b91ed525cfe6dad590efa247fea62302851c3d6d0870bc4136739c0ce56",
+    "blender/render_stills.py": "3db8e3a38321916787559c0414c70b1e1610e97c5716e12ae8ce9b99e55f5488",
+    "blender/verify_model.py": "ca7d0d495ffa43d5e02a45feaf5d713343c5da335ceaaa04e8d9a1d303416d85",
+    "blender/connections.json": "00c012dd18511c11ca569644c59841f9b6606398b97b05567e2428c027feef20",
+    "blender/viewer-anchors.json": "fe3a74bd4df2bea4d30f2e751acd1c464785738f90eef83f5238a90d1b8fb7e6",
+    "scripts/import-content.py": "5cafa057527d197f277e6c0b42c6e19d82ac07446595adfa79c04aea73c316b2",
+    "scripts/build-model.mjs": "44d74f528c77fed507c1ea83863362e3571384bfa2e16825f61281b349a7e176",
+    "scripts/render-stills.mjs": "874f65fbc26d9f3a68939ed5e2f9538738290c492c1116e5266cd30e0d6d3366",
+    "scripts/top_model_baseline.py": "74d46b0346a7f29a5986d00e544338a1784e841685987b3d338ab035f36884cf",
+    "scripts/build-site.mjs": "0e215bfa76bbad7291ac9807b78479137a4c990e458129f3df4e3211f4aa8b32"
+  },
+  "verification": {
+    "browser": {
+      "report": "qa/browser-report.json",
+      "passed": true,
+      "sha256": "89cc58826fc9fc7f66a164eaa41ee441f753a4ba73b868f946a35389d88180b1",
+      "checks": 487,
+      "verified_web_assets_sha256": {
+        "index.html": "b156f16be096d4de22eee0297b27f8f2debb561897f79b0ad9c42e096ab882b2",
+        "src/app.js": "f979f5098b48baf0482d7c7d9d3c53bf79f901cc7563a9f5790770dd4579beb9",
+        "src/style.css": "0e1cc775829741916566a3991179b6f4135cc9b7a19cbbe94744d0da34156ff8",
+        "assets/content.json": "2bb14dc1557cc7c7bfd0bb478e919eaf150b15ba5e8b5f4e145b6badf28b65f3",
+        "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
+        "stills/index.html": "e9ed8414aac95af61d4b94372b1042afcd68da0d516be5f778034ff5f5b7d51e",
+        "README.md": "eabe27f232b62830fdacd8733f3ada739c0c7e5afb210e9ea8e5aa875d3dd98d",
+        "assets/top-model-sizing.json": "2cf6cc0c570fbe7e6862dffdeb7f833e9191e83c3285c47e4f1530ea5600e33e"
+      }
+    },
+    "carousel_layout": {
+      "report": "qa/carousel-layout-report.json",
+      "passed": true,
+      "sha256": "de25144164efba459d19afc3f5538790c4f03b49268f0a8ac762a617602f6203",
+      "checks": 57,
+      "verified_web_assets_sha256": {
+        "index.html": "b156f16be096d4de22eee0297b27f8f2debb561897f79b0ad9c42e096ab882b2",
+        "src/app.js": "f979f5098b48baf0482d7c7d9d3c53bf79f901cc7563a9f5790770dd4579beb9",
+        "src/style.css": "0e1cc775829741916566a3991179b6f4135cc9b7a19cbbe94744d0da34156ff8",
+        "assets/content.json": "2bb14dc1557cc7c7bfd0bb478e919eaf150b15ba5e8b5f4e145b6badf28b65f3",
+        "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
+        "stills/index.html": "e9ed8414aac95af61d4b94372b1042afcd68da0d516be5f778034ff5f5b7d51e",
+        "README.md": "eabe27f232b62830fdacd8733f3ada739c0c7e5afb210e9ea8e5aa875d3dd98d",
+        "assets/top-model-sizing.json": "2cf6cc0c570fbe7e6862dffdeb7f833e9191e83c3285c47e4f1530ea5600e33e"
+      }
+    },
+    "model_energy": {
+      "report": "qa/model-energy-report.json",
+      "passed": true,
+      "sha256": "fd97acfa8809165b9df641c8a9e503b803ac03a04d8ca620f6f4151b6b161805",
+      "checks": 780,
+      "verified_web_assets_sha256": {
+        "index.html": "b156f16be096d4de22eee0297b27f8f2debb561897f79b0ad9c42e096ab882b2",
+        "src/app.js": "f979f5098b48baf0482d7c7d9d3c53bf79f901cc7563a9f5790770dd4579beb9",
+        "src/style.css": "0e1cc775829741916566a3991179b6f4135cc9b7a19cbbe94744d0da34156ff8",
+        "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
+        "stills/index.html": "e9ed8414aac95af61d4b94372b1042afcd68da0d516be5f778034ff5f5b7d51e",
+        "README.md": "eabe27f232b62830fdacd8733f3ada739c0c7e5afb210e9ea8e5aa875d3dd98d",
+        "assets/top-model-sizing.json": "2cf6cc0c570fbe7e6862dffdeb7f833e9191e83c3285c47e4f1530ea5600e33e"
+      },
+      "notes": "780 checks passed on desktop, laptop and phone, including independent numerical acceptance and all five workload scenarios. A subsequent content-only repair closed the backup-design HTML wrapper; the energy content and app were unchanged. Final content was then covered by browser, carousel and thermal suites. The final full-content hash is intentionally not attributed to this earlier energy run."
+    },
+    "thermal_design": {
+      "report": "qa/thermal-design-report.json",
+      "passed": true,
+      "sha256": "7f0b6c08147e9e4a89d8a8d17751250c8af7222bea52831e6ece9b043baafd18",
+      "checks": 176,
+      "verified_web_assets_sha256": {
+        "index.html": "b156f16be096d4de22eee0297b27f8f2debb561897f79b0ad9c42e096ab882b2",
+        "src/app.js": "f979f5098b48baf0482d7c7d9d3c53bf79f901cc7563a9f5790770dd4579beb9",
+        "src/style.css": "0e1cc775829741916566a3991179b6f4135cc9b7a19cbbe94744d0da34156ff8",
+        "assets/content.json": "2bb14dc1557cc7c7bfd0bb478e919eaf150b15ba5e8b5f4e145b6badf28b65f3",
+        "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
+        "stills/index.html": "e9ed8414aac95af61d4b94372b1042afcd68da0d516be5f778034ff5f5b7d51e",
+        "README.md": "eabe27f232b62830fdacd8733f3ada739c0c7e5afb210e9ea8e5aa875d3dd98d",
+        "assets/top-model-sizing.json": "2cf6cc0c570fbe7e6862dffdeb7f833e9191e83c3285c47e4f1530ea5600e33e"
+      }
+    },
+    "rendering_clarity": {
+      "report": "qa/rendering-clarity.json",
+      "passed": true,
+      "sha256": "f356517026df6b2a57512c035528d679327797ade10e85e4e413bace284e5e0b",
+      "views": 12,
+      "verified_web_assets_sha256": {
+        "index.html": "90741fcf1693c28a36e5cac15eb931178bd5ecfa9a9902c12b4b3fc3f47b220c",
+        "src/app.js": "7d92e083dff0b867007d2a3202ee2eb4551dc7256f4e95f18dbe79221e9a41f5",
+        "src/style.css": "316e78a6ffedb435a905c92fb520aba3cb76a26d890bf2f3c247b6df84df2064",
+        "assets/content.json": "930a6be12f60dcae4654ec5b88cef4378f0643cdea33f94daa23a5c1bfd17979",
+        "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
+        "stills/index.html": "e9ed8414aac95af61d4b94372b1042afcd68da0d516be5f778034ff5f5b7d51e",
+        "README.md": "444d2404bbca56bd4eb93f421743e4b1b5ff8d24ed7164ccc329c54a525ea4ac"
+      },
+      "historical_revision": true,
+      "revision_note": "Prior revision evidence retained with its original tested asset hashes. Current revision browser and energy tests also cover navigation and Clean view restoration."
+    },
+    "model_measurements": {
+      "report": "qa/model-measurements.json",
+      "passed": true,
+      "checks": 66,
+      "sha256": "b87f6a118a077a13682e85794998839a9c0e860016e545a2ea3c37ca77fa8821"
+    },
+    "model_connectivity": {
+      "report": "qa/model-connectivity.json",
+      "sha256": "86af65ce57717ed61cb6e80c08a728dd7d941c33bff1f48828e5c8898c4e7c04"
+    },
+    "blender_visual_review": {
+      "report": "qa/blender-visual-review-revision03.json",
+      "sha256": "a8aca3e3a3b480a044fa17693a802835bb14e304ba2d739facb503d9905a7d08",
+      "images": 14
+    },
+    "gltf_validation": {
+      "report": "qa/gltf-validation.json",
+      "errors": 0,
+      "warnings": 0,
+      "sha256": "70fb1d6d9eeb926e68ff829cd9e67516bd5dd7cd44fd7b552fe643c19bae659d"
+    },
+    "clean_view": {
+      "report": "qa/clean-view-report.json",
+      "passed": true,
+      "behavior_checks": 196,
+      "final_focus_checks": 13,
+      "sha256": "7f36a885e0ac6d96f8d6db6a2af29e72e7718927329875b24b1866a1eafbee1b",
+      "verified_web_assets_sha256": {
+        "index.html": "2e70691ef96b50908706a35f58350da4143776402ca2e7240e7454524f935905",
+        "src/app.js": "f30e853a8dfc1414c38b5ae17f8c1a42094ae2e32088227a1575aa1beee8ae1b",
+        "src/style.css": "351c4c9a2c17f681299a259970d7a5ebb92af6dd2065393c9b91beb9c01a98f9",
+        "assets/content.json": "930a6be12f60dcae4654ec5b88cef4378f0643cdea33f94daa23a5c1bfd17979",
+        "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
+        "stills/index.html": "e9ed8414aac95af61d4b94372b1042afcd68da0d516be5f778034ff5f5b7d51e",
+        "README.md": "84d7c1511400f99178cda332bf79c659bf49234cfcccc7f118763baa396d847d"
+      },
+      "notes": "Desktop, laptop and phone; annotations hidden, camera and card retained, mesh clicks suppressed, navigation and controls available. Final follow-up verifies accessible focus restoration and current screenshots after the focus correction.",
+      "historical_revision": true,
+      "revision_note": "Prior revision evidence retained with its original tested asset hashes. Current revision browser and energy tests also cover navigation and Clean view restoration."
+    },
+    "reimport": {
+      "passed": true,
+      "notes": "Re-import reproduced the final content and sizing assets byte for byte.",
+      "verified_assets_sha256": {
+        "assets/content.json": "2bb14dc1557cc7c7bfd0bb478e919eaf150b15ba5e8b5f4e145b6badf28b65f3",
+        "assets/top-model-sizing.json": "2cf6cc0c570fbe7e6862dffdeb7f833e9191e83c3285c47e4f1530ea5600e33e"
+      }
+    },
+    "amaru_brand": {
+      "passed": true,
+      "report": "qa/amaru-brand-report.json",
+      "sha256": "4362cca9eaa9566b3791ad01c73d776fc8c9c3ac2f0160175b031e1d1f4af111",
+      "notes": "Logo red, clear space, viewport fit and Tour stops navigation checked at 1920, 1366, 390 and 320 px. Gallery logo checked on phone.",
+      "verified_web_assets_sha256": {
+        "index.html": "df3fb970562c681c871109d6c26f0a36cfa2f92108331216c59e6ee4d349c21e",
+        "src/app.js": "f979f5098b48baf0482d7c7d9d3c53bf79f901cc7563a9f5790770dd4579beb9",
+        "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
+        "assets/content.json": "2bb14dc1557cc7c7bfd0bb478e919eaf150b15ba5e8b5f4e145b6badf28b65f3",
+        "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
+        "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
+        "README.md": "90e0dca09395a3807038ad053d9e4e4549bd42d0b4b4a29f81b86cc9fa71a377",
+        "assets/top-model-sizing.json": "2cf6cc0c570fbe7e6862dffdeb7f833e9191e83c3285c47e4f1530ea5600e33e",
+        "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
+      }
+    },
+    "publication_build": {
+      "passed": true,
+      "report": "qa/publication-build-report.json",
+      "sha256": "0869dbdb842d329ee23a68039e0e10440794542e1282a73b79f7c2f60cd40320"
+    }
+  },
+  "engineering_boundaries": [
+    "Illustrative Cambridge parcel and equipment routes; not a construction document.",
+    "Drain-down tank capacities, expansion sizing, pipe slopes, complete drainability and restart controls remain to be engineered.",
+    "Fresh-air dehumidification needs a suitably cold source and capacity sizing; the 75 F room-air loop alone does not establish a 50 F dew point.",
+    "Rock properties and cooling savings require the specified test bore and thermal response testing.",
+    "AI workload scenarios are modeled capacity estimates with transferred hardware-efficiency assumptions, not measured joules per token.",
+    "Llama 3.1 405B is a heavy sizing proxy, not a verified best-quality model. The 2.5x Rubin rack throughput gain is transferred from R1 and requires validation.",
+    "Full-workload figures are extrapolated capacity estimates. The existing six-campus geometry does not depict a designed 7.3–7.6 GW expansion.",
+    "The $231–242B subtotal is compute-rack purchase only at an inherited $7.8M planning estimate per rack. A new total project cost and payback have not been established.",
+    "Annual energy assumes full rated workload for 8,760 hours. Actual annual demand and utilization have not been forecast.",
+    "Heavy-model context cache, storage bandwidth, additional support power and reliability reserves require validation. Old R1-specific memory figures do not establish heavy-model capacity."
+  ],
+  "delivery_status": "Local preview verified; not deployed.",
+  "updated_at": "2026-10-18T23:40:33.000667+00:00",
+  "web_revision": "top-model-01-amaru",
+  "verification_notes": "Geometry and stills remain at scene revision03. Existing browser reports retain the asset hashes of their original verification; the targeted Clean view report covers this UI update.",
+  "test_source_sha256": {
+    "tests/tour.mjs": "19272474e15234243d163ab63972345a28ae2d6a7fd76fe361069e57f77a5098",
+    "tests/carousel-layout.mjs": "c50682e444a23fc14bb633bf445167c08277dad97b140d24013a5d4aae8217af",
+    "tests/model-energy.mjs": "13661162aab014cc9d795070773767ab4f5cd56c4fe01a86d04a4e0557b9020c",
+    "tests/thermal-design.mjs": "b276f7fde196f4a94444efa8b7bfc22cb85250c3fb7b8006bb954dbdd6b90784"
+  }
+}

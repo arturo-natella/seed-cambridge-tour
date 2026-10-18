@@ -1,0 +1,279 @@
+{
+  "revision": "seed-cambridge-03",
+  "reviewed_utc": "2026-10-18T22:43:32.852146+00:00",
+  "model": "tour/blender/SEED-Cambridge.blend",
+  "model_sha256": "73c6ed51fef690c5b2fccd7a175d31b887e0a55a676b597917130b70a1d77152",
+  "glb_sha256": "a30095da1136779145a2ccb389a93b96cbd5a76bd354d38d56c6a95aac0a92d7",
+  "measurement_sha_matches": true,
+  "blender": "5.2.1 LTS",
+  "result": "pass_with_documented_scale_and_design_limitations",
+  "scope": "Ten 4K Blender stills and four directional QA views inspected from one verified saved master. Geometry was frozen before final render-camera/caption refinements. Visual review is not construction, hydraulic, electrical or site approval.",
+  "checks_passed": 66,
+  "checks_total": 66,
+  "counts": {
+    "hall": 1,
+    "dockAirlock": 3,
+    "airlockInnerDoor": 3,
+    "airlockOuterDoor": 3,
+    "dewpointSensor": 8,
+    "batteryCabinet": 64,
+    "upsCabinet": 32,
+    "upsDistribution": 4,
+    "rackPowerDrop": 736,
+    "computeRack": 368,
+    "sparePosition": 32,
+    "coolingUnit": 32,
+    "rowBusway": 32,
+    "networkRack": 368,
+    "dryCooler": 102,
+    "pipeBridge": 3,
+    "drainTank": 2,
+    "expansionTank": 4,
+    "freshAirUnit": 1,
+    "freshAirDrainPan": 1,
+    "freshAirLouver": 1,
+    "bypassValve": 1,
+    "bypassActuator": 1,
+    "coolerIsolationValve": 204,
+    "coolerFreezeSensor": 102,
+    "coolerDrainValve": 102,
+    "coolerDrainJoin": 102,
+    "backupChiller": 6,
+    "borehole": 1024,
+    "groundLoopPump": 2,
+    "transformer": 3,
+    "generator": 30,
+    "fuelTank": 4
+  },
+  "images": [
+    {
+      "name": "S1",
+      "path": "tour/stills/S1.png",
+      "sha256": "832c20c845345f614ade09be7803f375c9c6364bb667f5038300850fe755ed44",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:36:29.139759+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior or plan"
+    },
+    {
+      "name": "S2",
+      "path": "tour/stills/S2.png",
+      "sha256": "1909508eae3a931f9231b023526bba4badc12ac263a0c9114b1878642ea75b1f",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:36:50.001257+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior or plan"
+    },
+    {
+      "name": "S3-detail",
+      "path": "tour/stills/S3-detail.png",
+      "sha256": "c1197c11eb95703cf6b3b4d6e2759b5970a2cec68d4d0a929c0e15d2fe6d273c",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:37:17.756057+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "Hall interior with power above and coolant below"
+    },
+    {
+      "name": "S3",
+      "path": "tour/stills/S3.png",
+      "sha256": "dc6323a9c0cc2514101578ffe75c3b62d4953834d2ad7488a32bd13fefde304e",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:41:11.505022+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "Section at x=-37, 150m borehole field, hall inset; visibility and section only"
+    },
+    {
+      "name": "S4",
+      "path": "tour/stills/S4.png",
+      "sha256": "0b88ca3748a3f4024007e5b7347bcf82e34fff99bf941feb47a1f0a6ffb7a419",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:37:54.740588+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior or plan"
+    },
+    {
+      "name": "Power-detail",
+      "path": "tour/stills/Power-detail.png",
+      "sha256": "329ad5e4d23b8ed145c0ff6aafc492b8479b2c70e846e1695c12d0902add1c1f",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:38:25.358837+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "Battery cabinets through UPS/distribution to overhead rack busways"
+    },
+    {
+      "name": "Freeze-detail",
+      "path": "tour/stills/Freeze-detail.png",
+      "sha256": "f3b20b4241604a254a03d94b5592e8ca5842db95f647197fe640dc31bc3da4ab",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:40:56.463146+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "Yellow chip bypass actuator and white drain routes"
+    },
+    {
+      "name": "Cooler-detail",
+      "path": "tour/stills/Cooler-detail.png",
+      "sha256": "a5175d94d983830e5d3f93e84b59c354b5aa1b28d8ed3cd46d5c87dddcbd8aa8",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:42:05.299471+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "Top view into cooler gap, two isolation actuators and white outlet sensor"
+    },
+    {
+      "name": "Drain-detail",
+      "path": "tour/stills/Drain-detail.png",
+      "sha256": "52dc34e676517c6d1c47961309496d2ab6ad0d2b8ccf436cebd40caf51dfcae1",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:39:58.214924+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "Both horizontal drain tanks and four upright expansion tanks"
+    },
+    {
+      "name": "FreshAir-detail",
+      "path": "tour/stills/FreshAir-detail.png",
+      "sha256": "0f7b30c83ed06fc360ca9d2d06f915ab48781f63646c95934b9efbb61795c17d",
+      "size": [
+        3840,
+        2160
+      ],
+      "modified_utc": "2026-10-18T22:40:26.812193+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "Intake duct, coil and drain pan with casing hidden"
+    },
+    {
+      "name": "QA-North",
+      "path": "tour/qa/QA-North.png",
+      "sha256": "010923875978680baf979af306a9e03417c6b2e69dd8a0ac8ca5bfa610526954",
+      "size": [
+        960,
+        540
+      ],
+      "modified_utc": "2026-10-18T22:38:27.239086+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior or plan"
+    },
+    {
+      "name": "QA-South",
+      "path": "tour/qa/QA-South.png",
+      "sha256": "4cae8045cb81bb4a28d9256bc30e39736c4d9d805d748d55f6e56a7567e880d0",
+      "size": [
+        960,
+        540
+      ],
+      "modified_utc": "2026-10-18T22:38:29.227736+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior or plan"
+    },
+    {
+      "name": "QA-East",
+      "path": "tour/qa/QA-East.png",
+      "sha256": "dd93e840fce065f304824a9ffe64c26bdbe78e5c10bad09328355a7c272656e9",
+      "size": [
+        960,
+        540
+      ],
+      "modified_utc": "2026-10-18T22:38:31.663085+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior or plan"
+    },
+    {
+      "name": "QA-West",
+      "path": "tour/qa/QA-West.png",
+      "sha256": "e149cc479c0869866f8056967cac3d1440dc7a6d28f982524b8eb1713d9e840c",
+      "size": [
+        960,
+        540
+      ],
+      "modified_utc": "2026-10-18T22:38:33.862426+00:00",
+      "render_success_marker": true,
+      "inspected": true,
+      "view": "roof-on exterior or plan"
+    }
+  ],
+  "observations": [
+    {
+      "severity": "pass",
+      "area": "Power-detail and S3-detail",
+      "finding": "Gold electrical power visibly connects the battery/UPS/distribution system to overhead busways and rack drops. Light gray cable trays and red fire sprinklers are distinct from orange/blue coolant."
+    },
+    {
+      "severity": "pass",
+      "area": "Freeze-detail and Cooler-detail",
+      "finding": "The yellow bypass actuator, white drain pipes with purple bands, a pair of dark-blue isolation actuators, and white outlet freeze sensor are visible in complementary views. The cooler caption explicitly locates its low-point drain on the opposite side."
+    },
+    {
+      "severity": "pass",
+      "area": "Drain-detail",
+      "finding": "One frame shows two horizontal drain tanks, four upright expansion tanks and the actual white connected drain manifold. Caption states that capacity and complete drainability require hydraulic engineering."
+    },
+    {
+      "severity": "pass",
+      "area": "FreshAir-detail",
+      "finding": "The clear casing-hidden view shows intake duct, coil and drain pan without the previous power-busway obstruction. Caption explicitly leaves cold-source selection, dehumidification duty and air delivery unresolved; 75F room-loop fluid cannot establish a 50F dew point."
+    },
+    {
+      "severity": "pass",
+      "area": "S3",
+      "finding": "The same mesh section exposes 150m depth and a highlighted U-loop with arrows. Caption now states 1,024 total loops and warm/cool fluid."
+    },
+    {
+      "severity": "pass",
+      "area": "S1, S4 and four directional views",
+      "finding": "Hall, cooling ridge, chillers, thermal plant house, solar field, substation, generator yard, greenhouse, operations building and parking retain their positions. Context buildings and skyline now rest on a ground surface, correcting the prior floating-context defect."
+    },
+    {
+      "severity": "design_limitation",
+      "area": "Freeze protection and fresh-air equipment",
+      "finding": "Tank envelopes, drain sizes/falls, coil duty, piping access, control sequence and full drainability are illustrative and require engineering. Saved-model connectivity checks confirm visual geometry only."
+    },
+    {
+      "severity": "presentation_limitation",
+      "area": "S2",
+      "finding": "Winter campus remains legible but composition retains a large sky area."
+    },
+    {
+      "severity": "scale_limitation",
+      "area": "S3",
+      "finding": "U-leg separation is very small at 150m depth; the dense field shows total extent, while the interactive diagram explains individual fluid travel without widening the measured geometry."
+    }
+  ]
+}
