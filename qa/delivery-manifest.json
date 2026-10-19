@@ -78,16 +78,16 @@
       "sha256": "0f7b30c83ed06fc360ca9d2d06f915ab48781f63646c95934b9efbb61795c17d"
     }
   },
-  "web_source_notes": "Preserves the original daily workload of 20 questions and five agent tasks, with source peak rates 4.6 output and 40 new input tokens/s per user. The heavy reference stands in for the top model. Each fixed campus supports an illustrative 4.37–4.57M users’ workload at those peak rates. The opening overview hides the requested assumption block; supporting explanations retain its basis. The physical Blender master is unchanged. A new Sundai cover is rendered from that master.",
+  "web_source_notes": "Eight active coding hours per person daily on the top model, with no fixed daily question or task allowance. The supplied developer rates of 28 output and 333 new input tokens/s are explicitly assumed throughout active hours; this is not measured Claude usage. One overlapping daily cohort gives an illustrative 610–640k users per campus. The six-campus 500 MW design remains fixed. The requested main-card assumption block is hidden; detailed assumptions remain in AI & energy. A Sundai cover uses a fresh render of the unchanged Blender master. All visible cards, equipment records and design details were audited for superseded annual results. Solar generation and weather availability are separate from operating hours. The hall description clarifies enclosed mineral-wool panels.",
   "web_assets_sha256": {
-    "index.html": "f760a371ae78c1fced5483d66126544ee380a092df31584ca6c246362af1a28c",
-    "src/app.js": "f2e4a9cde1a442556e484c020adbedd0edec0a944413ca7cc49e44bff1db7c2b",
+    "index.html": "ee06fdf33751755021fa15683bd74c553658a980d5e9023b3ddffac6276ecfcc",
+    "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
     "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-    "assets/content.json": "c996c731b63f802d0301e22e3cd1be0379e7dbc0bd972ae6eadea918652b426a",
+    "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
     "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
     "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
-    "README.md": "1aa27cfdaa6e30e7986fbe72c05d3601c081a59857baf6af9e4210e38a20e4a9",
-    "assets/top-model-sizing.json": "b15c59c5dd3b6b66f0ecfff00d6d3e0648c3c9cdfbea50bb5b48076d69b06f31",
+    "README.md": "ca14384a1f792038b5fa6aec4da03d1233e29e4b89bbd26b5052c940e6ce8c7a",
+    "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
     "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
   },
   "authoring_sha256": {
@@ -100,7 +100,7 @@
     "scripts/import-content.py": "5cafa057527d197f277e6c0b42c6e19d82ac07446595adfa79c04aea73c316b2",
     "scripts/build-model.mjs": "44d74f528c77fed507c1ea83863362e3571384bfa2e16825f61281b349a7e176",
     "scripts/render-stills.mjs": "874f65fbc26d9f3a68939ed5e2f9538738290c492c1116e5266cd30e0d6d3366",
-    "scripts/top_model_baseline.py": "5bee1eed00fe5d9fab8be647252918bfa6ffce211d1a111897af06a7ab222303",
+    "scripts/top_model_baseline.py": "06cbe142ae805efd07f965e39c3946c0d129b0d9c451cdc72feba062c093f218",
     "scripts/build-site.mjs": "0e215bfa76bbad7291ac9807b78479137a4c990e458129f3df4e3211f4aa8b32",
     "blender/render_project_cover.py": "ce3fe1bfc51eb2d433bd37fbaabcc627da1df951ef70d69f48b49ab7f84892fb",
     "scripts/render-project-cover.mjs": "269236664a2f634429acde8a3f400621274a50d742a0246874af0fb091af20c0",
@@ -110,17 +110,17 @@
     "browser": {
       "report": "qa/browser-report.json",
       "passed": true,
-      "sha256": "7d6cb7ceb714899ba49e6b2cf4c2d5ed85e4ad6716896cb6d93d5adf3e559ab9",
+      "sha256": "9583e244a5aaed6773e3a5ad9e722fbe14ae9b2eeb33b4d8bab9c2454e60f87b",
       "checks": 487,
       "verified_web_assets_sha256": {
-        "index.html": "f760a371ae78c1fced5483d66126544ee380a092df31584ca6c246362af1a28c",
-        "src/app.js": "f2e4a9cde1a442556e484c020adbedd0edec0a944413ca7cc49e44bff1db7c2b",
+        "index.html": "ee06fdf33751755021fa15683bd74c553658a980d5e9023b3ddffac6276ecfcc",
+        "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
         "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-        "assets/content.json": "c996c731b63f802d0301e22e3cd1be0379e7dbc0bd972ae6eadea918652b426a",
+        "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
         "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
         "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
-        "README.md": "1aa27cfdaa6e30e7986fbe72c05d3601c081a59857baf6af9e4210e38a20e4a9",
-        "assets/top-model-sizing.json": "b15c59c5dd3b6b66f0ecfff00d6d3e0648c3c9cdfbea50bb5b48076d69b06f31",
+        "README.md": "ca14384a1f792038b5fa6aec4da03d1233e29e4b89bbd26b5052c940e6ce8c7a",
+        "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
         "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
       }
     },
@@ -130,48 +130,69 @@
       "sha256": "de25144164efba459d19afc3f5538790c4f03b49268f0a8ac762a617602f6203",
       "checks": 57,
       "verified_web_assets_sha256": {
-        "index.html": "f760a371ae78c1fced5483d66126544ee380a092df31584ca6c246362af1a28c",
-        "src/app.js": "f2e4a9cde1a442556e484c020adbedd0edec0a944413ca7cc49e44bff1db7c2b",
+        "index.html": "ee06fdf33751755021fa15683bd74c553658a980d5e9023b3ddffac6276ecfcc",
+        "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
         "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-        "assets/content.json": "c996c731b63f802d0301e22e3cd1be0379e7dbc0bd972ae6eadea918652b426a",
+        "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
         "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
         "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
-        "README.md": "1aa27cfdaa6e30e7986fbe72c05d3601c081a59857baf6af9e4210e38a20e4a9",
-        "assets/top-model-sizing.json": "b15c59c5dd3b6b66f0ecfff00d6d3e0648c3c9cdfbea50bb5b48076d69b06f31",
+        "README.md": "ca14384a1f792038b5fa6aec4da03d1233e29e4b89bbd26b5052c940e6ce8c7a",
+        "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
         "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
       }
     },
     "model_energy": {
       "report": "qa/model-energy-report.json",
       "passed": true,
-      "sha256": "806d66fcff2afdfcae36f543eba38c88cd394e123aa4f0190856c3350b28c011",
+      "sha256": "7016882a8264d99163ebcd0f1b5ff49cc444be3159bf00ef391eaf882490fc3e",
       "checks": 297,
       "verified_web_assets_sha256": {
-        "index.html": "f760a371ae78c1fced5483d66126544ee380a092df31584ca6c246362af1a28c",
-        "src/app.js": "f2e4a9cde1a442556e484c020adbedd0edec0a944413ca7cc49e44bff1db7c2b",
+        "index.html": "ee06fdf33751755021fa15683bd74c553658a980d5e9023b3ddffac6276ecfcc",
+        "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
         "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-        "assets/content.json": "c996c731b63f802d0301e22e3cd1be0379e7dbc0bd972ae6eadea918652b426a",
+        "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
         "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
         "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
-        "README.md": "1aa27cfdaa6e30e7986fbe72c05d3601c081a59857baf6af9e4210e38a20e4a9",
-        "assets/top-model-sizing.json": "b15c59c5dd3b6b66f0ecfff00d6d3e0648c3c9cdfbea50bb5b48076d69b06f31",
+        "README.md": "ca14384a1f792038b5fa6aec4da03d1233e29e4b89bbd26b5052c940e6ce8c7a",
+        "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
         "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
+      },
+      "copy_audit": {
+        "auditedStrings": 599,
+        "forbiddenPatterns": [
+          "/20 questions/i",
+          "/five agent tasks/i",
+          "/20-question/i",
+          "/4\\.37[–-]4\\.57/",
+          "/26\\.2[–-]27\\.4/",
+          "/30[–-]40%/",
+          "/650[–-]1,130/",
+          "/1,580 MWh/",
+          "/4,250 MWh/",
+          "/4\\.4 TWh/",
+          "/86,000[–-]97,000/",
+          "/under 1% of (?:a|the) site/",
+          "/0\\.2% of the site/",
+          "/231[–-]242B/",
+          "/3[–-]7 weeks/",
+          "/3,600 m³/"
+        ]
       }
     },
     "thermal_design": {
       "report": "qa/thermal-design-report.json",
       "passed": true,
-      "sha256": "fbd36bfd93183c32a71290038a79d1e204f3ac9f677cc0ed688dbfcb07206c1e",
+      "sha256": "a8aee8a92e47e11c39e78274140a9454169ee20f37cdb424be0330db645a0d4b",
       "checks": 176,
       "verified_web_assets_sha256": {
-        "index.html": "f760a371ae78c1fced5483d66126544ee380a092df31584ca6c246362af1a28c",
-        "src/app.js": "f2e4a9cde1a442556e484c020adbedd0edec0a944413ca7cc49e44bff1db7c2b",
+        "index.html": "ee06fdf33751755021fa15683bd74c553658a980d5e9023b3ddffac6276ecfcc",
+        "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
         "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-        "assets/content.json": "c996c731b63f802d0301e22e3cd1be0379e7dbc0bd972ae6eadea918652b426a",
+        "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
         "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
         "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
-        "README.md": "1aa27cfdaa6e30e7986fbe72c05d3601c081a59857baf6af9e4210e38a20e4a9",
-        "assets/top-model-sizing.json": "b15c59c5dd3b6b66f0ecfff00d6d3e0648c3c9cdfbea50bb5b48076d69b06f31",
+        "README.md": "ca14384a1f792038b5fa6aec4da03d1233e29e4b89bbd26b5052c940e6ce8c7a",
+        "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
         "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
       }
     },
@@ -236,8 +257,8 @@
       "passed": true,
       "notes": "Re-import reproduced the final content and sizing assets byte for byte.",
       "verified_assets_sha256": {
-        "assets/content.json": "c996c731b63f802d0301e22e3cd1be0379e7dbc0bd972ae6eadea918652b426a",
-        "assets/top-model-sizing.json": "b15c59c5dd3b6b66f0ecfff00d6d3e0648c3c9cdfbea50bb5b48076d69b06f31"
+        "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
+        "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8"
       }
     },
     "amaru_brand": {
@@ -262,7 +283,7 @@
     "publication_build": {
       "passed": true,
       "report": "qa/publication-build-report.json",
-      "sha256": "c5f868e2a32c251df0efd741eedbd46d2f56decfff05f9fc02daba33a61d49d2"
+      "sha256": "4fd6c3aa5fff079da6447c68719cc106b3dd9e574fe747dd7489c9bc78fea33a"
     },
     "sundai_cover": {
       "passed": true,
@@ -275,22 +296,23 @@
     "Illustrative Cambridge parcel and equipment routes; not a construction document.",
     "Drain-down tank capacities, expansion sizing, pipe slopes, complete drainability and restart controls remain to be engineered.",
     "Fresh-air dehumidification needs a suitably cold source and capacity sizing; the 75 F room-air loop alone does not establish a 50 F dew point.",
-    "Rock properties and cooling savings require test bores and thermal response testing.",
-    "The unchanged 20-question/five-task workload uses the source case C peak rates. Reported capacity is a population workload equivalent, not simultaneous sessions or measured Claude capacity.",
+    "Rock properties require test bores. Seasonal heat balance, winter recharge, annual cooling savings and field sizing must be revalidated against the revised hourly load.",
+    "Eight hours establishes duration, not token demand. Sustained developer rates, efficient context reuse and one overlapping daily cohort are explicitly stated planning assumptions. Quota waiting is outside active time.",
     "Llama 3.1 405B is a heavy sizing proxy, not a verified best-quality model. The 2.5x Rubin rack throughput gain is transferred from R1 and requires validation.",
-    "Six campuses remain under 500 MW with 338 active pairs each. The model does not engineer an expansion to the 7.3–7.6 GW extrapolated full-population requirement.",
+    "Six campuses remain below 500 MW with 338 active pairs each. No automatic shift multiplier or additional concurrency discount is applied.",
     "The $2.64B per-site and $15.82B fleet subtotals buy compute racks only at the inherited $7.8M price. A new total project budget and payback are not established.",
-    "Actual daily or annual energy requires a load schedule including idle demand. Peak power does not establish continuous operation or an active-hour schedule.",
-    "Heavy-model context cache, storage bandwidth, additional support power and reliability reserves require validation."
+    "Eight loaded hours use about 666 MWh per campus, plus idle and transition electricity. Daily and annual energy require the total operating-load schedule; remaining hours are not assumed to draw zero.",
+    "Heavy-model context cache, storage bandwidth, additional support power and reliability reserves require validation.",
+    "Stone-wool wall cores are enclosed between steel faces. Edge closures, joints, penetrations, fire-stopping and installation dust controls require the selected assembly specifications and final engineering."
   ],
   "delivery_status": "Source release verified locally. Production release status is verified separately against the GitHub merge and Vercel deployment.",
-  "updated_at": "2026-10-19T00:15:52.616797+00:00",
-  "web_revision": "fixed-workload-03",
+  "updated_at": "2026-10-19T00:32:38.315847+00:00",
+  "web_revision": "coding-capacity-05",
   "verification_notes": "Current browser, carousel, energy and thermal reports apply to the listed web asset hashes. Geometry and original stills remain at scene revision03. Prior specialized reports are marked historical.",
   "test_source_sha256": {
     "tests/tour.mjs": "cc2f35523a908e6e839d7a1e0bc9ebf8556225f40d0cc6fe36c88a8b7874477a",
     "tests/carousel-layout.mjs": "c50682e444a23fc14bb633bf445167c08277dad97b140d24013a5d4aae8217af",
-    "tests/model-energy.mjs": "aae9450a262fb71fe7967ae595832e67352f98a8bbbad6c9a462715adb3b659c",
+    "tests/model-energy.mjs": "ae832afb70802d260275e3aba87ee187e8f3483a4e1089fe82e96675a818cecd",
     "tests/thermal-design.mjs": "b276f7fde196f4a94444efa8b7bfc22cb85250c3fb7b8006bb954dbdd6b90784"
   },
   "sundai_cover": {

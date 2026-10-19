@@ -199,9 +199,9 @@
     "qa/thermal-design-hardware-dewpoint.png"
   ],
   "sourceHashesAtStart": {
-    "src/app.js": "f2e4a9cde1a442556e484c020adbedd0edec0a944413ca7cc49e44bff1db7c2b",
+    "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
     "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-    "assets/content.json": "c996c731b63f802d0301e22e3cd1be0379e7dbc0bd972ae6eadea918652b426a",
+    "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
     "assets/campus.glb": "a30095da1136779145a2ccb389a93b96cbd5a76bd354d38d56c6a95aac0a92d7"
   }
 }

@@ -1,15 +1,14 @@
 {
-  "revision": "fixed-workload-03",
+  "revision": "coding-capacity-05",
   "assumptions": {
-    "targetUsers": 400000000.0,
-    "promptsPerDay": 20,
-    "agentTasksPerDay": 5,
+    "targetUsers": 400000000,
+    "activeHoursPerUserDay": 8,
     "campuses": 6,
     "fleetCapMW": 500,
     "campusCapMW": 83.33333333333333,
-    "outputPerSecond": 4.6,
-    "inputPerSecond": 40.0,
-    "referenceContextReadsPerUserDay": 104000000.0,
+    "outputPerSecond": 28.0,
+    "inputPerSecond": 333.0,
+    "referenceContextReadsPerUserDay": 860000000.0,
     "prefillGain": 10.0,
     "gpusPerRack": 72,
     "rubinRackThroughputGain": 2.5,
@@ -33,26 +32,35 @@
     ]
   },
   "baseline": {
-    "workPerUserAtPeak": 8.6,
+    "workPerActiveUserSecond": 61.3,
     "usersPerCampus": [
-      4365124.350205198,
-      4567369.493844049
+      612399.1747433068,
+      640772.8816812206
     ],
     "usersFleet": [
-      26190746.101231188,
-      27404216.963064294
+      3674395.048459841,
+      3844637.2900873236
     ],
+    "simultaneousUsersPerCampus": [
+      612399.1747433068,
+      640772.8816812206
+    ],
+    "baselineDailyCohorts": 1,
+    "outputTokensPerUserDay": 806400.0,
+    "newInputTokensPerUserDay": 9590400.0,
+    "loadedHoursPerDay": 8,
+    "loadedEnergyMWhPerCampusDay": 666.2656000000001,
     "targetPercent": [
-      6.547686525307797,
-      6.851054240766073
+      0.9185987621149602,
+      0.9611593225218309
     ],
     "facilityMWForTarget": [
-      7293.756295587648,
-      7631.69095020947
+      51989.21638599103,
+      54397.98316835355
     ],
     "computeRacksForTarget": [
-      29601.28366715766,
-      30972.77171351246
+      210995.1963717168,
+      220771.03558585042
     ]
   },
   "sourceHashes": {
@@ -60,13 +68,13 @@
     "analysis/budget.py": "ac60690b871d95d7511d7794652f523cd2222e3c659cde597b8ef8a7cc6d7184"
   },
   "notes": [
-    "User correction: preserve 20 questions and five agent tasks per person daily. A task may make several AI calls. Case C peak rates remain 4.6 output and 40 new input tokens/s per source user.",
-    "The heavy reference stands in for the top model on every question and task. No weaker-model routing is assumed.",
-    "Peak rates are population-normalized sizing inputs, not continuous per-user generation rates. No eight-hour coding, daily-token integration, shift or quota-wait capacity multiplier is used.",
-    "Reported headcount is the population whose assumed workload fits at the source peak rates, not the number of simultaneous chat sessions.",
-    "Llama 3.1 405B is a provisional hardware proxy, not measured Opus performance or proof of equal answer quality. The 2.5x Rubin gain is transferred from R1.",
+    "User requirement: eight active coding hours per person per day, with the top model throughout. No fixed question or task count limits this workload.",
+    "Token-rate assumption: the supplied case B developer peak rates, 28 output and 333 new input tokens/s, are treated as sustained aggregate rates during active hours. This is a planning assumption, not measured Claude or user usage.",
+    "Multiple calls, tool results, retries and parallel agents count toward the aggregate token rates. Quota-blocked waiting is outside the eight active hours.",
+    "The baseline assumes one daily cohort with overlapping active periods, so daily users equal simultaneous capacity. No automatic one-third concurrency factor or quota-wait multiplier is applied.",
+    "Llama 3.1 405B is a provisional heavy hardware proxy, not measured Opus performance or proof of equal answer quality. The 2.5x Rubin gain is transferred from R1.",
     "Capacity precedes reliability reserves, long-context attention, memory bandwidth, response-time guarantees and any additional storage power. The range covers benchmark endpoints only.",
-    "Energy requires an operating-load schedule. Full-load MW is not an annual MWh forecast.",
+    "Loaded energy covers the eight modeled active hours only; add idle and transition electricity. Annual energy requires an operating-load schedule.",
     "338 rack pairs fit each campus; six independently capped campuses hold 2028 pairs."
   ]
 }

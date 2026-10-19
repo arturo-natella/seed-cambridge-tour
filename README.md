@@ -33,20 +33,26 @@ Run `npm run build` to reproduce the published website. The output includes the 
 - Show boreholes flies to the ground section. A surface locator marks the field, and one actual front-edge U-loop is highlighted among all 1,024 loops. The cold battery stores cooling in rock; the electrical UPS batteries are inside the hall.
 - Ground cooling explains how room air transfers heat into circulating fluid and then rock. Its Summer / Winter buttons show the two seasonal paths; air never travels down the boreholes.
 - Winter protection separates normal cold-weather operation from a long cold outage with the computers off. Locate buttons show the bypass and indoor drain-down tanks. Tank capacities, full drainability, slopes and final control settings remain engineering work.
-- AI & energy keeps the daily workload at 20 questions and five agent tasks per person, with the heavy reference standing in for the top model on every call. It explains the link between AI work, chip time and electricity, then shows how many users’ workload fits each fixed-size datacenter.
+- AI & energy uses eight active coding hours per person daily on the top model, including repeated calls, retries and parallel agents. It explains how intensity, chip time and electricity determine capacity within each fixed-size datacenter.
 - Clean view in See inside hides the main card, tags, legends and hover tips while keeping the model controls and navigation available. Toggle it off or press Escape to restore the explanations without resetting the camera or selected card. It stays on while moving between tour stops.
 - X-ray reveals the hall; Ground cutaway reveals the boreholes and hides foreground terrain and meadow panels for visibility. Heat flow shows direction, reversing the seasonal ground loop in winter. Season and Labels can be changed independently.
 - Full-screen mode is in the top-right corner. Reduced-motion preferences are honored.
 
-The daily workload remains 20 questions plus five agent tasks per person. Each task may make several AI calls. The source case C peak rates remain 4.6 output and 40 new input tokens/s per user. They already include the aggregate workload, so no extra task-count multiplier is added. The heavy reference stands in for the top model for all requests. The opening card’s “We assume…” block is hidden at the user's request; its workload basis remains in supporting details and AI & energy.
+The requirement is eight active coding hours per person daily on the top model, with no fixed daily question or task allowance. Quota-blocked waiting is excluded. The opening overview hides its “We assume…” block; the detailed workload and hardware assumptions remain inside the supporting cards.
 
-The six-site 500 MW design stays fixed. At 210 kW compute + 14 kW support and PUE 1.10, each campus fits 338 whole rack pairs: 2,028 pairs and 499.70 MW across six sites. Llama 3.1 405B is the heavy hardware proxy, with the assumed 2.5× Rubin rack throughput gain transferred from R1. This is not measured Claude throughput or proof of equal answer quality.
+Eight hours establishes duration, not token volume. This planning estimate treats the supplied developer study’s 28 output and 333 new input tokens/s peak rates as sustained during active hours. These are assumed aggregate rates across calls and agents, not measured Claude or personal usage. Llama 3.1 405B is the heavy hardware proxy; the 2.5× Rubin throughput gain is transferred from R1 and needs validation.
 
-The result is roughly 4.37–4.57 million users’ assumed workload per datacenter, or 26.19–27.40 million across six sites: 6.55–6.85% of the 400M target. These figures describe the population supported at the source peak rates, not simultaneous conversations. There is no eight-hour coding substitution, daily-shift multiplier or quota-wait capacity credit. Memory bandwidth, long-context attention, response-time targets, additional storage power and reliability reserves still need validation.
+The six-site 500 MW design stays fixed. At 210 kW compute + 14 kW support and PUE 1.10, each campus fits 338 whole rack pairs: 2,028 pairs and 499.70 MW across six sites. The illustrative one-cohort result is roughly 610–640 thousand users per datacenter per day, or 3.67–3.84 million across six sites. Active periods overlap in this baseline; each user receives eight active hours. No automatic threefold shift credit or quota-wait multiplier is applied. Actual scheduling, memory bandwidth, long-context attention, response-time targets, additional storage power and reliability reserves require validation.
 
-Serving the entire 400M target with the same workload and heavy reference extrapolates to 7.3–7.6 GW. The existing physical design is not expanded to that size. Actual daily and annual energy require an operating-load schedule. At the modeled 83.28 MW campus load, one hour uses 83.28 MWh; peak power alone does not establish an energy forecast. Recoverable greenhouse heat also follows IT load.
+At that assumed intensity, eight hours processes 9,590,400 new input tokens and generates 806,400 output tokens per person. These are scenario volumes, not measured user usage or stored data. Effective context reuse is assumed, but attention, memory access and cache misses still cost resources.
 
-Compute-rack purchase is about $2.64B per campus or $15.82B across six sites. Buildings, networking, context memory, electricity and operations are additional; no revised five-year total or payback is claimed. The Blender campus has 368 drawn positions, which fit the lower 190 kW case; 338 active pairs fit at the midpoint. The operating capacity changes without altering that physical model.
+One eight-hour fully loaded cohort uses about 666 MWh per campus during those hours, plus idle and transition electricity. The remaining 16 hours are not assumed to draw zero. Actual daily and annual energy require a total-load schedule. Greenhouse heat availability also follows IT load.
+
+All 13 stops, the equipment explanations and embedded design details use this operating basis. Prior annual cooling savings, carbon-footprint shares and payback claims have been removed. Solar generation and weather-file availability are labeled separately from site electricity consumption and actual operating hours. The original borehole and cooling geometry remains a concept requiring a revised seasonal heat-balance simulation; the eight-hour requirement alone does not validate annual savings or field size.
+
+Compute-rack purchase is about $2.64B per campus or $15.82B across six sites. Buildings, networking, context memory, electricity and operations are additional; no revised five-year total or payback is claimed. The Blender campus has 368 drawn positions, which fit the lower 190 kW case; 338 active pairs fit at the midpoint. The workload changes operating capacity without changing the physical design.
+
+The hall wall specification encloses the stone-wool core between steel panel faces. The presentation now explains the enclosure, cut-edge and penetration details, and dust controls during installation or repair. Final assembly detailing remains engineering work.
 
 ## Deliverables
 
@@ -61,7 +67,7 @@ Compute-rack purchase is about $2.64B per campus or $15.82B across six sites. Bu
 - `qa/model-connectivity.json`: measured cooler connections, drain routes and separation between circuits in the saved model.
 - `qa/browser-report.json`: all-stop and equipment browser acceptance checks.
 - `qa/carousel-layout-report.json`: card titles, local details, scrolling and responsive-layout checks.
-- `qa/model-energy-report.json`: revised workload scenarios, keyboard navigation and responsive energy-card checks.
+- `qa/model-energy-report.json`: workload arithmetic, stale-copy audit, keyboard navigation and responsive energy-card checks.
 - `assets/top-model-sizing.json`: reproducible numerical results, assumptions and input hashes.
 - `scripts/top_model_baseline.py`: tour-local sizing calculation and the user-approved content revision.
 - `qa/thermal-design-report.json`: seasonal geothermal explanations, freeze-protection cards and clickable equipment checks.

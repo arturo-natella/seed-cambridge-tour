@@ -2,7 +2,7 @@ import {chromium} from 'playwright';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 
-// Independent acceptance from the raw heavy benchmark and preserved case C rates.
+// Independent acceptance from the raw heavy benchmark and explicit developer-rate assumption.
 const calculated=JSON.parse(fs.readFileSync('assets/top-model-sizing.json','utf8'));
 const close=(a,b,label)=>assert.ok(Math.abs(a-b)<1e-6,label);
 const rackMW=(210+14)*1.10/1000;
@@ -15,33 +15,69 @@ close(calculated.hardware.loadedCampusMW,83.2832,'Support and cooling counted ex
 close(calculated.hardware.loadedFleetMW,499.6992,'Six sites remain below 500 MW');
 close(calculated.hardware.computeRackPurchaseFleetB,15.8184,'Fixed fleet compute-rack purchase');
 assert.equal(calculated.assumptions.targetUsers,400e6);
-assert.equal(calculated.assumptions.promptsPerDay,20);
-assert.equal(calculated.assumptions.agentTasksPerDay,5);
-assert.equal(calculated.assumptions.outputPerSecond,4.6);
-assert.equal(calculated.assumptions.inputPerSecond,40);
-assert.equal(calculated.assumptions.activeHoursPerUserDay,undefined,'No active-hour substitution');
-assert.equal(calculated.baseline.workPerUserAtPeak,8.6);
+assert.equal(calculated.assumptions.promptsPerDay,undefined);
+assert.equal(calculated.assumptions.agentTasksPerDay,undefined);
+assert.equal(calculated.assumptions.outputPerSecond,28);
+assert.equal(calculated.assumptions.inputPerSecond,333);
+assert.equal(calculated.assumptions.activeHoursPerUserDay,8,'Eight active hours are required');
+assert.equal(calculated.baseline.workPerActiveUserSecond,61.3);
 for(const [i,raw] of [259,271].entries()){
  const effective=raw*(1+9400/(680*10));
  const throughput=racks*72*2.5*effective;
- const users=throughput/(4.6+40/10);
- close(calculated.baseline.usersPerCampus[i],users,'Raw benchmark divided by unchanged source workload');
+ const users=throughput/(28+333/10);
+ close(calculated.baseline.usersPerCampus[i],users,'Raw benchmark divided by assumed active-hour intensity');
  close(calculated.baseline.usersFleet[i],users*6,'Six separately capped campuses');
  close(calculated.baseline.targetPercent[i],users*6/400e6*100,'Fraction of target population');
- close(calculated.baseline.facilityMWForTarget[1-i],400e6*(4.6+40/10)/(72*2.5*effective)*rackMW,'Target extrapolation uses the same workload and power basis');
+ close(calculated.baseline.facilityMWForTarget[1-i],400e6*(28+333/10)/(72*2.5*effective)*rackMW,'Target extrapolation uses the same workload and power basis');
 }
 const content=JSON.parse(fs.readFileSync('assets/content.json','utf8'));
-assert.equal(content.planningRevision,'fixed-workload-03');
-assert.equal(content.modelEnergy.perCampus,'4.37–4.57M');
-assert.equal(content.modelEnergy.fleet,'26.19–27.40M');
+assert.equal(content.planningRevision,'coding-capacity-05');
+assert.equal(content.modelEnergy.perCampus,'610–640k');
+assert.equal(content.modelEnergy.fleet,'3.67–3.84M');
 assert.equal(content.bubbles[0].hideOverviewAssumption,true);
-assert.equal(content.bubbles[10].number,'~4.37–4.57M');
+assert.equal(content.bubbles[10].number,'~610–640k');
 assert.equal(content.bubbles[11].number,'$2.64B');
 assert.ok(content.bubbles[7].unit.includes('varies with load'));
-assert.ok(!JSON.stringify(content.bubbles).includes('610–640'));
+assert.ok(!JSON.stringify(content).includes('20 questions'));
+assert.ok(!JSON.stringify(content).includes('five agent tasks'));
+assert.equal(calculated.baseline.outputTokensPerUserDay,806400);
+assert.equal(calculated.baseline.newInputTokensPerUserDay,9590400);
+assert.equal(calculated.baseline.baselineDailyCohorts,1);
+close(calculated.baseline.loadedEnergyMWhPerCampusDay,666.2656,'Eight loaded hours, not a zero-idle daily total');
 assert.ok(content.design.memory.html.includes('Cache size, bandwidth and added support power remain unvalidated'));
+// Audit all nested presentation copy, including collapsed source/design details
+// and equipment records shared by every Closer look card.
+const superseded=[/20 questions/i,/five agent tasks/i,/20-question/i,/4\.37[–-]4\.57/,/26\.2[–-]27\.4/,
+ /30[–-]40%/,/650[–-]1,130/,/1,580 MWh/,/4,250 MWh/,/4\.4 TWh/,/86,000[–-]97,000/,
+ /under 1% of (?:a|the) site/,/0\.2% of the site/,/231[–-]242B/,/3[–-]7 weeks/,/3,600 m³/];
+let auditedStrings=0;
+function auditCopy(value,path='content'){
+ if(typeof value==='string'){
+  auditedStrings++;
+  for(const pattern of superseded)assert.ok(!pattern.test(value),`Superseded assumption in ${path}: ${pattern}`);
+ }else if(value&&typeof value==='object'){
+  for(const [key,item] of Object.entries(value))auditCopy(item,`${path}.${key}`);
+ }
+}
+auditCopy(content);
+for(const file of ['src/app.js','index.html','stills/index.html'])auditCopy(fs.readFileSync(file,'utf8'),file);
+assert.ok(auditedStrings>400,'All nested presentation strings are covered');
+assert.ok(content.bubbles[2].assumption.includes('operating schedule'));
+assert.ok(content.bubbles[5].unit.includes('weather-file hours'));
+assert.ok(content.bubbles[6].assumption.includes('rerun the hourly heat balance'));
+assert.ok(content.bubbles[6].card.math[0].includes('338 support racks'));
+assert.ok(content.bubbles[9].card.math[2].includes('No revised annual footprint'));
+assert.ok(content.design.power.html.includes('~666 MWh, plus idle and transition'));
+assert.ok(content.design['chip-loop'].html.includes('Requires revised hourly load and weather simulation'));
+assert.ok(content.design['room-air'].html.includes('Not yet recalculated for the eight-hour scenario'));
+assert.ok(content.design.hall.html.includes('Not established for the revised operating schedule'));
+assert.ok(content.objects.solar.text.includes('Annual grid savings depend'));
+assert.ok(content.objects.boreholes.number.includes('seasonal heat balance to validate'));
+assert.ok(content.objects.hall.text.includes('enclosed between interior and exterior steel panel faces'));
+assert.ok(content.design.hall.html.includes('no exposed insulation in occupied rooms or air paths'));
+assert.ok(content.bubbles[1].designKeys.includes('hall'));
 const energyStops=[0,3,8,10,11,12];
-const report={passed:false,checks:[],screenshots:[],errors:[],network:[],viewports:[],reference:'Unchanged 20 questions and five tasks daily; raw heavy benchmark, 4.6/40 peak rates, independently capped campuses and overview-block removal'};
+const report={passed:false,checks:[],screenshots:[],errors:[],network:[],viewports:[],copyAudit:{auditedStrings,forbiddenPatterns:superseded.map(String)},reference:'Eight active coding hours with no fixed daily task count; explicitly assumed developer token intensity, raw heavy benchmark, fixed campus capacity, overview-block removal and dependent annual-claim audit'};
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const context=await browser.newContext({viewport:{width:1920,height:1080},reducedMotion:'reduce'});
 const page=await context.newPage();
@@ -61,7 +97,7 @@ const noOverflow=async name=>{
 const capture=async name=>{const file=`qa/model-energy-${name}.png`;await page.screenshot({path:file});report.screenshots.push(file);};
 try{
  await page.goto('http://127.0.0.1:4173/#stop-3');await settled();
- check('Removed coding scenarios are not available',await page.locator('#energy-scenario').count()===0);
+ check('One clearly labeled planning case is shown',await page.locator('#energy-scenario').count()===0);
  for(const viewport of [{name:'desktop',width:1920,height:1080},{name:'laptop',width:1366,height:768},{name:'phone',width:390,height:844}]){
   await page.setViewportSize({width:viewport.width,height:viewport.height});
   for(let stop=0;stop<13;stop++){
@@ -76,11 +112,11 @@ try{
    check(`${viewport.name} stop ${stop}: energy opens in main card`,await page.locator('#panel-energy').isVisible()&&await page.locator('#tab-energy').getAttribute('aria-selected')==='true'&&page.url()===url);
    const result=page.locator('#energy-result');
    const figures=await result.locator('.energy-figures strong').allTextContents();
-   check(`${viewport.name} stop ${stop}: corrected capacity`,figures[0]==='4.37–4.57M'&&figures[1]==='26.19–27.40M');
+   check(`${viewport.name} stop ${stop}: corrected capacity`,figures[0]==='610–640k'&&figures[1]==='3.67–3.84M');
    const resultText=await result.innerText();
-   check(`${viewport.name} stop ${stop}: fixed power and target share`,resultText.includes('83.3 MW')&&resultText.includes('6.55–6.85%'));
-   check(`${viewport.name} stop ${stop}: same workload is explicit`,resultText.includes('20 questions + 5 agent tasks per person daily'));
-   check(`${viewport.name} stop ${stop}: capacity is not simultaneous conversations`,resultText.includes('not a count of simultaneous conversations'));
+   check(`${viewport.name} stop ${stop}: fixed power and target share`,resultText.includes('83.3 MW')&&resultText.includes('0.92–0.96%'));
+   check(`${viewport.name} stop ${stop}: eight-hour requirement is explicit`,resultText.includes('8 active coding hours per person daily'));
+   check(`${viewport.name} stop ${stop}: intensity and overlap are assumptions`,resultText.includes('Assumed intensity: 28 output + 333 new input')&&resultText.includes('users’ active periods overlap'));
    await noOverflow(`${viewport.name} stop ${stop}: no horizontal overflow`);
    await page.locator('#panel-energy').evaluate(element=>element.scrollTop=0);
    await capture(`${viewport.name}-stop${stop}`);
@@ -103,7 +139,7 @@ try{
   }
   await page.locator('#panel-energy .energy-calculation').scrollIntoViewIfNeeded();await capture(`${viewport.name}-calculation`);
   const text=await page.locator('#panel-energy').innerText();
-  check(`${viewport.name}: formula and power-versus-energy boundary are included`,text.includes('8.6 output-equivalent tokens/s per user at peak')&&text.includes('1 MW for one hour uses 1 MWh')&&text.includes('Actual daily and annual electricity use needs an operating-load schedule'));
+  check(`${viewport.name}: formula and power-versus-energy boundary are included`,text.includes('61.3 output-equivalent tokens/s per active user')&&text.includes('1 MW for one hour uses 1 MWh')&&text.includes('Actual daily and annual electricity use needs an operating-load schedule'));
   check(`${viewport.name}: full campus capacity is distinct from demand`,text.includes('83.28 MW')&&text.includes('338 active pairs')&&text.includes('Llama 3.1 405B does not establish Claude Opus throughput'));
   await page.locator('#panel-energy').evaluate(element=>element.scrollTop=element.scrollHeight);
   await capture(`${viewport.name}-capacity`);
@@ -114,7 +150,7 @@ try{
   await page.setViewportSize({width,height:width===390?844:1080});await atStop(0);
   check(`${width}: requested workload assumption block removed from main card`,!await page.locator('#assumption').isVisible());
   await page.locator('#tab-why').click();
-  check(`${width}: workload basis remains in supporting explanation`,(await page.locator('#choice-details').innerText()).includes('20 questions + 5 agent tasks'));
+  check(`${width}: workload basis remains in supporting explanation`,(await page.locator('#choice-details').innerText()).includes('28 output + 333 new input'));
   await atStop(3);check(`${width}: equipment-specific assumption remains`,await page.locator('#assumption').isVisible());
  }
  await atStop(11);await page.setViewportSize({width:1920,height:1080});
