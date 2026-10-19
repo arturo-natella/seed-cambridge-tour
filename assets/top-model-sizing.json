@@ -1,167 +1,72 @@
 {
-  "revision": "top-model-01",
+  "revision": "fixed-workload-03",
   "assumptions": {
-    "users": 400000000.0,
+    "targetUsers": 400000000.0,
     "promptsPerDay": 20,
     "agentTasksPerDay": 5,
+    "campuses": 6,
+    "fleetCapMW": 500,
+    "campusCapMW": 83.33333333333333,
     "outputPerSecond": 4.6,
     "inputPerSecond": 40.0,
+    "referenceContextReadsPerUserDay": 104000000.0,
     "prefillGain": 10.0,
     "gpusPerRack": 72,
     "rubinRackThroughputGain": 2.5,
     "computeRackKW": 210,
     "supportRackKW": 14,
     "pue": 1.1,
-    "capMW": 500,
-    "computeRackPriceMillion": 7.8,
-    "fullLoadHoursPerYear": 8760
+    "computeRackPriceMillion": 7.8
   },
-  "outputEquivalentTokensPerSecond": 3440000000.0,
-  "scenarios": {
-    "fast": [
-      {
-        "gb300EquivalentGPUs": 163809.5238095238,
-        "racks": 910.05291005291,
-        "gpus": 65523.80952380952,
-        "itMW": 203.85185185185182,
-        "siteMW": 224.23703703703703,
-        "capPercent": 44.84740740740741,
-        "servedPercent": 100,
-        "servedUsers": 400000000.0,
-        "annualTWhAtFullLoad": 1.9643164444444443,
-        "computeRackPurchaseB": 7.098412698412698
-      },
-      {
-        "gb300EquivalentGPUs": 183368.86993603408,
-        "racks": 1018.7159440890782,
-        "gpus": 73347.54797441364,
-        "itMW": 228.1923714759535,
-        "siteMW": 251.01160862354888,
-        "capPercent": 50.202321724709776,
-        "servedPercent": 100,
-        "servedUsers": 400000000.0,
-        "annualTWhAtFullLoad": 2.1988616915422883,
-        "computeRackPurchaseB": 7.9459843638948096
-      }
-    ],
-    "mixed20": [
-      {
-        "gb300EquivalentGPUs": 191454.1506433167,
-        "racks": 1063.6341702406485,
-        "gpus": 76581.66025732669,
-        "itMW": 238.25405413390527,
-        "siteMW": 262.0794595472958,
-        "capPercent": 52.41589190945917,
-        "servedPercent": 100,
-        "servedUsers": 400000000.0,
-        "annualTWhAtFullLoad": 2.295816065634311,
-        "computeRackPurchaseB": 8.296346527877057
-      },
-      {
-        "gb300EquivalentGPUs": 219522.80843657293,
-        "racks": 1219.5711579809608,
-        "gpus": 87809.12337462918,
-        "itMW": 273.1839393877352,
-        "siteMW": 300.5023333265088,
-        "capPercent": 60.10046666530175,
-        "servedPercent": 100,
-        "servedUsers": 400000000.0,
-        "annualTWhAtFullLoad": 2.6324004399402168,
-        "computeRackPurchaseB": 9.512655032251494
-      }
-    ],
-    "mixed50": [
-      {
-        "gb300EquivalentGPUs": 232921.09089400608,
-        "racks": 1294.006060522256,
-        "gpus": 93168.43635760242,
-        "itMW": 289.85735755698533,
-        "siteMW": 318.8430933126839,
-        "capPercent": 63.76861866253678,
-        "servedPercent": 100,
-        "servedUsers": 400000000.0,
-        "annualTWhAtFullLoad": 2.793065497419111,
-        "computeRackPurchaseB": 10.093247272073596
-      },
-      {
-        "gb300EquivalentGPUs": 273753.7161873812,
-        "racks": 1520.8539788187843,
-        "gpus": 109501.48647495247,
-        "itMW": 340.67129125540765,
-        "siteMW": 374.73842038094847,
-        "capPercent": 74.94768407618969,
-        "servedPercent": 100,
-        "servedUsers": 400000000.0,
-        "annualTWhAtFullLoad": 3.2827085625371084,
-        "computeRackPurchaseB": 11.862661034786518
-      }
-    ],
-    "premium": [
-      {
-        "gb300EquivalentGPUs": 611449.365041369,
-        "racks": 3396.9409168964944,
-        "gpus": 244579.7460165476,
-        "itMW": 760.9147653848147,
-        "siteMW": 837.0062419232962,
-        "capPercent": 167.40124838465925,
-        "servedPercent": 59.73671102512761,
-        "servedUsers": 238946844.10051045,
-        "annualTWhAtFullLoad": 7.332174679248075,
-        "computeRackPurchaseB": 26.496139151792658
-      },
-      {
-        "gb300EquivalentGPUs": 663821.7279220596,
-        "racks": 3687.8984884558868,
-        "gpus": 265528.69116882386,
-        "itMW": 826.0892614141186,
-        "siteMW": 908.6981875555306,
-        "capPercent": 181.7396375111061,
-        "servedPercent": 55.023769921346414,
-        "servedUsers": 220095079.68538564,
-        "annualTWhAtFullLoad": 7.960196122986448,
-        "computeRackPurchaseB": 28.765608209955918
-      }
-    ],
-    "heavy": [
-      {
-        "gb300EquivalentGPUs": 5328231.060088378,
-        "racks": 29601.28366715766,
-        "gpus": 2131292.4240353513,
-        "itMW": 6630.687541443315,
-        "siteMW": 7293.756295587647,
-        "capPercent": 1458.7512591175296,
-        "servedPercent": 6.855178316041004,
-        "servedUsers": 27420713.264164016,
-        "annualTWhAtFullLoad": 63.89330514934779,
-        "computeRackPurchaseB": 230.89001260382972
-      },
-      {
-        "gb300EquivalentGPUs": 5575098.9084322415,
-        "racks": 30972.77171351245,
-        "gpus": 2230039.5633728965,
-        "itMW": 6937.900863826789,
-        "siteMW": 7631.690950209469,
-        "capPercent": 1526.3381900418938,
-        "servedPercent": 6.551627984703395,
-        "servedUsers": 26206511.938813582,
-        "annualTWhAtFullLoad": 66.85361272383494,
-        "computeRackPurchaseB": 241.5876193653971
-      }
+  "hardware": {
+    "racksPerCampus": 338,
+    "racksFleet": 2028,
+    "gpusPerCampus": 24336,
+    "gpusFleet": 146016,
+    "loadedCampusMW": 83.28320000000001,
+    "loadedFleetMW": 499.6992,
+    "computeRackPurchasePerCampusB": 2.6364,
+    "computeRackPurchaseFleetB": 15.8184,
+    "adjustedHeavyTokensPerGPUSecond": [
+      617.0294117647059,
+      645.6176470588235
     ]
   },
-  "wholeRacksWithin500MW": 2029,
+  "baseline": {
+    "workPerUserAtPeak": 8.6,
+    "usersPerCampus": [
+      4365124.350205198,
+      4567369.493844049
+    ],
+    "usersFleet": [
+      26190746.101231188,
+      27404216.963064294
+    ],
+    "targetPercent": [
+      6.547686525307797,
+      6.851054240766073
+    ],
+    "facilityMWForTarget": [
+      7293.756295587648,
+      7631.69095020947
+    ],
+    "computeRacksForTarget": [
+      29601.28366715766,
+      30972.77171351246
+    ]
+  },
   "sourceHashes": {
     "analysis/case_sizing.py": "1bb2cdef3bcea785c2a75c68d38fd3f6f3291d421cc83abc530b49e166ab4481",
     "analysis/budget.py": "ac60690b871d95d7511d7794652f523cd2222e3c659cde597b8ef8a7cc6d7184"
   },
   "notes": [
-    "User requirement: top-quality model for every request; Llama 3.1 405B is a provisional heavy reference, not proof of best quality.",
-    "Preserves case C peak workload. No additional concurrency discount or unmeasured batching/cache multiplier.",
-    "2.5x throughput per Rubin rack, transferred from DeepSeek-R1, remains an assumption for every model.",
-    "Direct chip-to-rack conversion raises the old fast-model rack estimate by about 4%.",
-    "500 MW is treated conservatively as total facility power before any solar credit.",
-    "Annual energy assumes the calculated full load for all 8760 hours; it is not a demand forecast.",
-    "Rack prices are inherited planning estimates. Rack purchase is not a five-year project budget.",
-    "The old R1-specific context-memory capacity and price are not validated for the heavy model."
+    "User correction: preserve 20 questions and five agent tasks per person daily. A task may make several AI calls. Case C peak rates remain 4.6 output and 40 new input tokens/s per source user.",
+    "The heavy reference stands in for the top model on every question and task. No weaker-model routing is assumed.",
+    "Peak rates are population-normalized sizing inputs, not continuous per-user generation rates. No eight-hour coding, daily-token integration, shift or quota-wait capacity multiplier is used.",
+    "Reported headcount is the population whose assumed workload fits at the source peak rates, not the number of simultaneous chat sessions.",
+    "Llama 3.1 405B is a provisional hardware proxy, not measured Opus performance or proof of equal answer quality. The 2.5x Rubin gain is transferred from R1.",
+    "Capacity precedes reliability reserves, long-context attention, memory bandwidth, response-time guarantees and any additional storage power. The range covers benchmark endpoints only.",
+    "Energy requires an operating-load schedule. Full-load MW is not an annual MWh forecast.",
+    "338 rack pairs fit each campus; six independently capped campuses hold 2028 pairs."
   ]
 }

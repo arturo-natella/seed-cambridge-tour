@@ -2,16 +2,16 @@
   "bubbles": [
     {
       "name": "Opening (before stop 1)",
-      "headline": "SEED: the top model, within a power limit",
+      "headline": "The top model. The same power limit.",
       "bullets": [
-        "500 MW and $30B across six campuses",
-        "Goal: 400 million people, all using the top model",
-        "Current heavy-model estimate: 26–27 million within the cap"
+        "20 questions and five agent tasks per person daily",
+        "The heavy reference stands in for the top model on every call",
+        "Fixed six-site design: ~4.37–4.57M users’ workload per datacenter"
       ],
       "number": "400 million",
-      "unit": "people targeted · capacity still falls short",
-      "assumption": "The same workload: 20 questions + 5 agent tasks per person daily. The heavy reference stands in for the top model.",
-      "source": "Challenge targets · revised sizing estimate",
+      "unit": "people targeted · fixed-campus capacity is lower",
+      "assumption": "20 questions + 5 agent tasks per person daily. Peak rates: 4.6 output and 40 new input tokens/s per user. The heavy reference stands in for the top model.",
+      "source": "Same workload · heavy-model capacity estimate",
       "camera": [
         [
           -450,
@@ -36,19 +36,20 @@
         "solar",
         "substation"
       ],
-      "why": "SEED means Sustainable, Energy-Efficient Datacenters. The new requirement is the top model for every request. We keep the 400-million-user goal and show the capacity gap explicitly.",
+      "why": "SEED means Sustainable, Energy-Efficient Datacenters. We keep each datacenter’s power fixed and calculate how much of the original 400-million-person workload fits when every call uses the heavy reference.",
       "referenceModels": [
         {
-          "tier": "Baseline proxy",
-          "name": "Llama 3.1 405B"
+          "tier": "Service requirement",
+          "name": "Strongest model throughout"
         },
         {
-          "tier": "Comparisons",
-          "name": "gpt-oss-120b / DeepSeek-R1"
+          "tier": "Hardware proxy",
+          "name": "Llama 3.1 405B"
         }
       ],
-      "referenceSource": "User-approved top-model baseline · 18 October 2026",
-      "referenceAssumption": "Llama 3.1 405B is a heavy-model proxy; its quality is not a validated match for the best model. Rubin’s 2.5× per-rack gain is assumed."
+      "referenceSource": "Fixed-workload correction · 18 October 2026",
+      "referenceAssumption": "The heavy reference stands in for the top model. Peak sizing uses 4.6 output + 40 new input tokens/s per user; hardware transfer and cache behavior still need validation.",
+      "hideOverviewAssumption": true
     },
     {
       "name": "1. SEED House",
@@ -59,9 +60,9 @@
         "Wood where people work; steel where computers run"
       ],
       "number": "52,000–55,000",
-      "unit": "users’ workload per MW · heavy-reference estimate",
-      "assumption": "The same peak workload and hardware assumptions as the top-model baseline.",
-      "source": "Revised sizing · users per MW",
+      "unit": "users’ assumed workload per MW · illustrative",
+      "assumption": "Same daily workload and heavy-model proxy; source peak rates, before reliability reserves and context bottlenecks.",
+      "source": "Fixed workload · users per MW",
       "camera": [
         [
           -260.0,
@@ -85,8 +86,8 @@
         "why": "timber stores carbon and cuts embodied carbon where people work. Insurers want the data halls noncombustible, so the timber goes here.",
         "how": "the campus is run from here. SEED rates the work, not the building: users served per megawatt, and the carbon and water each user costs.",
         "math": [
-          "Users per MW: ~26.2–27.4 million users’ workload ÷ 500 MW ≈ 52,000–55,000.",
-          "The previous carbon-per-user figure divided by 400 million. Embodied carbon and water per user must be recalculated for the actual fleet and workload served."
+          "~4.37–4.57M users’ workload ÷ ~83.3 MW ≈ 52,000–55,000 users per MW.",
+          "This is a population capacity estimate at the assumed peak rates, not a count of simultaneous conversations. Carbon and water per user need a validated operating schedule."
         ]
       },
       "designKeys": [
@@ -151,13 +152,13 @@
       "name": "3. Inside a data hall",
       "headline": "Water, not air, cools the chips",
       "bullets": [
-        "368 rack positions shown; ~338 fit per site at the midpoint power assumption",
+        "368 rack positions drawn; 338 active rack pairs fit the midpoint power allowance",
         "Each rack makes ~5× the heat air can carry",
         "Sealed rooms: muggy, salty outside air stays out"
       ],
       "number": "210 kW",
       "unit": "per compute rack + 14 kW for networking and storage",
-      "assumption": "210 kW is the midpoint of the reported 190–230 kW range; the 368-rack drawing uses the lower end.",
+      "assumption": "210 kW is the midpoint of the reported 190–230 kW range. The drawing uses the lower end; operating capacity uses 338 pairs.",
       "source": "calc 02 · NVIDIA",
       "camera": [
         [
@@ -188,23 +189,23 @@
         "why": "air-cooled racks top out near 40 kW (NVIDIA's guidance), and these draw ~190–230 kW. Sealing keeps muggy summer air, dry winter air and salt outside.",
         "how": "cold plates on every chip pass the heat into water, which goes in at up to 113°F (45°C) and comes out at about 131°F (55°C). Networking racks get rear-door coils, pushed by their own fans. The water never drops below 77°F (25°C), well above the hall air's dew point (kept under 50°F, 10°C), so nothing condenses on the pipes or chips.",
         "math": [
-          "The drawing has 368 compute racks × 72 GPUs = 26,496 GPUs. At 210 + 14 kW and 1.10 PUE, a full drawn site would use ~90.7 MW; its ~83.3 MW allowance fits about 338 active rack pairs. At 190 + 14 kW, the drawing uses ~82.6 MW.",
+          "At the midpoint: 338 × (210 + 14) kW × 1.10 ≈ 83.28 MW per campus; 338 × 72 = 24,336 active GPUs. The 368 drawn positions would use ~90.7 MW at this midpoint, so they cannot all run at that draw within the allowance.",
           "Water out: NVIDIA says coolant entering a Rubin chip at 113°F (45°C) leaves at about 131°F (55°C). Lenovo's flow table for the earlier GB300 rack gives ~131°F (55°C) out at every inlet from 77 to 113°F (25–45°C), so we assume the same for Rubin (our estimate).",
-          "Serving all 400 million on the heavy reference requires about 29,600–31,000 compute racks across a much larger fleet. This campus is one part of the original 500 MW concept."
+          "More calls, longer outputs and input reprocessing use more chip time. With fixed hardware and power, fewer users’ workload fits."
         ]
       },
       "referenceModels": [
         {
-          "tier": "Baseline proxy",
-          "name": "Llama 3.1 405B"
+          "tier": "Service requirement",
+          "name": "Strongest model throughout"
         },
         {
-          "tier": "Comparisons",
-          "name": "gpt-oss-120b / DeepSeek-R1"
+          "tier": "Hardware proxy",
+          "name": "Llama 3.1 405B"
         }
       ],
-      "referenceSource": "User-approved top-model baseline · 18 October 2026",
-      "referenceAssumption": "Llama 3.1 405B is a heavy-model proxy; its quality is not a validated match for the best model. Rubin’s 2.5× per-rack gain is assumed.",
+      "referenceSource": "Fixed-workload correction · 18 October 2026",
+      "referenceAssumption": "The heavy reference stands in for the top model. Peak sizing uses 4.6 output + 40 new input tokens/s per user; hardware transfer and cache behavior still need validation.",
       "designKeys": [
         "computers",
         "sealed",
@@ -395,12 +396,12 @@
       "headline": "Waste heat warms a greenhouse",
       "bullets": [
         "Warm water leaving the halls heats the glass house",
-        "It needs well under 1 MW of our ~75 MW of heat",
+        "At full IT load, ~75 MW becomes heat; the greenhouse needs well under 1 MW",
         "Heat is a resource, not just waste"
       ],
       "number": "~124°F (51°C)",
-      "unit": "water, all year",
-      "assumption": "…~300 W per m² of peak heating, a rough figure",
+      "unit": "warm return-water design point · availability varies with load",
+      "assumption": "~300 W/m² peak greenhouse demand, roughly estimated. Recoverable heat follows IT load; off-peak backup heat is not sized.",
       "source": "calc 13 · our estimate",
       "camera": [
         [
@@ -423,9 +424,9 @@
         "title": "Greenhouse",
         "what": "a glass greenhouse heated by the datacenter.",
         "why": "it puts waste heat to use instead of sending it all into the air.",
-        "how": "warm return water at about 124°F (51°C) runs through the greenhouse's heating loop on its way to the coolers.",
+        "how": "Warm return water is designed around 124°F (51°C). Its usable heat output depends on the computers’ load; the workload assumption does not establish round-the-clock heat availability.",
         "math": [
-          "the return water carries all ~75 MW at about 124°F (51°C). The 60 × 30 m greenhouse needs well under 1 MW at peak (about 1,800 m² × ~300 W/m², rough), a sliver of what's available."
+          "At modeled full load, the campus IT demand is ~75 MW and becomes heat. The 60 × 30 m greenhouse needs roughly 1,800 m² × 300 W/m² = 0.54 MW at peak. Heat recovered by this particular circuit and off-peak backup must still be engineered."
         ]
       },
       "designKeys": [
@@ -438,16 +439,16 @@
     },
     {
       "name": "8. Substation and grid",
-      "headline": "500 MW stays our power limit",
+      "headline": "The datacenter keeps its power limit",
       "bullets": [
-        "Six campus allowances of about 83 MW each",
-        "All 400 million on the heavy reference need ~7.3–7.6 GW",
-        "Clean-power contracts do not increase the allowed capacity"
+        "About 83.3 MW per datacenter; 500 MW across six sites",
+        "More AI work per person reduces capacity, not the power limit",
+        "User sessions can pause while other users keep the machines busy"
       ],
-      "number": "500 MW",
-      "unit": "fleet limit · heavy-model demand is about 15× higher",
-      "assumption": "Sizing includes networking, storage support and cooling, before a solar credit.",
-      "source": "Revised sizing · total facility power",
+      "number": "83.3 MW",
+      "unit": "power allowance per datacenter · unchanged",
+      "assumption": "338 active rack pairs per site, 210 + 14 kW each, PUE 1.10; before a solar credit.",
+      "source": "Fixed-campus design · operating scenario",
       "camera": [
         [
           265.0,
@@ -471,8 +472,9 @@
         "why": "the challenge caps grid power. Massachusetts has no geothermal power plants and only modest sun, so clean power is bought, not made. The state's new rules for big datacenters (Executive Order 658, September 2026) ask for exactly this: new clean generation to match what we use.",
         "how": "a 115,000-volt line comes in from the east and transformers step it down.",
         "math": [
-          "500 MW × 8,760 h = 4.38 TWh if the capped fleet runs at full power all year.",
-          "Serving the full heavy-model workload needs ~7.3–7.6 GW at the midpoint rack draw. Holding that full load all year would use ~64–67 TWh; this is not an annual demand forecast."
+          "338 × 224 kW × 1.10 = 83.2832 MW at modeled full load. Six sites total 499.6992 MW.",
+          "At 83.28 MW, one hour at full load uses 83.28 MWh. Actual daily and annual energy depend on the load over time.",
+          "Peak token rates size the hardware. They are not assumed to run continuously for eight or 24 hours, and no shift or quota-wait multiplier is added."
         ]
       },
       "designKeys": [
@@ -484,16 +486,16 @@
       "why": "the challenge caps grid power. Massachusetts has no geothermal power plants and only modest sun, so clean power is bought, not made. The state's new rules for big datacenters (Executive Order 658, September 2026) ask for exactly this: new clean generation to match what we use.",
       "referenceModels": [
         {
-          "tier": "Baseline proxy",
-          "name": "Llama 3.1 405B"
+          "tier": "Service requirement",
+          "name": "Strongest model throughout"
         },
         {
-          "tier": "Comparisons",
-          "name": "gpt-oss-120b / DeepSeek-R1"
+          "tier": "Hardware proxy",
+          "name": "Llama 3.1 405B"
         }
       ],
-      "referenceSource": "User-approved top-model baseline · 18 October 2026",
-      "referenceAssumption": "Llama 3.1 405B is a heavy-model proxy; its quality is not a validated match for the best model. Rubin’s 2.5× per-rack gain is assumed."
+      "referenceSource": "Fixed-workload correction · 18 October 2026",
+      "referenceAssumption": "The heavy reference stands in for the top model. Peak sizing uses 4.6 output + 40 new input tokens/s per user; hardware transfer and cache behavior still need validation."
     },
     {
       "name": "9. Backup power",
@@ -533,7 +535,7 @@
         "why": "it's proven and insurable, and Kao Data has run its UK campus this way since 2021. Renewable diesel cuts the generators' lifetime fuel carbon by 50–80%, and they only run for tests and rare outages, so backup fuel is under 1% of the site's footprint.",
         "how": "if the grid drops, batteries carry the load for minutes while about 30 generators start. 48 hours of fuel sits in four tanks, and deliveries keep them running in longer outages.",
         "math": [
-          "Fuel for the existing full campus: 48 h × ~82 MW × ~0.28 L/kWh ≈ 1.1 million litres. A larger fleet requires a new backup-power and fuel plan.",
+          "Fuel for the existing full campus: 48 h × ~82 MW × ~0.28 L/kWh ≈ 1.1 million litres. Fewer users do not shrink the backup requirement for a fully loaded campus.",
           "Kao Data's Harlow campus plans \"more than 750,000 litres\" of HVO for 35–71 MW of IT.",
           "Carbon: 20 test hours a year ≈ 0.2 million litres ≈ 510–570 t CO₂ on diesel, ~100–290 t on renewable diesel, against ~86,000–97,000 t for a year of grid power at New England's 2024 mix."
         ]
@@ -552,16 +554,16 @@
     },
     {
       "name": "10. The whole campus",
-      "headline": "The top model changes our capacity",
+      "headline": "How many people fit in one datacenter?",
       "bullets": [
-        "Every question and agent task uses the heavy reference",
-        "The 400-million-user goal needs ~7.3–7.6 GW",
-        "At 500 MW, about 6.6–6.9% of the assumed workload fits"
+        "Same workload: 20 questions and five agent tasks per person daily",
+        "Six sites support ~26.2–27.4 million users’ assumed workload",
+        "The heavy reference handles every call; the 500 MW limit stays fixed"
       ],
-      "number": "26–27 million",
-      "unit": "users’ workload within 500 MW · planning estimate",
-      "assumption": "The same peak usage, cached context, 210 + 14 kW per rack pair and 1.10 PUE.",
-      "source": "Top-model baseline · revised sizing",
+      "number": "~4.37–4.57M",
+      "unit": "users’ assumed workload per datacenter",
+      "assumption": "4.6 output + 40 new input tokens/s per source user at peak; efficient context reuse; no reliability or latency reserve included.",
+      "source": "Same workload · heavy-model capacity",
       "camera": [
         [
           -450.0,
@@ -578,29 +580,30 @@
       "anchor": "#users",
       "featured": [],
       "card": {
-        "title": "Capacity with the top model",
-        "what": "A 500 MW fleet serving every request on the top model, provisionally sized using Llama 3.1 405B.",
-        "why": "Top-model access is the requirement. Capacity must follow the work that fits within the power limit, rather than a fast-model result.",
-        "how": "Batch requests, reuse available context and schedule jobs on the same model. These techniques already inform the sizing basis; no extra saving is assumed.",
+        "title": "The same workload within a fixed campus",
+        "what": "Same workload: 20 questions and five agent tasks per person daily",
+        "why": "The hardware supports the population whose assumed peak workload fits. The daily task count is unchanged; the heavy model uses more chip time, so fewer users fit within the fixed power limit.",
+        "how": "Each agent task may make several calls. The source workload already includes questions and agent tasks in its 4.6 output and 40 new input tokens/s peak rates. Do not multiply those rates by the task count again.",
         "math": [
-          "400 million × (4.6 + 40 ÷ 10) = 3.44 billion output-equivalent tokens per second at the modeled peak.",
-          "Divide by the adjusted heavy-reference speed (~617–646 tokens/s per GB300 GPU), then by 72 GPUs and the assumed 2.5× Rubin rack gain: ~29,600–31,000 compute racks.",
-          "Racks × (210 + 14) kW × 1.10 = ~7.3–7.6 GW of total facility power.",
-          "400 million × 500 MW ÷ required facility MW = ~26–27 million users’ equivalent workload within the cap. Response-time and quality targets still require testing."
+          "338 rack pairs × (210 + 14) kW × 1.10 = 83.28 MW per campus.",
+          "Peak work per source user: 4.6 output + 40 new input ÷ 10 = 8.6 output-equivalent tokens/s.",
+          "338 × 72 GPUs × assumed 2.5× Rubin gain × ~617–646 adjusted tokens/s ÷ 8.6 ≈ 4.37–4.57 million users’ workload per campus.",
+          "Six equal sites support ~26.2–27.4 million users’ workload, about 6.55–6.85% of the 400M target.",
+          "Peak rates do not establish daily token totals, eight active hours or simultaneous session counts. No shift or quota-wait multiplier is included."
         ]
       },
       "referenceModels": [
         {
-          "tier": "Baseline proxy",
-          "name": "Llama 3.1 405B"
+          "tier": "Service requirement",
+          "name": "Strongest model throughout"
         },
         {
-          "tier": "Comparisons",
-          "name": "gpt-oss-120b / DeepSeek-R1"
+          "tier": "Hardware proxy",
+          "name": "Llama 3.1 405B"
         }
       ],
-      "referenceSource": "User-approved top-model baseline · 18 October 2026",
-      "referenceAssumption": "Llama 3.1 405B is a heavy-model proxy; its quality is not a validated match for the best model. Rubin’s 2.5× per-rack gain is assumed.",
+      "referenceSource": "Fixed-workload correction · 18 October 2026",
+      "referenceAssumption": "The heavy reference stands in for the top model. Peak sizing uses 4.6 output + 40 new input tokens/s per user; hardware transfer and cache behavior still need validation.",
       "designKeys": [
         "models",
         "computers"
@@ -609,20 +612,20 @@
         "compute",
         "network"
       ],
-      "why": "Top-model access is the requirement. Capacity must follow the work that fits within the power limit, rather than a fast-model result."
+      "why": "The hardware supports the population whose assumed peak workload fits. The daily task count is unchanged; the heavy model uses more chip time, so fewer users fit within the fixed power limit."
     },
     {
       "name": "Closing 1: what it costs",
-      "headline": "The full workload exceeds the budget",
+      "headline": "Budget the fixed campuses",
       "bullets": [
-        "~29,600–31,000 compute racks for all 400 million",
-        "Compute racks alone exceed the entire $30B budget",
-        "Buildings, support systems and electricity cost extra"
+        "338 compute racks per datacenter; 2,028 across six sites",
+        "Six-site compute-rack purchase: about $15.82B",
+        "Buildings, memory, support systems and operations cost extra"
       ],
-      "number": "$231–242B",
-      "unit": "compute-rack purchase only · not a five-year total",
-      "assumption": "$7.8M per compute rack, the existing analyst-based midpoint; no vendor quote.",
-      "source": "Revised rack count × inherited price assumption",
+      "number": "$2.64B",
+      "unit": "compute-rack purchase per datacenter only",
+      "assumption": "$7.8M per compute rack, inherited planning midpoint; no vendor quote or new five-year total.",
+      "source": "Fixed rack count × inherited price assumption",
       "camera": [
         [
           -450,
@@ -640,16 +643,16 @@
       "featured": [],
       "referenceModels": [
         {
-          "tier": "Baseline proxy",
-          "name": "Llama 3.1 405B"
+          "tier": "Service requirement",
+          "name": "Strongest model throughout"
         },
         {
-          "tier": "Comparisons",
-          "name": "gpt-oss-120b / DeepSeek-R1"
+          "tier": "Hardware proxy",
+          "name": "Llama 3.1 405B"
         }
       ],
-      "referenceSource": "User-approved top-model baseline · 18 October 2026",
-      "referenceAssumption": "Llama 3.1 405B is a heavy-model proxy; its quality is not a validated match for the best model. Rubin’s 2.5× per-rack gain is assumed.",
+      "referenceSource": "Fixed-workload correction · 18 October 2026",
+      "referenceAssumption": "The heavy reference stands in for the top model. Peak sizing uses 4.6 output + 40 new input tokens/s per user; hardware transfer and cache behavior still need validation.",
       "designKeys": [
         "budget"
       ],
@@ -658,20 +661,20 @@
         "solar",
         "generators"
       ],
-      "why": "Everyone using the heavy reference needs roughly 30 times the fast-model hardware. The previous $15.8–17.2B five-year estimate no longer applies."
+      "why": "Using the heavy reference reduces the number of people served for the same workload. It does not require purchasing a hypothetical fleet for all 400 million in this fixed-campus plan. The $30B five-year constraint still needs a complete cost review."
     },
     {
       "name": "Closing 2: against a typical datacenter",
-      "headline": "Efficiency helps; the gap remains",
+      "headline": "Efficiency creates room for more work",
       "bullets": [
-        "Same computer work: ~24% less total power at PUE 1.10 vs 1.44",
-        "Within 500 MW: ~31% more power available to computers",
-        "The full top-model workload still needs a much larger fleet"
+        "Same IT load: ~24% less total power at PUE 1.10 vs 1.44",
+        "At a fixed power limit: ~31% more power available to IT",
+        "The heavy model still lowers the people served for the same workload"
       ],
       "number": "~24%",
       "unit": "less total power for the same computer load",
-      "assumption": "PUE 1.10 is a design allowance; 1.44 is the supplied large-datacenter comparison.",
-      "source": "PUE comparison · revised planning baseline",
+      "assumption": "PUE 1.10 is a design allowance; 1.44 is the supplied comparison. Workload and scheduling determine headcount.",
+      "source": "PUE comparison · fixed-campus capacity",
       "camera": [
         [
           -450,
@@ -689,16 +692,16 @@
       "featured": [],
       "referenceModels": [
         {
-          "tier": "Baseline proxy",
-          "name": "Llama 3.1 405B"
+          "tier": "Service requirement",
+          "name": "Strongest model throughout"
         },
         {
-          "tier": "Comparisons",
-          "name": "gpt-oss-120b / DeepSeek-R1"
+          "tier": "Hardware proxy",
+          "name": "Llama 3.1 405B"
         }
       ],
-      "referenceSource": "User-approved top-model baseline · 18 October 2026",
-      "referenceAssumption": "Llama 3.1 405B is a heavy-model proxy; its quality is not a validated match for the best model. Rubin’s 2.5× per-rack gain is assumed.",
+      "referenceSource": "Fixed-workload correction · 18 October 2026",
+      "referenceAssumption": "The heavy reference stands in for the top model. Peak sizing uses 4.6 output + 40 new input tokens/s per user; hardware transfer and cache behavior still need validation.",
       "designKeys": [
         "efficiency",
         "budget"
@@ -709,7 +712,7 @@
         "solar",
         "generators"
       ],
-      "why": "Efficient cooling still matters when every request uses the top model. It improves useful capacity, but does not remove the compute demand or establish a new project payback."
+      "why": "Efficient cooling supports more useful computation within the same electrical limit. This is a power comparison, not a new dollar-saving or payback claim."
     }
   ],
   "objects": {
@@ -736,8 +739,8 @@
     },
     "compute": {
       "name": "Compute rack",
-      "text": "An NVIDIA Vera Rubin rack: 72 AI chips (GPUs), cooled by water through metal plates on every chip. Water goes in at up to 113°F (45°C) and comes out at about 131°F (55°C). The drawing uses the lower rack-power case; the midpoint sizing includes a separate 14 kW support rack per compute rack.",
-      "number": "368 positions drawn; ~338 active per campus at the midpoint power assumption",
+      "text": "An NVIDIA Vera Rubin rack: 72 AI chips (GPUs), cooled by water through metal plates on every chip. Water goes in at up to 113°F (45°C) and comes out at about 131°F (55°C). Operational sizing uses 338 compute racks plus their support allowance. More AI work per person reduces how many users these racks can serve.",
+      "number": "368 positions drawn; 338 active rack pairs per campus at midpoint power",
       "math": "#racks",
       "why": "#computers"
     },
@@ -855,8 +858,8 @@
     },
     "greenhouse": {
       "name": "Waste-heat greenhouse",
-      "text": "Warm water leaving the halls heats it on the way to the coolers.",
-      "number": "needs under 1 MW of ~75 MW",
+      "text": "Warm return water can heat it on the way to the coolers. Available heat follows IT load; off-peak backup heat remains to be sized.",
+      "number": "~0.54 MW peak heating estimate",
       "math": "#greenhouse",
       "why": "#house"
     },
@@ -918,7 +921,7 @@
     }
   },
   "labels": [
-    "Sealed data halls: 368 rack positions drawn; ~338 fit at midpoint power",
+    "368 rack positions drawn; 338 active pairs within the midpoint power cap",
     "Warm-water chip cooling: up to 113°F (45°C) at the racks, no chillers for the chips",
     "Antifreeze loops: Dow's DOWFROST, never colder than the high teens °F",
     "Rear-door coils: the last 7–10% of heat, from networking gear",
@@ -934,34 +937,34 @@
   ],
   "design": {
     "scope": {
-      "title": "Six-campus concept; full top-model demand is larger",
-      "why": "<p>SEED means Sustainable, Energy-Efficient Datacenters. The new requirement is the top model for every request. We keep the 400-million-user goal and show the capacity gap explicitly.</p>",
-      "html": "<p>The challenge sets 400 million knowledge workers, six sites, a 500 MW power limit and $30B over five years. The user now requires the top model for every request.</p><p>We preserve 20 chat questions and five agent tasks per person per day, along with the original peak rates. Agent tasks can make multiple model calls. The fleet is shared; no additional concurrency discount is applied.</p><p>The Blender model remains the original Cambridge campus concept. Its cooling and backup equipment describe that campus, not an engineered 7.3–7.6 GW expansion.</p><p>Cambridge land, grid access, a suitable parcel and rock conditions remain unresolved. The site is illustrative.</p><div class=\"nums\"><dl><div><dt>User target</dt><dd>400 million</dd></div><div><dt>Within 500 MW, heavy reference</dt><dd>~26–27 million users’ workload</dd></div><div><dt>Full workload facility power</dt><dd>~7.3–7.6 GW</dd></div></dl></div>",
-      "notes": "<span><strong>Planning basis</strong>User-approved top-model revision. Original source links support individual inputs; their older scenario totals are superseded here.</span><span><strong>Sources</strong><a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#power\" target=\"_blank\" rel=\"noopener\">calc 01, power to the chips</a></span>"
+      "title": "The same daily workload within fixed campuses",
+      "why": "<p>SEED means Sustainable, Energy-Efficient Datacenters. We keep each datacenter’s power fixed and calculate how much of the original 400-million-person workload fits when every call uses the heavy reference.</p>",
+      "html": "<p>The challenge targets 400 million people, six sites, 500 MW and $30B over five years. We keep the physical limits and report how much of that population’s assumed workload fits.</p><p>Each person has 20 questions and five agent tasks daily. A task may make several AI calls. The heavy reference stands in for the top model on every call.</p><p>The supplied case C peak rates remain 4.6 output and 40 new input tokens/s per source user. They are peak sizing inputs, not continuous daily generation rates.</p><p>No active-hour schedule, daily-cohort multiplier or extra concurrency discount is assumed. Land, grid access and rock testing remain unresolved.</p><div class=\"nums\"><dl><div><dt>Per-campus power allowance</dt><dd>~83.3 MW</dd></div><div><dt>Daily workload</dt><dd>20 questions + 5 agent tasks per person</dd></div><div><dt>Capacity per campus</dt><dd>~4.37–4.57M users’ workload, illustrative</dd></div></dl></div>",
+      "notes": "<span><strong>Planning basis</strong>20 questions and five agent tasks per person daily, with the heavy reference for the top model. Source peak rates, hardware transfer and cache behavior determine the estimate; this is not measured Claude performance.</span><span><strong>Original input references</strong><a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#power\" target=\"_blank\" rel=\"noopener\">calc 01, power to the chips</a></span>"
     },
     "power": {
       "title": "Buy clean power; make what the site allows",
-      "html": "<div>\n          <div><h4>What we chose</h4><p>Clean power bought over the grid through long-term contracts for new clean plants. About 5.8 MW of solar panels per site on the roof, parking canopies and meadow, counted inside the 500 MW cap. And little is wasted: SEED&#x27;s design allowance for power usage effectiveness (PUE, the site&#x27;s total power divided by its computers&#x27; power) is 1.1, and the cooling model suggests 1.03–1.07.</p></div>\n          <div><h4>Why</h4><p>The challenge caps grid power, and Massachusetts can&#x27;t make clean power at this scale on a campus. It has no geothermal power plants: rock hot enough for power, about 300°F (150°C), starts about 4 miles down and is mostly 4.5–6 miles down (MIT, 2006). Solar averages about 17% of its inverter (AC) rating (EIA, 2024) and about 14% of its panels&#x27; (DC) rating, so it only trims what we buy.</p><p>Contracts that pay for new plants are how large operators &quot;make&quot; clean power, and a new state order calls for them. Governor Healey&#x27;s Executive Order 658 (8 Sep 2026) says projects over 25 MW must sign a community benefits agreement and buy &quot;incremental new&quot; clean power, eligible under the state&#x27;s Clean Energy Standard, to match their yearly use, or pay into a Ratepayer Protection Fund. Existing hydro likely won&#x27;t count. The output of New England Clean Energy Connect (NECEC), the new line from Québec, is already under 20-year contracts to Massachusetts utilities, so SEED doesn&#x27;t plan to buy it.</p><p>Every watt saved on cooling goes to chips. At PUE 1.1, 455 of the 500 MW reaches the computers. A typical large site, at 1.44 (the Uptime Institute&#x27;s 2025 average for sites of 20 MW and up), gets 347 MW. So SEED makes 31% more IT power available under the same cap, or 40% more against the all-site average of 1.54.</p></div>\n          <div class=\"nums\"><h4>Numbers</h4><dl>\n            <div><dt>Energy at 500 MW, a year</dt><dd>4.4 TWh</dd></div>\n            <div><dt>Share of Massachusetts sales</dt><dd>~9%</dd></div>\n            <div><dt>Solar, average per site</dt><dd>0.8–1.0 MW</dd></div>\n            <div><dt>Budgeted price</dt><dd>10–18.2¢/kWh</dd></div>\n            <div><dt>Industry PUE, all sites / 20 MW and up</dt><dd>1.54 / 1.44</dd></div>\n            <div><dt>More IT power under the cap than at PUE 1.44</dt><dd>31%</dd></div>\n          </dl></div>\n        </div><p><b>Top-model revision:</b> 500 MW remains the limit. Full heavy-model demand is ~7.3–7.6 GW before solar. The existing campus solar and grid design have not been scaled to that demand.</p>",
+      "html": "<div>\n          <div><h4>What we chose</h4><p>Clean power bought over the grid through long-term contracts for new clean plants. About 5.8 MW of solar panels per site on the roof, parking canopies and meadow, counted inside the 500 MW cap. And little is wasted: SEED&#x27;s design allowance for power usage effectiveness (PUE, the site&#x27;s total power divided by its computers&#x27; power) is 1.1, and the cooling model suggests 1.03–1.07.</p></div>\n          <div><h4>Why</h4><p>The challenge caps grid power, and Massachusetts can&#x27;t make clean power at this scale on a campus. It has no geothermal power plants: rock hot enough for power, about 300°F (150°C), starts about 4 miles down and is mostly 4.5–6 miles down (MIT, 2006). Solar averages about 17% of its inverter (AC) rating (EIA, 2024) and about 14% of its panels&#x27; (DC) rating, so it only trims what we buy.</p><p>Contracts that pay for new plants are how large operators &quot;make&quot; clean power, and a new state order calls for them. Governor Healey&#x27;s Executive Order 658 (8 Sep 2026) says projects over 25 MW must sign a community benefits agreement and buy &quot;incremental new&quot; clean power, eligible under the state&#x27;s Clean Energy Standard, to match their yearly use, or pay into a Ratepayer Protection Fund. Existing hydro likely won&#x27;t count. The output of New England Clean Energy Connect (NECEC), the new line from Québec, is already under 20-year contracts to Massachusetts utilities, so SEED doesn&#x27;t plan to buy it.</p><p>Every watt saved on cooling goes to chips. At PUE 1.1, 455 of the 500 MW reaches the computers. A typical large site, at 1.44 (the Uptime Institute&#x27;s 2025 average for sites of 20 MW and up), gets 347 MW. So SEED makes 31% more IT power available under the same cap, or 40% more against the all-site average of 1.54.</p></div>\n          <div class=\"nums\"><h4>Numbers</h4><dl>\n            <div><dt>Energy at 500 MW, a year</dt><dd>4.4 TWh</dd></div>\n            <div><dt>Share of Massachusetts sales</dt><dd>~9%</dd></div>\n            <div><dt>Solar, average per site</dt><dd>0.8–1.0 MW</dd></div>\n            <div><dt>Budgeted price</dt><dd>10–18.2¢/kWh</dd></div>\n            <div><dt>Industry PUE, all sites / 20 MW and up</dt><dd>1.54 / 1.44</dd></div>\n            <div><dt>More IT power under the cap than at PUE 1.44</dt><dd>31%</dd></div>\n          </dl></div>\n        </div><p><b>Fixed-workload correction:</b> 20 questions and five agent tasks per person daily, with the heavy reference for the top model. About 83.3 MW per site and 500 MW across six sites remain fixed. The resulting capacity is ~4.37–4.57M users’ workload per site at the source peak rates.</p>",
       "why": "<p>The challenge caps grid power, and Massachusetts can&#x27;t make clean power at this scale on a campus. It has no geothermal power plants: rock hot enough for power, about 300°F (150°C), starts about 4 miles down and is mostly 4.5–6 miles down (MIT, 2006). Solar averages about 17% of its inverter (AC) rating (EIA, 2024) and about 14% of its panels&#x27; (DC) rating, so it only trims what we buy.</p><p>Contracts that pay for new plants are how large operators &quot;make&quot; clean power, and a new state order calls for them. Governor Healey&#x27;s Executive Order 658 (8 Sep 2026) says projects over 25 MW must sign a community benefits agreement and buy &quot;incremental new&quot; clean power, eligible under the state&#x27;s Clean Energy Standard, to match their yearly use, or pay into a Ratepayer Protection Fund. Existing hydro likely won&#x27;t count. The output of New England Clean Energy Connect (NECEC), the new line from Québec, is already under 20-year contracts to Massachusetts utilities, so SEED doesn&#x27;t plan to buy it.</p><p>Every watt saved on cooling goes to chips. At PUE 1.1, 455 of the 500 MW reaches the computers. A typical large site, at 1.44 (the Uptime Institute&#x27;s 2025 average for sites of 20 MW and up), gets 347 MW. So SEED makes 31% more IT power available under the same cap, or 40% more against the all-site average of 1.54.</p>",
       "notes": "<span><strong>Set aside</strong>Making the bulk on site: 40 MW of average solar alone needs ~1,200–1,900 acres plus storage. Small reactors and deep geothermal power: after 2030, so space can be reserved.</span><span><strong>Sources</strong><a href=\"https://www.eia.gov/electricity/state/massachusetts/\" target=\"_blank\" rel=\"noopener\">EIA Massachusetts electricity profile</a> (2024 sales; solar at 17% of inverter rating) · <a href=\"https://www.eia.gov/electricity/annual/html/epa_02_10.html\" target=\"_blank\" rel=\"noopener\">EIA Electric Power Annual, Table 2.10</a> (18.2¢ industrial price, 5th highest) · <a href=\"https://www1.eere.energy.gov/geothermal/pdfs/future_geo_energy.pdf\" target=\"_blank\" rel=\"noopener\">MIT, The Future of Geothermal Energy</a> (2006, Table A.2.1) · <a href=\"https://web.archive.org/web/20260916142023/https://www.mass.gov/executive-orders/no-658-establishing-requirements-for-responsible-data-center-development-and-operations-in-massachusetts-to-protect-and-support-ratepayers-communities-and-the-environment\" target=\"_blank\" rel=\"noopener\">Executive Order 658</a> (archived copy) · <a href=\"https://media.wbur.org/wp/2026/01/AGR-NECEC-Completion.pdf\" target=\"_blank\" rel=\"noopener\">Avangrid&#x27;s NECEC release</a> (16 Jan 2026, hosted by WBUR) · <a href=\"https://datacenter.uptimeinstitute.com/rs/711-RIA-145/images/2025.Annual.Survey.Report.pdf\" target=\"_blank\" rel=\"noopener\">Uptime Institute 2025 survey</a> (PUE) · <a href=\"https://docs.nlr.gov/docs/fy13osti/56290.pdf\" target=\"_blank\" rel=\"noopener\">NREL solar land-use report</a> (2013, acres per MW)</span><span><strong>Math</strong><a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#power\" target=\"_blank\" rel=\"noopener\">calc 01</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#solar\" target=\"_blank\" rel=\"noopener\">calc 14</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#grid\" target=\"_blank\" rel=\"noopener\">calc 15</a></span>"
     },
     "computers": {
-      "title": "Rack count follows the top-model workload",
+      "title": "338 active rack pairs per datacenter",
       "why": "<p>air-cooled racks top out near 40 kW (NVIDIA's guidance), and these draw ~190–230 kW. Sealing keeps muggy summer air, dry winter air and salt outside.</p>",
-      "html": "<p>The 72-GPU Vera Rubin rack remains the hardware reference. New sizing converts required GB300 GPUs directly to racks at an assumed 2.5× per-rack throughput gain. The source measured that gain on DeepSeek-R1; applying it to Llama is an assumption.</p><p>Power uses 210 kW per compute rack, plus 14 kW for networking and storage support, then a 1.10 total-facility-to-IT power ratio. Extra context storage may change that allowance.</p><p>The drawing has 368 populated compute positions per campus and about 26,500 GPUs, based on the 190 kW lower-power case. At the 210 kW midpoint, about 338 rack pairs fit each ~83.3 MW campus allowance. The six-site fleet fits about 2,029 whole rack pairs at 500 MW, before reliability reserves.</p><p>The previous 876–980-rack first purchase is no longer the plan. Its fast-model comparison is now ~910–1,020 racks after the direct conversion correction.</p><div class=\"nums\"><dl><div><dt>Heavy workload: compute racks</dt><dd>~29,600–31,000</dd></div><div><dt>Heavy workload: Rubin GPUs</dt><dd>~2.1–2.2 million</dd></div><div><dt>Within 500 MW at midpoint</dt><dd>~2,029 rack pairs</dd></div></dl></div>",
-      "notes": "<span><strong>Planning basis</strong>User-approved top-model revision. Original source links support individual inputs; their older scenario totals are superseded here.</span><span><strong>Sources</strong><a href=\"https://blogs.nvidia.com/?p=97826\" target=\"_blank\" rel=\"noopener\">&quot;up to 30× per megawatt&quot; claim</a> · <a href=\"https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/\" target=\"_blank\" rel=\"noopener\">NVIDIA Vera Rubin NVL72 page</a> · <a href=\"https://hashrateindex.com/blog/nvidia-vera-rubin-nvl72-specs-breakdown/\" target=\"_blank\" rel=\"noopener\">Hashrate Index</a> · <a href=\"https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference\" target=\"_blank\" rel=\"noopener\">NVIDIA&#x27;s MLPerf v6.1 preview</a> · <a href=\"https://lenovopress.lenovo.com/lp2357-lenovo-nvidia-gb300-nvl72-rack-scale-ai\" target=\"_blank\" rel=\"noopener\">Lenovo GB300 guide</a> · <a href=\"https://www.vertiv.com/493cf5/globalassets/campaigns/ai-hub/vertiv-reference-design-020-ds-en-na-2024-gr-00109-web.pdf\" target=\"_blank\" rel=\"noopener\">Vertiv GB200 reference design</a> · <a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/price-of-nvidias-vera-rubin-nvl72-racks-skyrockets-to-as-much-as-usd8-8-million-apiece-but-server-makers-margins-will-be-tight-nvidia-is-moving-closer-to-shipping-entire-full-scale-systems\" target=\"_blank\" rel=\"noopener\">Tom&#x27;s Hardware</a> · <a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidias-memory-costs-soar-485-percent-latest-ai-systems-now-cost-usd7-8-million-to-build-memory-now-comprises-25-percent-of-the-total-cost-rubin-gpus-a-mere-usd50-000-apiece\" target=\"_blank\" rel=\"noopener\">Tom&#x27;s Hardware</a> · <a href=\"https://q.futunn.com/feed/116719391540004\" target=\"_blank\" rel=\"noopener\">Futu</a> · <a href=\"https://finance.biggo.com/news/vBOcuJ4BXp3ZLKjg3ZZf\" target=\"_blank\" rel=\"noopener\">BigGo</a> · <a href=\"https://docs.nvidia.com/dgx-superpod/design-guides/dgx-superpod-data-center-design-h100/latest/planning.html\" target=\"_blank\" rel=\"noopener\">NVIDIA DGX SuperPOD H100 design guide</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#racks\" target=\"_blank\" rel=\"noopener\">calc 02</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#users\" target=\"_blank\" rel=\"noopener\">calc 04</a></span>"
+      "html": "<p>The design still has 368 drawn rack positions. At the 210 kW midpoint plus 14 kW support and PUE 1.10, 338 active pairs fit each 83.3 MW allowance. At the lower 190 kW compute draw, all 368 positions fit.</p><p>Six independently capped campuses therefore operate 2,028 pairs. We cannot pool the small leftover power between sites to activate a 2,029th pair.</p><p>The capacity calculation uses 72 GPUs per rack and an assumed 2.5× rack throughput gain over the GB300 heavy-reference benchmark. Applying the R1 hardware gain to Llama and this workload needs validation.</p><p>No capacity reserve is included. Additional context storage, attention work, memory bandwidth, maintenance and latency requirements can lower the usable headcount.</p><div class=\"nums\"><dl><div><dt>Active GPUs per campus</dt><dd>24,336</dd></div><div><dt>Modeled loaded power</dt><dd>83.28 MW per campus</dd></div><div><dt>Six-site active rack pairs</dt><dd>2,028</dd></div></dl></div>",
+      "notes": "<span><strong>Planning basis</strong>20 questions and five agent tasks per person daily, with the heavy reference for the top model. Source peak rates, hardware transfer and cache behavior determine the estimate; this is not measured Claude performance.</span><span><strong>Original input references</strong><a href=\"https://blogs.nvidia.com/?p=97826\" target=\"_blank\" rel=\"noopener\">&quot;up to 30× per megawatt&quot; claim</a> · <a href=\"https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/\" target=\"_blank\" rel=\"noopener\">NVIDIA Vera Rubin NVL72 page</a> · <a href=\"https://hashrateindex.com/blog/nvidia-vera-rubin-nvl72-specs-breakdown/\" target=\"_blank\" rel=\"noopener\">Hashrate Index</a> · <a href=\"https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference\" target=\"_blank\" rel=\"noopener\">NVIDIA&#x27;s MLPerf v6.1 preview</a> · <a href=\"https://lenovopress.lenovo.com/lp2357-lenovo-nvidia-gb300-nvl72-rack-scale-ai\" target=\"_blank\" rel=\"noopener\">Lenovo GB300 guide</a> · <a href=\"https://www.vertiv.com/493cf5/globalassets/campaigns/ai-hub/vertiv-reference-design-020-ds-en-na-2024-gr-00109-web.pdf\" target=\"_blank\" rel=\"noopener\">Vertiv GB200 reference design</a> · <a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/price-of-nvidias-vera-rubin-nvl72-racks-skyrockets-to-as-much-as-usd8-8-million-apiece-but-server-makers-margins-will-be-tight-nvidia-is-moving-closer-to-shipping-entire-full-scale-systems\" target=\"_blank\" rel=\"noopener\">Tom&#x27;s Hardware</a> · <a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidias-memory-costs-soar-485-percent-latest-ai-systems-now-cost-usd7-8-million-to-build-memory-now-comprises-25-percent-of-the-total-cost-rubin-gpus-a-mere-usd50-000-apiece\" target=\"_blank\" rel=\"noopener\">Tom&#x27;s Hardware</a> · <a href=\"https://q.futunn.com/feed/116719391540004\" target=\"_blank\" rel=\"noopener\">Futu</a> · <a href=\"https://finance.biggo.com/news/vBOcuJ4BXp3ZLKjg3ZZf\" target=\"_blank\" rel=\"noopener\">BigGo</a> · <a href=\"https://docs.nvidia.com/dgx-superpod/design-guides/dgx-superpod-data-center-design-h100/latest/planning.html\" target=\"_blank\" rel=\"noopener\">NVIDIA DGX SuperPOD H100 design guide</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#racks\" target=\"_blank\" rel=\"noopener\">calc 02</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#users\" target=\"_blank\" rel=\"noopener\">calc 04</a></span>"
     },
     "models": {
-      "title": "Top model for every request",
-      "why": "<p>Top-model access is the requirement. Capacity must follow the work that fits within the power limit, rather than a fast-model result.</p>",
-      "html": "<p><b>Service requirement:</b> every chat question and agent task may use the top-quality model. Llama 3.1 405B is the provisional heavy reference from the study, not proof of best answer quality or the exact cost of a proprietary model.</p><p>The other references, gpt-oss-120b and DeepSeek-R1, are comparison cases only. Switching to them changes the requirement.</p><p>The calculation retains cached context and benchmark throughput. Batching, prompt reuse and scheduling must be measured together; they are not additional assumed multipliers.</p><p>Validate representative long documents, reasoning and agent jobs, output quality, response time, concurrent load, cache hits and misses, and whole-system energy before committing to capacity.</p><div class=\"nums\"><dl><div><dt>Peak equivalent output</dt><dd>3.44 billion tokens/s</dd></div><div><dt>Heavy-reference speed, adjusted</dt><dd>~617–646 tokens/s/GB300 GPU</dd></div><div><dt>Rubin throughput gain, assumed</dt><dd>2.5× per 72-GPU rack</dd></div></dl></div>",
-      "notes": "<span><strong>Planning basis</strong>User-approved top-model revision. Original source links support individual inputs; their older scenario totals are superseded here.</span><span><strong>Sources</strong><a href=\"https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records/\" target=\"_blank\" rel=\"noopener\">NVIDIA&#x27;s MLPerf v6.0 results</a> · <a href=\"https://lambda.ai/blog/lambdas-mlperf-inference-v6.0-hardware-leap-software-maturity-research-breakthrough\" target=\"_blank\" rel=\"noopener\">Lambda</a> · <a href=\"https://nebius.com/blog/posts/mlperf-inference-v6-0-results\" target=\"_blank\" rel=\"noopener\">Nebius</a> · <a href=\"https://cdn.openai.com/gpt-5-system-card.pdf\" target=\"_blank\" rel=\"noopener\">GPT-5 system card</a> · <a href=\"https://inferencex.semianalysis.com/rankings/fastest-gpu-for-kimi-k3\" target=\"_blank\" rel=\"noopener\">InferenceX ranking</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#users\" target=\"_blank\" rel=\"noopener\">calc 04</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#tiers\" target=\"_blank\" rel=\"noopener\">calc 05</a></span>"
+      "title": "The heavy reference for every question and task",
+      "why": "<p>The hardware supports the population whose assumed peak workload fits. The daily task count is unchanged; the heavy model uses more chip time, so fewer users fit within the fixed power limit.</p>",
+      "html": "<p>The same daily workload is retained. Every question and every call within an agent task uses the heavy reference; there is no weaker-model routing.</p><p>Llama 3.1 405B is the provisional hardware proxy for the top model. Its benchmark does not measure proprietary Claude throughput, answer quality, subscription quota or joules per token.</p><p>4.6 output and 40 new input tokens/s per source user are the original case C peak rates. They already aggregate the daily workload; multiplying again by 20 questions or five tasks would double-count work.</p><p>Actual input, cache creation, cache reads, reasoning output, session overlap and response-time targets still need measurement before a service-capacity commitment.</p>",
+      "notes": "<span><strong>Planning basis</strong>20 questions and five agent tasks per person daily, with the heavy reference for the top model. Source peak rates, hardware transfer and cache behavior determine the estimate; this is not measured Claude performance.</span><span><strong>Original input references</strong><a href=\"https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records/\" target=\"_blank\" rel=\"noopener\">NVIDIA&#x27;s MLPerf v6.0 results</a> · <a href=\"https://lambda.ai/blog/lambdas-mlperf-inference-v6.0-hardware-leap-software-maturity-research-breakthrough\" target=\"_blank\" rel=\"noopener\">Lambda</a> · <a href=\"https://nebius.com/blog/posts/mlperf-inference-v6-0-results\" target=\"_blank\" rel=\"noopener\">Nebius</a> · <a href=\"https://cdn.openai.com/gpt-5-system-card.pdf\" target=\"_blank\" rel=\"noopener\">GPT-5 system card</a> · <a href=\"https://inferencex.semianalysis.com/rankings/fastest-gpu-for-kimi-k3\" target=\"_blank\" rel=\"noopener\">InferenceX ranking</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#users\" target=\"_blank\" rel=\"noopener\">calc 04</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#tiers\" target=\"_blank\" rel=\"noopener\">calc 05</a></span>"
     },
     "memory": {
-      "title": "Reuse context; validate the heavy model’s memory needs",
-      "why": "<p>Caching can avoid processing the same input again, while new answers still require compute. Its capacity and bandwidth must match the chosen model.</p>",
-      "html": "<p>The calculation assumes available context can be reused. Long contexts, cache misses and moving cached data through the storage system can reduce throughput.</p><p>The old ~2.3 EB, ~5.7 GB/user and $1.5–1.8B flash estimates were based on DeepSeek-R1 and an assumed FP8 cache. They are not validated storage figures for Llama 3.1 405B or a future top model.</p><p>Recalculate cache bytes per token, active sessions, retention and eviction, memory-tier bandwidth, support power and cost for the selected model. The new rack-price subtotal excludes this redesign.</p>",
-      "notes": "<span><strong>Planning basis</strong>User-approved top-model revision. Original source links support individual inputs; their older scenario totals are superseded here.</span><span><strong>Sources</strong><a href=\"https://nvidianews.nvidia.com/news/nvidia-bluefield-4-powers-new-class-of-ai-native-storage-infrastructure-for-the-next-frontier-of-ai\" target=\"_blank\" rel=\"noopener\">NVIDIA&#x27;s BlueField-4 release</a> · <a href=\"https://www.blocksandfiles.com/flash/2026/04/08/vdura-says-30-tb-qlc-ssd-capacity-now-costs-226x-more-than-hdd/5214761\" target=\"_blank\" rel=\"noopener\">$15,121 per 30 TB drive in Q1 2026</a> · <a href=\"https://www.storagereview.com/news/enterprise-ssd-prices-run-at-6-5x-last-year-vdura-pegs-a-30tb-tlc-drive-at-22600\" target=\"_blank\" rel=\"noopener\">$18,080 in Q3</a> · <a href=\"https://www.solidigm.com/content/dam/solidigm/en/site/products/technology/p5336-product-brief/documents/Solidigm-D5P5336-ProductBrief.pdf\" target=\"_blank\" rel=\"noopener\">Solidigm D5-P5336</a> · <a href=\"https://www.micron.com/content/dam/micron/global/public/products/storage/ssds/data-center/6600/6600-ion-nvme-ssd-product-brief.pdf\" target=\"_blank\" rel=\"noopener\">Micron 6600 ION</a> · <a href=\"https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/\" target=\"_blank\" rel=\"noopener\">NVIDIA Vera Rubin NVL72 page</a> · <a href=\"https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/config.json\" target=\"_blank\" rel=\"noopener\">DeepSeek-R1&#x27;s config.json</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#memory\" target=\"_blank\" rel=\"noopener\">calc 06</a></span>"
+      "title": "An agent task can involve many AI calls",
+      "why": "<p>The daily task count is not a count of model calls. Context, tool results and repeated processing also consume computing resources.</p>",
+      "html": "<p>The daily workload is 20 questions plus five agent tasks per person. Each task can involve several AI calls; code, conversation history and tool results can be processed again on later calls.</p><p>The case C source lists 104 million context reads per person per day, separately from the 40 new input tokens/s peak rate. Repeated reads are not the same as new input, stored data or network downloads.</p><p>The baseline assumes effective context reuse. Cache hits still require attention, memory and bandwidth; misses require additional input processing.</p><p>Cache size, bandwidth and added support power remain unvalidated. The old R1-specific 2.3 EB and flash-cost estimates do not size the chosen heavy model. Peak rates alone do not establish daily token totals.</p>",
+      "notes": "<span><strong>Planning basis</strong>20 questions and five agent tasks per person daily, with the heavy reference for the top model. Source peak rates, hardware transfer and cache behavior determine the estimate; this is not measured Claude performance.</span><span><strong>Original input references</strong><a href=\"https://nvidianews.nvidia.com/news/nvidia-bluefield-4-powers-new-class-of-ai-native-storage-infrastructure-for-the-next-frontier-of-ai\" target=\"_blank\" rel=\"noopener\">NVIDIA&#x27;s BlueField-4 release</a> · <a href=\"https://www.blocksandfiles.com/flash/2026/04/08/vdura-says-30-tb-qlc-ssd-capacity-now-costs-226x-more-than-hdd/5214761\" target=\"_blank\" rel=\"noopener\">$15,121 per 30 TB drive in Q1 2026</a> · <a href=\"https://www.storagereview.com/news/enterprise-ssd-prices-run-at-6-5x-last-year-vdura-pegs-a-30tb-tlc-drive-at-22600\" target=\"_blank\" rel=\"noopener\">$18,080 in Q3</a> · <a href=\"https://www.solidigm.com/content/dam/solidigm/en/site/products/technology/p5336-product-brief/documents/Solidigm-D5P5336-ProductBrief.pdf\" target=\"_blank\" rel=\"noopener\">Solidigm D5-P5336</a> · <a href=\"https://www.micron.com/content/dam/micron/global/public/products/storage/ssds/data-center/6600/6600-ion-nvme-ssd-product-brief.pdf\" target=\"_blank\" rel=\"noopener\">Micron 6600 ION</a> · <a href=\"https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/\" target=\"_blank\" rel=\"noopener\">NVIDIA Vera Rubin NVL72 page</a> · <a href=\"https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/config.json\" target=\"_blank\" rel=\"noopener\">DeepSeek-R1&#x27;s config.json</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#memory\" target=\"_blank\" rel=\"noopener\">calc 06</a></span>"
     },
     "chip-loop": {
       "title": "Warm water and dry coolers",
@@ -989,19 +992,19 @@
     },
     "hall": {
       "title": "A low steel hall that can't burn",
-      "html": "<div>\n          <div><h4>What we chose</h4><p>A 210 × 60 m one-story steel hall (recycled steel) on a low-carbon concrete slab, with a low roof (8–9.5 m) carrying solar, stone-wool-core metal wall panels and wood-look noncombustible cladding.</p><p>Cooling pipes stay below the racks. The coolant distribution units (CDUs) stand at the row ends along the hall&#x27;s edge. Noncombustible pipes (stainless steel, welded where possible, no push-fit joints) run in covered trenches in the floor slab under the aisles, over noncombustible drip containment, with quick disconnects only at each rack&#x27;s manifold. Power busway and cable trays stay overhead, so nothing wet sits above the racks or the power.</p><p class=\"changed\"><span class=\"flag\">Changed 18 Oct</span> after the source check; confirmed by Arturo. The pipes ran overhead, in a drip-panned tray beside the power lines. FM Global&#x27;s data-center data sheet (DS 5-32, January 2026 edition) bars cooling pipes above critical equipment (§2.2.1.6), wants them below the room or along its edge with no joints over equipment (§2.5.2.10–2.5.2.12), and asks for noncombustible pipe, preferably welded (§2.5.2.4–2.5.2.5).</p></div>\n          <div><h4>Why</h4><p>Insurers require noncombustible data halls (FM Global DS 5-32, §2.2.1.1), and stone wool doesn&#x27;t burn. The low roof keeps the cooler tops (~9.9 m) above it so they breathe freely, as Evapco&#x27;s layout guide asks, which matters because hot-day winds blow from the west and southwest across the hall toward the coolers.</p><p>Timber would save less carbon here than in Microsoft&#x27;s two timber-hybrid datacenters (35% less embodied carbon than steel, by Microsoft&#x27;s estimate, with no method stated). Their saving came from replacing elevated concrete floors; a one-story hall on a slab would save mainly on the roof (WoodWorks, p.31). And civil, structural and architectural work is only ~30% of a datacenter&#x27;s upfront embodied carbon, servers excluded (Arup), so timber could cut the whole building&#x27;s by ~10% at most (our estimate). So the hall uses low-carbon concrete and recycled steel, and timber goes where people work.</p></div>\n          <div class=\"nums\"><h4>Numbers</h4><dl>\n            <div><dt>Embodied carbon</dt><dd>Recalculate for the new workload and fleet</dd></div>\n            <div><dt>6-inch wall panels, kg CO₂e per m²: stone wool / foam (PIR)</dt><dd>~55–57 / ~33–43</dd></div>\n            <div><dt>Stone wool&#x27;s extra carbon, per site</dt><dd>~56–116 t</dd></div>\n            <div><dt>Stone wool&#x27;s extra carbon repaid</dt><dd>~3–7 weeks</dd></div>\n            <div><dt>Slab concrete, kg CO₂e per m³: federal low-carbon limit / US average</dt><dd>≤284 / ~308</dd></div>\n          </dl></div>\n        </div>",
+      "html": "<div>\n          <div><h4>What we chose</h4><p>A 210 × 60 m one-story steel hall (recycled steel) on a low-carbon concrete slab, with a low roof (8–9.5 m) carrying solar, stone-wool-core metal wall panels and wood-look noncombustible cladding.</p><p>Cooling pipes stay below the racks. The coolant distribution units (CDUs) stand at the row ends along the hall&#x27;s edge. Noncombustible pipes (stainless steel, welded where possible, no push-fit joints) run in covered trenches in the floor slab under the aisles, over noncombustible drip containment, with quick disconnects only at each rack&#x27;s manifold. Power busway and cable trays stay overhead, so nothing wet sits above the racks or the power.</p><p class=\"changed\"><span class=\"flag\">Changed 18 Oct</span> after the source check; confirmed by Arturo. The pipes ran overhead, in a drip-panned tray beside the power lines. FM Global&#x27;s data-center data sheet (DS 5-32, January 2026 edition) bars cooling pipes above critical equipment (§2.2.1.6), wants them below the room or along its edge with no joints over equipment (§2.5.2.10–2.5.2.12), and asks for noncombustible pipe, preferably welded (§2.5.2.4–2.5.2.5).</p></div>\n          <div><h4>Why</h4><p>Insurers require noncombustible data halls (FM Global DS 5-32, §2.2.1.1), and stone wool doesn&#x27;t burn. The low roof keeps the cooler tops (~9.9 m) above it so they breathe freely, as Evapco&#x27;s layout guide asks, which matters because hot-day winds blow from the west and southwest across the hall toward the coolers.</p><p>Timber would save less carbon here than in Microsoft&#x27;s two timber-hybrid datacenters (35% less embodied carbon than steel, by Microsoft&#x27;s estimate, with no method stated). Their saving came from replacing elevated concrete floors; a one-story hall on a slab would save mainly on the roof (WoodWorks, p.31). And civil, structural and architectural work is only ~30% of a datacenter&#x27;s upfront embodied carbon, servers excluded (Arup), so timber could cut the whole building&#x27;s by ~10% at most (our estimate). So the hall uses low-carbon concrete and recycled steel, and timber goes where people work.</p></div>\n          <div class=\"nums\"><h4>Numbers</h4><dl>\n            <div><dt>Embodied carbon</dt><dd>Recalculate for the actual workload, schedule and fleet</dd></div>\n            <div><dt>6-inch wall panels, kg CO₂e per m²: stone wool / foam (PIR)</dt><dd>~55–57 / ~33–43</dd></div>\n            <div><dt>Stone wool&#x27;s extra carbon, per site</dt><dd>~56–116 t</dd></div>\n            <div><dt>Stone wool&#x27;s extra carbon repaid</dt><dd>~3–7 weeks</dd></div>\n            <div><dt>Slab concrete, kg CO₂e per m³: federal low-carbon limit / US average</dt><dd>≤284 / ~308</dd></div>\n          </dl></div>\n        </div>",
       "why": "<p>Insurers require noncombustible data halls (FM Global DS 5-32, §2.2.1.1), and stone wool doesn&#x27;t burn. The low roof keeps the cooler tops (~9.9 m) above it so they breathe freely, as Evapco&#x27;s layout guide asks, which matters because hot-day winds blow from the west and southwest across the hall toward the coolers.</p><p>Timber would save less carbon here than in Microsoft&#x27;s two timber-hybrid datacenters (35% less embodied carbon than steel, by Microsoft&#x27;s estimate, with no method stated). Their saving came from replacing elevated concrete floors; a one-story hall on a slab would save mainly on the roof (WoodWorks, p.31). And civil, structural and architectural work is only ~30% of a datacenter&#x27;s upfront embodied carbon, servers excluded (Arup), so timber could cut the whole building&#x27;s by ~10% at most (our estimate). So the hall uses low-carbon concrete and recycled steel, and timber goes where people work.</p>",
       "notes": "<span><strong>Set aside</strong>A 24 m tall north side (traps hot cooler exhaust). Mass timber in the data halls: combustible, at risk from leaks, and some insurers limit or decline it, notably over water damage (Aon). Foam-core panels (combustible core).</span><span class=\"todo\"><strong>To validate</strong>the stone-wool panel&#x27;s exterior-wall approval. Metl-Span&#x27;s ThermalSafe datasheet lists FM 4880 (interior) but not FM 4881 (exterior wall), so confirm with the insurer or choose an FM 4881-approved mineral-wool panel.</span><span><strong>Sources</strong><a href=\"https://www.fm.com/-/media/project/publicwebsites/fmglobal/documentum-new/data-sheet-individual/05-electrical/fmds0532.pdf\" target=\"_blank\" rel=\"noopener\">FM Global DS 5-32</a> (January 2026, interim revision July 2026) · <a href=\"https://www.evapco.com/media/1644929\" target=\"_blank\" rel=\"noopener\">Evapco eco-Air layout manual</a> (p.3) · Metl-Span environmental product declarations for <a href=\"https://nucoripg.widen.net/s/cwgzxtznxh/metl-span--roof-and-wall-epd-pir-panels\" target=\"_blank\" rel=\"noopener\">foam (SCS-EPD-10342)</a> and <a href=\"https://nucoripg.widen.net/s/6x5xx5gggf/metlspan-commercialindustrialinsulatedpanels-thermalsafe-epd\" target=\"_blank\" rel=\"noopener\">stone-wool (SCS-EPD-10343)</a> panels · <a href=\"https://metlspan.com/wp-content/uploads/2022/11/Metl-Span-Architectural-Insulated-Panels-Thermalsafe-Data-Sheet.pdf\" target=\"_blank\" rel=\"noopener\">ThermalSafe datasheet</a> (FM approvals) · <a href=\"https://news.microsoft.com/source/features/sustainability/microsoft-builds-first-datacenters-with-wood-to-slash-carbon-emissions/\" target=\"_blank\" rel=\"noopener\">Microsoft</a> (2024) · <a href=\"https://www.woodworks.org/wp-content/uploads/presentation_slides_Dineen_LoBuono_Mass_timber_Data_Centers_06.2026.pdf\" target=\"_blank\" rel=\"noopener\">WoodWorks webinar slides</a> (June 2026, p.31) · <a href=\"https://www.arup.com/globalassets/downloads/insights/c/circular-thinking-for-data-centres/arup-circular-thinking-for-data-centres.pdf\" target=\"_blank\" rel=\"noopener\">Arup</a> (p.13) · <a href=\"https://www.aon.com/en/insights/articles/mass-timber-insurance-understanding-risk-challenges\" target=\"_blank\" rel=\"noopener\">Aon</a> (2025) · <a href=\"https://www.gsa.gov/system/files/Interim%20IRA%20LEC%20Material%20Requirements%20-%20used%20in%20Pilot%20May%202023%2005162023.pdf\" target=\"_blank\" rel=\"noopener\">GSA low-carbon concrete limits</a> (2023, top 20% for 4,000 psi) · <a href=\"https://www.nrmca.org/wp-content/uploads/2022/02/NRMCA_LCAReportV3-2_20220224.pdf\" target=\"_blank\" rel=\"noopener\">NRMCA US benchmark</a> (2022)</span><span><strong>Math</strong><a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#snow\" target=\"_blank\" rel=\"noopener\">calc 12</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#carbon\" target=\"_blank\" rel=\"noopener\">calc 18</a></span>"
     },
     "house": {
       "title": "Timber where people work; waste heat for plants",
-      "html": "<div>\n          <div><h4>What we chose</h4><p>The SEED House, a two-story mass-timber operations building with a sedum roof, plus timber on the Cold Battery House and entry canopies. A 60 × 30 m glass greenhouse heated by the ~124°F (51°C) return water.</p></div>\n          <div><h4>Why</h4><p>Timber stores carbon and is welcome where people work, away from the data halls. The greenhouse puts a sliver of the waste heat to use instead of sending it all into the air.</p></div>\n          <div class=\"nums\"><h4>Numbers</h4><dl>\n            <div><dt>Greenhouse heat at peak</dt><dd>~0.5 MW</dd></div>\n            <div><dt>Waste heat available</dt><dd>~75 MW</dd></div>\n          </dl></div>\n        </div>",
+      "html": "<p><strong>Revised operating assumption:</strong> Recoverable heat follows IT load. The workload scenario does not establish a continuous 75 MW heat supply or guaranteed return temperature. Off-peak backup heating remains to be sized.</p><div>\n          <div><h4>What we chose</h4><p>The SEED House, a two-story mass-timber operations building with a sedum roof, plus timber on the Cold Battery House and entry canopies. A 60 × 30 m glass greenhouse heated by the ~124°F (51°C) return water.</p></div>\n          <div><h4>Why</h4><p>Timber stores carbon and is welcome where people work, away from the data halls. The greenhouse puts a sliver of the waste heat to use instead of sending it all into the air.</p></div>\n          <div class=\"nums\"><h4>Numbers</h4><dl>\n            <div><dt>Greenhouse heat at peak</dt><dd>~0.5 MW</dd></div>\n            <div><dt>Total IT heat at full load</dt><dd>~75 MW</dd></div>\n          </dl></div>\n        </div>",
       "why": "<p>Timber stores carbon and is welcome where people work, away from the data halls. The greenhouse puts a sliver of the waste heat to use instead of sending it all into the air.</p>",
       "notes": "<span><strong>Math</strong><a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#greenhouse\" target=\"_blank\" rel=\"noopener\">calc 13</a></span>"
     },
     "backup": {
       "title": "Batteries, then generators on renewable diesel",
-      "html": "<div>\n          <div><h4>What we chose</h4><p>Batteries (an uninterruptible power supply, UPS) carry the computers, cooling pumps and controls for the first minutes. About 30 standard ~3 MW generators with the cleanest engines (EPA Tier 4 Final) take over, running on renewable diesel (hydrotreated vegetable oil, HVO), with 48 hours of fuel on site and a resupply contract. Space is reserved to add hydrogen fuel cells later.</p></div>\n          <div><h4>Why</h4><p>It&#x27;s proven, insurable and already in a normal building&#x27;s cost. Kao Data has run its UK campus&#x27;s backup generators on HVO since 2021, and US operators are following (below). Engine makers approve it: Caterpillar and mtu as a drop-in fuel, and Kohler for all its mission-critical gensets with no changes (its US approval follows ASTM D975, the diesel standard). Cummins approves it in all its generator sets except some QSX15 configurations, and says to confirm with the supplier that the HVO suits all site temperatures.</p><p>HVO cuts lifecycle carbon by about 50–80% (our estimate from California&#x27;s figures; its renewable diesel averaged ~58% below fossil diesel in Q2 2025), but it isn&#x27;t zero-emission: it still has tailpipe emissions. Generators only run for tests and rare outages, so their fuel is under 1% of a site&#x27;s footprint.</p></div>\n          <p>The shown full-campus concept stores about 1.1 million litres for 48 hours. A larger fleet requires a new backup-power, fuel and cost calculation.</p></div>",
+      "html": "<div>\n          <div><h4>What we chose</h4><p>Batteries (an uninterruptible power supply, UPS) carry the computers, cooling pumps and controls for the first minutes. About 30 standard ~3 MW generators with the cleanest engines (EPA Tier 4 Final) take over, running on renewable diesel (hydrotreated vegetable oil, HVO), with 48 hours of fuel on site and a resupply contract. Space is reserved to add hydrogen fuel cells later.</p></div>\n          <div><h4>Why</h4><p>It&#x27;s proven, insurable and already in a normal building&#x27;s cost. Kao Data has run its UK campus&#x27;s backup generators on HVO since 2021, and US operators are following (below). Engine makers approve it: Caterpillar and mtu as a drop-in fuel, and Kohler for all its mission-critical gensets with no changes (its US approval follows ASTM D975, the diesel standard). Cummins approves it in all its generator sets except some QSX15 configurations, and says to confirm with the supplier that the HVO suits all site temperatures.</p><p>HVO cuts lifecycle carbon by about 50–80% (our estimate from California&#x27;s figures; its renewable diesel averaged ~58% below fossil diesel in Q2 2025), but it isn&#x27;t zero-emission: it still has tailpipe emissions. Generators only run for tests and rare outages, so their fuel is under 1% of a site&#x27;s footprint.</p></div>\n          <p>The full-campus concept stores about 1.1 million litres for 48 hours. Fewer users at the same loaded power do not reduce this backup requirement.</p></div>",
       "why": "<p>It&#x27;s proven, insurable and already in a normal building&#x27;s cost. Kao Data has run its UK campus&#x27;s backup generators on HVO since 2021, and US operators are following (below). Engine makers approve it: Caterpillar and mtu as a drop-in fuel, and Kohler for all its mission-critical gensets with no changes (its US approval follows ASTM D975, the diesel standard). Cummins approves it in all its generator sets except some QSX15 configurations, and says to confirm with the supplier that the HVO suits all site temperatures.</p><p>HVO cuts lifecycle carbon by about 50–80% (our estimate from California&#x27;s figures; its renewable diesel averaged ~58% below fossil diesel in Q2 2025), but it isn&#x27;t zero-emission: it still has tailpipe emissions. Generators only run for tests and rare outages, so their fuel is under 1% of a site&#x27;s footprint.</p>",
       "notes": "<span><strong>Who runs HVO</strong><a href=\"https://www.cambridgenetwork.co.uk/index.php/news/road-net-zero-kao-data-becomes-first-uk-data-centre-transition-diesel-renewable-hvo-fuel\" target=\"_blank\" rel=\"noopener\">Kao Data</a>, Harlow, UK: all its backup generators since July 2021. Its <a href=\"https://www.computerweekly.com/news/252433701/Kao-Data-opens-doors-on-first-phase-of-200m-datacentre-campus-in-Harlow\" target=\"_blank\" rel=\"noopener\">2018 plan</a> was ~35 MW, with a first building of 8.8 MW; the campus is <a href=\"https://kaodata.com/locations/harlow/\" target=\"_blank\" rel=\"noopener\">71 MW</a> when complete. <a href=\"https://datacentrereview.com/2024/04/digital-realty-rolls-out-hvo-at-three-us-sites/\" target=\"_blank\" rel=\"noopener\">Digital Realty</a>: three US sites, 2024. <a href=\"https://www.compassdatacenters.com/?p=21312\" target=\"_blank\" rel=\"noopener\">Compass</a>: Northern Virginia, Arizona and Texas, from its 1 June 2022 release; its supplier <a href=\"https://www.biobased-diesel.com/post/foster-fuels-compass-datacenters-celebrate-half-a-million-gallons-of-renewable-diesel-delivery\" target=\"_blank\" rel=\"noopener\">Foster Fuels</a> had delivered 500,000 gallons to North American data centers by November 2022. <a href=\"https://vantage-dc.com/news/vantage-data-centers-to-continue-deploying-renewable-generator-fuel-plans-rollout-in-additional-markets-in-2023/\" target=\"_blank\" rel=\"noopener\">Vantage</a>: Santa Clara, announced in 2023 for year-end. <a href=\"https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf\" target=\"_blank\" rel=\"noopener\">Google</a> piloted renewable diesel in select US and European data centers in 2023 (2024 Environmental Report, p.33).</span><span><strong>Set aside</strong>Hydrogen fuel cells at 80 MW: 25–50× the largest datacenter tests (Microsoft&#x27;s 3 MW in 2022; a 1.5 MW Caterpillar, Microsoft and NREL demo in 2024), and no Northeast supplier found. Bloom&#x27;s natural-gas fuel cells: on gas they emit 679–833 lb of CO₂ per MWh (<a href=\"https://www.bloomenergy.com/wp-content/uploads/bloom-energy-server-datasheet-feb-2026.pdf\" target=\"_blank\" rel=\"noopener\">Bloom&#x27;s datasheet</a>, Feb 2026), more than New England&#x27;s grid at 597 (ISO New England, 2024). Shifting work to other sites in an outage (needs spare racks and replicated data, which aren&#x27;t budgeted). Flywheels instead of batteries.</span><span class=\"todo\"><strong>To validate</strong>generator restart times and sequencing, thermal buffering, N+1 and reserve margins; a vendor quote for the Tier 4 Final premium (the $0.10–0.20M per MW in the budget is our assumption; no source prices it); an air permit from MassDEP (the Massachusetts Department of Environmental Protection). The state counts 50 tons a year of nitrogen oxides (NOx, in US short tons) as a major source. By our estimates, a full site of ordinary Tier 2 engines would emit ~58 tons at the 100 run hours a year its emergency-engine rule allows, and Tier 4 Final engines ~31 tons even at EPA&#x27;s default of 500 hours. Also an HVO supply contract (New England&#x27;s first, Broco Energy&#x27;s with Massport, is a one-year deal for ~1.2 million gallons from December 2025), and a community benefits agreement (required above 25 MW by Executive Order 658).</span><span><strong>Sources</strong><a href=\"https://www.cummins.com/sites/default/files/2023-12/hvo-fuel-faq-2023.pdf\" target=\"_blank\" rel=\"noopener\">Cummins HVO FAQ</a> (2023) · Kohler: <a href=\"https://www.powerprogress.com/news/kohler-diesel-engines-now-hvo-approved-in-us/8022508.article\" target=\"_blank\" rel=\"noopener\">Power Progress</a> and <a href=\"https://www.datacenterdynamics.com/en/product-news/kohler-hvo-fuel-capabilities-provide-data-center-customers-with-a-pathway-to-zero-carbon/\" target=\"_blank\" rel=\"noopener\">DCD</a> (2022) · <a href=\"https://www.cat.com/en_US/news/engine-press-releases/cat-rental-power-solutions-deployed-by-peterson-power-systems-surpass-8-million-gallons-in-hvo-fuel-use.html\" target=\"_blank\" rel=\"noopener\">Caterpillar</a> (2024) · <a href=\"https://mtu-solutions.com/na/en/pressreleases/2022/milestone-towards-net-zero--mtu-gensets-from-rolls-royce-approve.html\" target=\"_blank\" rel=\"noopener\">mtu</a> (2022) · <a href=\"https://www.argusmedia.com/en/news-and-insights/latest-market-news/2749041-renewable-diesel-use-lifts-lcfs-credit-volume-update\" target=\"_blank\" rel=\"noopener\">Argus</a> (California, Q2 2025) · <a href=\"https://afdc.energy.gov/files/u/publication/alternative-fuel-price-report-april-2026\" target=\"_blank\" rel=\"noopener\">AFDC fuel price report</a> (April 2026: New England diesel $5.55–5.86/gal) plus the <a href=\"https://www.mvtimes.com/2026/07/23/ssa-restarts-renewable-fuel-test-run/\" target=\"_blank\" rel=\"noopener\">Steamship Authority&#x27;s</a> ~$0.83/gal HVO premium · <a href=\"https://www.hydrocarbonprocessing.com/news/2025/12/broco-energy-secures-new-englands-us-first-renewable-diesel-contract-with-massport/\" target=\"_blank\" rel=\"noopener\">Broco and Massport</a> (2 Dec 2025) · <a href=\"https://www.law.cornell.edu/regulations/massachusetts/310-CMR-7-26\" target=\"_blank\" rel=\"noopener\">310 CMR 7.26</a> (run hours) and <a href=\"https://www.epa.gov/system/files/documents/2021-12/cmr-7-app-a.pdf\" target=\"_blank\" rel=\"noopener\">310 CMR 7.00 Appendix A</a> (50 tons) · <a href=\"https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P100OA05.pdf\" target=\"_blank\" rel=\"noopener\">EPA engine standards</a> (2016) · <a href=\"https://www.epa.gov/sites/default/files/2015-08/documents/emgen.pdf\" target=\"_blank\" rel=\"noopener\">EPA&#x27;s 500-hour memo</a> (1995) · <a href=\"https://www.iso-ne.com/about/key-stats/air-emissions\" target=\"_blank\" rel=\"noopener\">ISO New England emissions</a> (597 lb/MWh, 2024)</span><span><strong>Math</strong><a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#stoppage\" target=\"_blank\" rel=\"noopener\">calc 08</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#backup\" target=\"_blank\" rel=\"noopener\">calc 16</a></span>"
     },
@@ -1012,164 +1015,109 @@
       "notes": "<span><strong>Set aside</strong>Preaction sprinklers (dry pipes, but detectors must work first). Double-interlock preaction, which one panelist at a June 2026 industry roundtable called typical (Schlosser, Jensen Hughes), would need a 3,500 ft² dry-pipe design area (~700 gpm), and FM ranks it last (§2.4.1.1–2.4.1.2). Clean-agent and hybrid (water plus inert gas) systems: FM rules them out with lithium batteries in the racks (§2.4.3.6.4.1); without them, it allows gas only in a noncombustible room with power isolation (Fig. 2.4.3.1.1.1; §2.5.3). FM now allows its Approved water mist (HC-2), but wet pipe stays Arturo&#x27;s life-safety choice.</span><span class=\"todo\"><strong>To validate</strong>the battery kWh of a Vera Rubin rack (FM&#x27;s rack rules stop at 20 kWh); the NFPA 855 edition, with the Cambridge Fire Department (Massachusetts enforces its fire code, 527 CMR 1.00, based on NFPA 1-2021, and Brookline&#x27;s fire department still cites NFPA 855&#x27;s 2020 edition); FM&#x27;s DS 5-28 and DS 5-33 for the UPS and battery rooms; NFPA 2&#x27;s full table for the reserved hydrogen pad.</span><span><strong>Sources</strong><a href=\"https://www.fm.com/-/media/project/publicwebsites/fmglobal/documentum-new/data-sheet-individual/05-electrical/fmds0532.pdf\" target=\"_blank\" rel=\"noopener\">FM Global DS 5-32</a> (January 2026, interim revision July 2026) · <a href=\"https://docinfofiles.nfpa.org/files/AboutTheCodes/855/855_A2025_ESS_AAA_SD_SRStatements.pdf\" target=\"_blank\" rel=\"noopener\">NFPA 855 committee records</a> (20 kWh per fire area, 600 kWh, NFPA 69) · <a href=\"https://www.ul.com/resources/installation-codes-and-requirements-energy-storage-systems-ess-faqs\" target=\"_blank\" rel=\"noopener\">UL on battery fire testing</a> · <a href=\"https://www.brooklinema.gov/3576/Energy-Storage-System-Permits\" target=\"_blank\" rel=\"noopener\">Brookline Fire Department</a> (NFPA 855, 2020) · <a href=\"https://docs.nvidia.com/mission-control/docs/nmc-software-installation-guide/2.3.1/integration-of-bms-with-bcm.html\" target=\"_blank\" rel=\"noopener\">NVIDIA&#x27;s leak-detection levels and responses</a> · <a href=\"https://www.csemag.com/?p=32023\" target=\"_blank\" rel=\"noopener\">Consulting-Specifying Engineer roundtable</a> (June 2026)</span>"
     },
     "budget": {
-      "title": "The full top-model workload exceeds $30B",
-      "why": "<p>Everyone using the heavy reference needs roughly 30 times the fast-model hardware. The previous $15.8–17.2B five-year estimate no longer applies.</p>",
-      "html": "<p><b>$231–242B is compute-rack purchase only.</b> It comes from ~29,600–31,000 racks × the inherited $7.8M midpoint estimate. It is not a total build cost or five-year budget.</p><p>Separate networking, context memory, land, buildings, grid connections, backup, cooling, electricity and operations still need a revised budget. A 7.3–7.6 GW fleet is an extrapolation, not a designed expansion.</p><p>The old $15.8–17.2B total, $13–14B left over, ~$90M annual electricity saving and ~2.5-year payback belonged to the fast-model scenario. None is a claim about the new baseline.</p><p>The existing 500 MW concept can support about 26–27 million users’ assumed heavy-model workload. Its updated cost and reliability margins also require review.</p><div class=\"nums\"><dl><div><dt>Full workload compute-rack purchase</dt><dd>$231–242B</dd></div><div><dt>Five-year budget constraint</dt><dd>$30B</dd></div><div><dt>New five-year total</dt><dd>Not yet established</dd></div></dl></div>",
-      "notes": "<span><strong>Planning basis</strong>User-approved top-model revision. Original source links support individual inputs; their older scenario totals are superseded here.</span><span><strong>Sources</strong><a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/price-of-nvidias-vera-rubin-nvl72-racks-skyrockets-to-as-much-as-usd8-8-million-apiece-but-server-makers-margins-will-be-tight-nvidia-is-moving-closer-to-shipping-entire-full-scale-systems\" target=\"_blank\" rel=\"noopener\">Tom&#x27;s Hardware</a> · <a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidias-memory-costs-soar-485-percent-latest-ai-systems-now-cost-usd7-8-million-to-build-memory-now-comprises-25-percent-of-the-total-cost-rubin-gpus-a-mere-usd50-000-apiece\" target=\"_blank\" rel=\"noopener\">Tom&#x27;s Hardware</a> · <a href=\"https://q.futunn.com/feed/116719391540004\" target=\"_blank\" rel=\"noopener\">Futu</a> · <a href=\"https://finance.biggo.com/news/vBOcuJ4BXp3ZLKjg3ZZf\" target=\"_blank\" rel=\"noopener\">BigGo</a> · <a href=\"https://www.coradvisors.net/2026/06/ai-data-center-development-costs-2026.html\" target=\"_blank\" rel=\"noopener\">CORE Advisors</a> · <a href=\"https://www.eia.gov/electricity/annual/html/epa_02_10.html\" target=\"_blank\" rel=\"noopener\">EIA Table 2.10</a> · <a href=\"https://www.blocksandfiles.com/flash/2026/04/08/vdura-says-30-tb-qlc-ssd-capacity-now-costs-226x-more-than-hdd/5214761\" target=\"_blank\" rel=\"noopener\">Blocks &amp; Files</a> · <a href=\"https://www.storagereview.com/news/enterprise-ssd-prices-run-at-6-5x-last-year-vdura-pegs-a-30tb-tlc-drive-at-22600\" target=\"_blank\" rel=\"noopener\">StorageReview</a> · <a href=\"https://blog.heatspring.com/?p=2516\" target=\"_blank\" rel=\"noopener\">HeatSpring</a> · <a href=\"https://www.eia.gov/analysis/studies/buildings/equipcosts/pdf/full.pdf\" target=\"_blank\" rel=\"noopener\">EIA equipment costs</a> · <a href=\"https://www.datacentres.com/news/diesel-duty-cycles-and-dollars-inside-the-2-8m-per-mw-backup-power-stack-powerin-slot3-2026-09-03\" target=\"_blank\" rel=\"noopener\">Datacentres.com Research</a> · <a href=\"https://afdc.energy.gov/files/u/publication/alternative-fuel-price-report-april-2026\" target=\"_blank\" rel=\"noopener\">AFDC</a> · <a href=\"https://datacenter.uptimeinstitute.com/rs/711-RIA-145/images/2025.Annual.Survey.Report.pdf\" target=\"_blank\" rel=\"noopener\">Uptime Institute 2025 survey</a> · <a href=\"https://eta-publications.lbl.gov/sites/default/files/lbnl-1005775_v2.pdf\" target=\"_blank\" rel=\"noopener\">2016</a> · <a href=\"https://escholarship.org/uc/item/32d6m0d1\" target=\"_blank\" rel=\"noopener\">2024</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#budget\" target=\"_blank\" rel=\"noopener\">calc 17</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#water\" target=\"_blank\" rel=\"noopener\">calc 19, water</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#baseline\" target=\"_blank\" rel=\"noopener\">calc 20, the traditional baseline</a></span>"
+      "title": "Purchase the fixed campus hardware",
+      "why": "<p>Using the heavy reference reduces the number of people served for the same workload. It does not require purchasing a hypothetical fleet for all 400 million in this fixed-campus plan. The $30B five-year constraint still needs a complete cost review.</p>",
+      "html": "<p>338 compute racks × $7.8M ≈ $2.64B per datacenter; six sites cost about $15.82B for compute-rack purchase only. This is not the earlier similarly numbered whole-project budget.</p><p>Networking, context memory, buildings, land, cooling, grid access, backup, electricity and operations are additional. The $30B five-year constraint has not been revalidated.</p><p>The previous $231–242B extrapolation purchased compute racks to chase the whole population under this same workload. It is not the fixed-campus purchase plan.</p><p>The old total-cost, leftover-budget, savings and payback headlines are superseded. Measure usage and finish the engineering estimate before making a financial commitment.</p>",
+      "notes": "<span><strong>Planning basis</strong>20 questions and five agent tasks per person daily, with the heavy reference for the top model. Source peak rates, hardware transfer and cache behavior determine the estimate; this is not measured Claude performance.</span><span><strong>Original input references</strong><a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/price-of-nvidias-vera-rubin-nvl72-racks-skyrockets-to-as-much-as-usd8-8-million-apiece-but-server-makers-margins-will-be-tight-nvidia-is-moving-closer-to-shipping-entire-full-scale-systems\" target=\"_blank\" rel=\"noopener\">Tom&#x27;s Hardware</a> · <a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidias-memory-costs-soar-485-percent-latest-ai-systems-now-cost-usd7-8-million-to-build-memory-now-comprises-25-percent-of-the-total-cost-rubin-gpus-a-mere-usd50-000-apiece\" target=\"_blank\" rel=\"noopener\">Tom&#x27;s Hardware</a> · <a href=\"https://q.futunn.com/feed/116719391540004\" target=\"_blank\" rel=\"noopener\">Futu</a> · <a href=\"https://finance.biggo.com/news/vBOcuJ4BXp3ZLKjg3ZZf\" target=\"_blank\" rel=\"noopener\">BigGo</a> · <a href=\"https://www.coradvisors.net/2026/06/ai-data-center-development-costs-2026.html\" target=\"_blank\" rel=\"noopener\">CORE Advisors</a> · <a href=\"https://www.eia.gov/electricity/annual/html/epa_02_10.html\" target=\"_blank\" rel=\"noopener\">EIA Table 2.10</a> · <a href=\"https://www.blocksandfiles.com/flash/2026/04/08/vdura-says-30-tb-qlc-ssd-capacity-now-costs-226x-more-than-hdd/5214761\" target=\"_blank\" rel=\"noopener\">Blocks &amp; Files</a> · <a href=\"https://www.storagereview.com/news/enterprise-ssd-prices-run-at-6-5x-last-year-vdura-pegs-a-30tb-tlc-drive-at-22600\" target=\"_blank\" rel=\"noopener\">StorageReview</a> · <a href=\"https://blog.heatspring.com/?p=2516\" target=\"_blank\" rel=\"noopener\">HeatSpring</a> · <a href=\"https://www.eia.gov/analysis/studies/buildings/equipcosts/pdf/full.pdf\" target=\"_blank\" rel=\"noopener\">EIA equipment costs</a> · <a href=\"https://www.datacentres.com/news/diesel-duty-cycles-and-dollars-inside-the-2-8m-per-mw-backup-power-stack-powerin-slot3-2026-09-03\" target=\"_blank\" rel=\"noopener\">Datacentres.com Research</a> · <a href=\"https://afdc.energy.gov/files/u/publication/alternative-fuel-price-report-april-2026\" target=\"_blank\" rel=\"noopener\">AFDC</a> · <a href=\"https://datacenter.uptimeinstitute.com/rs/711-RIA-145/images/2025.Annual.Survey.Report.pdf\" target=\"_blank\" rel=\"noopener\">Uptime Institute 2025 survey</a> · <a href=\"https://eta-publications.lbl.gov/sites/default/files/lbnl-1005775_v2.pdf\" target=\"_blank\" rel=\"noopener\">2016</a> · <a href=\"https://escholarship.org/uc/item/32d6m0d1\" target=\"_blank\" rel=\"noopener\">2024</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#budget\" target=\"_blank\" rel=\"noopener\">calc 17</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#water\" target=\"_blank\" rel=\"noopener\">calc 19, water</a> · <a href=\"https://claude.ai/artifact/8ofePKB934K361bVkuPRN4#baseline\" target=\"_blank\" rel=\"noopener\">calc 20, the traditional baseline</a></span>"
     },
     "efficiency": {
-      "title": "Cooling efficiency still improves useful capacity",
-      "why": "<p>Efficient cooling still matters when every request uses the top model. It improves useful capacity, but does not remove the compute demand or establish a new project payback.</p>",
-      "html": "<p>For the same computer and networking load, 1 − 1.10 ÷ 1.44 = 23.6% less total facility power. This compares the SEED design allowance with the supplied large-datacenter PUE reference.</p><p>Under a fixed 500 MW limit, 500 ÷ 1.10 ≈ 455 MW reaches IT equipment versus 500 ÷ 1.44 ≈ 347 MW: about 31% more IT power available.</p><p>These are power ratios, not evidence that the full top-model workload fits. New dollar savings, water totals, cooling layouts and payback require a design and operating schedule for the actual fleet.</p>",
-      "notes": "<span><strong>Source</strong>Supplied budget: PUE 1.10 design allowance versus Uptime Institute 2025 large-site PUE 1.44.</span>"
+      "title": "Use the available electricity more effectively",
+      "why": "<p>Efficient cooling supports more useful computation within the same electrical limit. This is a power comparison, not a new dollar-saving or payback claim.</p>",
+      "html": "<p>For the same IT load, 1 − 1.10 ÷ 1.44 = 23.6% less facility power. At a fixed 500 MW, 500 ÷ 1.10 versus 500 ÷ 1.44 gives about 31% more power for IT.</p><p>Power is a rate; energy is power over time. One hour at the modeled 83.28 MW campus load uses 83.28 MWh. Actual daily and annual energy require an operating-load schedule, including idle demand.</p><p>The daily question and task counts stay fixed. The heavy model changes the chip time needed, while cooling, backup and boreholes still serve the same datacenter load.</p>",
+      "notes": "<span><strong>Source</strong>Supplied budget: PUE 1.10 design allowance versus large-site PUE 1.44. Daily and annual electricity require a load schedule; peak power is not an energy forecast.</span>"
     }
   },
   "modelEnergy": {
-    "source": "Top-model revision · case C inputs and benchmark references · rack assumptions from the supplied budget",
-    "defaultScenario": "heavy",
     "demand": {
-      "users": 400000000.0,
+      "targetUsers": 400000000.0,
       "promptsPerDay": 20,
       "agentTasksPerDay": 5,
+      "campuses": 6,
+      "fleetCapMW": 500,
+      "campusCapMW": 83.33333333333333,
       "outputPerSecond": 4.6,
       "inputPerSecond": 40.0,
+      "referenceContextReadsPerUserDay": 104000000.0,
       "prefillGain": 10.0,
       "gpusPerRack": 72,
       "rubinRackThroughputGain": 2.5,
       "computeRackKW": 210,
       "supportRackKW": 14,
       "pue": 1.1,
-      "capMW": 500,
-      "computeRackPriceMillion": 7.8,
-      "fullLoadHoursPerYear": 8760
+      "computeRackPriceMillion": 7.8
     },
-    "figures": {
-      "powerGW": "7.3–7.6",
-      "racks": "29,600–31,000",
-      "chipsMillion": "2.1–2.2",
-      "annualTWh": "64–67",
-      "purchaseB": "231–242",
-      "servedMillion": "26–27"
-    },
-    "comparison": [
-      [
-        "Compute racks for all 400M",
-        "910–1,020",
-        "29,600–31,000"
-      ],
-      [
-        "AI chips",
-        "66,000–73,000",
-        "2.1–2.2 million"
-      ],
-      [
-        "Total facility power at full load",
-        "224–251 MW",
-        "7.3–7.6 GW"
-      ],
-      [
-        "Electricity at that load all year",
-        "2.0–2.2 TWh",
-        "64–67 TWh"
-      ],
-      [
-        "Compute-rack purchase only",
-        "$7.1–7.9B",
-        "$231–242B"
-      ],
-      [
-        "Users’ workload within 500 MW",
-        "400 million",
-        "26–27 million"
+    "hardware": {
+      "racksPerCampus": 338,
+      "racksFleet": 2028,
+      "gpusPerCampus": 24336,
+      "gpusFleet": 146016,
+      "loadedCampusMW": 83.28320000000001,
+      "loadedFleetMW": 499.6992,
+      "computeRackPurchasePerCampusB": 2.6364,
+      "computeRackPurchaseFleetB": 15.8184,
+      "adjustedHeavyTokensPerGPUSecond": [
+        617.0294117647059,
+        645.6176470588235
       ]
-    ],
-    "scenarios": [
-      {
-        "id": "heavy",
-        "label": "Top model for everyone · baseline",
-        "mix": "Every question and agent task uses the Llama 3.1 405B heavy reference.",
-        "low": 1459,
-        "high": 1526,
-        "served": "6.6–6.9%",
-        "power": "7.3–7.6 GW",
-        "users": "26–27 million",
-        "meaning": "The baseline exceeds the 500 MW limit by about 15 times. Keeping that limit supports about 26–27 million users’ assumed workload, not all 400 million."
-      },
-      {
-        "id": "fast",
-        "label": "Fast models · comparison",
-        "mix": "Every question and agent task uses the gpt-oss-120b fast reference.",
-        "low": 45,
-        "high": 50,
-        "served": "100%",
-        "power": "224–251 MW",
-        "users": "400 million",
-        "meaning": "Comparison only. This changes model use and does not meet the top-model-for-every-request requirement."
-      },
-      {
-        "id": "mixed20",
-        "label": "20% of agent tasks on mid tier · comparison",
-        "mix": "Chat stays fast; agent tasks use 80% fast and 20% mid.",
-        "low": 52,
-        "high": 60,
-        "served": "100%",
-        "power": "262–301 MW",
-        "users": "400 million",
-        "meaning": "Comparison only. This changes model use and does not meet the top-model-for-every-request requirement."
-      },
-      {
-        "id": "mixed50",
-        "label": "50% of agent tasks on mid tier · comparison",
-        "mix": "Chat stays fast; agent tasks use 50% fast and 50% mid.",
-        "low": 64,
-        "high": 75,
-        "served": "100%",
-        "power": "319–375 MW",
-        "users": "400 million",
-        "meaning": "Comparison only. This changes model use and does not meet the top-model-for-every-request requirement."
-      },
-      {
-        "id": "premium",
-        "label": "Premium mix · comparison",
-        "mix": "Chat: 80% fast, 20% mid. Tasks: 60% fast, 30% mid, 10% heavy.",
-        "low": 167,
-        "high": 182,
-        "served": "55.0–59.7%",
-        "power": "837–909 MW",
-        "users": "220–239 million",
-        "meaning": "Comparison only. This changes model use and does not meet the top-model-for-every-request requirement."
-      }
-    ],
+    },
+    "baseline": {
+      "workPerUserAtPeak": 8.6,
+      "usersPerCampus": [
+        4365124.350205198,
+        4567369.493844049
+      ],
+      "usersFleet": [
+        26190746.101231188,
+        27404216.963064294
+      ],
+      "targetPercent": [
+        6.547686525307797,
+        6.851054240766073
+      ],
+      "facilityMWForTarget": [
+        7293.756295587648,
+        7631.69095020947
+      ],
+      "computeRacksForTarget": [
+        29601.28366715766,
+        30972.77171351246
+      ]
+    },
+    "perCampus": "4.37–4.57M",
+    "fleet": "26.19–27.40M",
+    "served": "6.55–6.85%",
+    "targetPowerGW": "7.3–7.6",
+    "source": "Same daily workload: 20 questions + 5 agent tasks. Case C peak rates: 4.6 output + 40 new input tokens/s per user. Heavy reference for the top model.",
     "models": [
       {
         "name": "Llama 3.1 405B",
-        "tier": "Baseline",
+        "tier": "Hardware proxy",
         "rate": [
           617,
           646
         ],
         "work": "~29–34×",
-        "description": "Provisional heavy reference. Largest in this study does not establish best answer quality."
+        "description": "Used for all capacity figures. Not a measurement of Claude Opus or a claim about which model is best."
       },
       {
         "name": "gpt-oss-120b",
-        "tier": "Fast",
+        "tier": "Benchmark context",
         "rate": [
           18760,
           21000
         ],
         "work": "1×",
-        "description": "Previous fast-model approach, retained only for comparison."
+        "description": "Retained to explain relative chip time; no requests are routed to this model in the plan."
       },
       {
         "name": "DeepSeek-R1",
-        "tier": "Mid",
+        "tier": "Hardware-gain reference",
         "rate": [
           8230,
           10023
         ],
         "work": "~2–3×",
-        "description": "Mid-tier comparison and source of the assumed Rubin hardware gain."
+        "description": "Source of the assumed Rubin throughput gain. Its cache sizing does not establish the heavy model’s memory needs."
       }
     ]
   },
@@ -1177,5 +1125,5 @@
   "whyURL": "https://claude.ai/artifact/65FXnUpGEvJaqCACavodDt",
   "sourceSHA256": "c1136f68381114b5023824d4ec62c8a79f43408c747a368342c1806ecfd67478",
   "designSHA256": "47fa08cecd17b8dbb43b55444a2503509a6806b27d2499ce39aa0e3d9b8646a1",
-  "planningRevision": "top-model-01"
+  "planningRevision": "fixed-workload-03"
 }

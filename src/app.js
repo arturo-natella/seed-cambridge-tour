@@ -109,8 +109,8 @@ function showCard(index,focus=false){
     const active=name===names[state.card],tab=$('#tab-'+name),panel=$('#panel-'+name);tab.hidden=!names.includes(name);tab.setAttribute('aria-selected',String(active));tab.tabIndex=active?0:-1;panel.hidden=!active;if(active)panel.scrollTop=0;if(active&&focus)tab.focus();
   }
   $('#story').classList.toggle('is-reading',state.card!==0);
-  const specialTitles={energy:'Model choice changes power',geothermal:'The ground cools a sealed fluid loop',freeze:'How the cooling system handles winter'};
-  const specialSources={energy:'Top-model baseline · revised sizing',geothermal:'Calc 09 · closed-loop design',freeze:'Handoff §5 · freeze protection'};
+  const specialTitles={energy:'How many people fit?',geothermal:'The ground cools a sealed fluid loop',freeze:'How the cooling system handles winter'};
+  const specialSources={energy:'Same workload · heavy-model capacity',geothermal:'Calc 09 · closed-loop design',freeze:'Handoff §5 · freeze protection'};
   $('#headline').textContent=state.card===3?specialTitles[names[3]]:state.card===2?content.objects[state.object].name:content.bubbles[state.index].headline;
   $('#source').textContent=state.card===3?specialSources[names[3]]:state.card===2?'SEED basis of design':content.bubbles[state.index].source;
   $('#card-count').textContent=`${state.card+1} / ${count}`;$('#story').scrollTop=0;
@@ -123,42 +123,46 @@ $('#show-energy').addEventListener('click',()=>showCard(3));
 $('#show-system').addEventListener('click',()=>showCard(3));
 function renderEnergy(){
   const e=content.modelEnergy;
-  $('#panel-energy').innerHTML=`<p class="energy-intro"><b>Our baseline: the top model for every request.</b> Llama 3.1 405B is our provisional heavy reference for sizing.</p>
-    <ol class="energy-chain" aria-label="How model choice affects energy"><li>Model + workload</li><li>Chip time + racks</li><li>Electricity + heat</li></ol>
-    <label for="energy-scenario" class="field-label">Same workload. Baseline and alternatives.</label>
-    <select id="energy-scenario">${e.scenarios.map(s=>`<option value="${esc(s.id)}" ${s.id===e.defaultScenario?'selected':''}>${esc(s.label)}</option>`).join('')}</select>
-    <div id="energy-result" class="energy-result" aria-live="polite" aria-atomic="true"></div>
-    <details class="design-details"><summary>What changed from the fast-model plan?</summary>
-      <div class="energy-comparison"><table><caption>Resources for the same 400-million-user workload</caption><thead><tr><th scope="col">Measure</th><th scope="col">Fast comparison</th><th scope="col">Heavy baseline</th></tr></thead><tbody>${e.comparison.map(row=>`<tr><th scope="row">${esc(row[0])}</th><td>${esc(row[1])}</td><td>${esc(row[2])}</td></tr>`).join('')}</tbody></table></div>
-      <p><b>The $231–242B figure buys compute racks only.</b> It uses the existing $7.8M-per-rack price assumption. Buildings, networking, context memory, electricity and other costs are additional. A new five-year total and payback have not been established.</p>
-      <p>The corrected direct rack conversion raises the old fast-model rack estimate by about 4%. Both columns now use the same 210 kW compute rack, 14 kW support allowance and 1.10 PUE.</p>
-      <p>Annual electricity assumes the calculated full load for all 8,760 hours, before solar. Actual annual use needs a workload schedule.</p>
+  $('#panel-energy').innerHTML=`<p class="energy-intro"><b>Same workload. Top model for every call.</b> Each person has 20 questions and five agent tasks daily. A task may make several AI calls.</p>
+    <ol class="energy-chain" aria-label="How model choice affects capacity"><li>Heavy model</li><li>More chip time</li><li>Fewer people fit</li></ol>
+    <div id="energy-result" class="energy-result"><p class="energy-mix">20 questions + 5 agent tasks per person daily</p><div class="energy-figures"><div><strong>${esc(e.perCampus)}</strong><span>users’ workload per datacenter</span></div><div><strong>${esc(e.fleet)}</strong><span>users’ workload across six sites</span></div></div><p>About ${esc(e.served)} of the 400M target. This is the population whose assumed workload fits at the source peak rates, not a count of simultaneous conversations.</p><p><b>Power stays fixed:</b> about 83.3 MW per datacenter, including networking and storage support, and cooling.</p><small>Illustrative capacity before reliability reserves and long-context bottlenecks. The heavy reference stands in for the top model; it is not measured Claude capacity.</small></div>
+    <details class="design-details"><summary>What workload are we keeping?</summary>
+      <p><b>20 questions and five agent tasks per person daily.</b> A task can use multiple AI calls, file reads, tool results and retries. Five tasks does not mean only five model calls.</p>
+      <p>The source case C peak rates stay at <b>4.6 output and 40 new input tokens/second per user</b>. Those rates already represent the modeled questions and tasks. Multiplying them by 20 or five again would double-count the work.</p>
+      <p>These are population-normalized peak sizing rates. They are not continuous daily generation rates or a promise that every person is actively generating at once. No eight-hour session, shift multiplier or quota-wait discount is used.</p>
     </details>
-    <details class="design-details"><summary>How the three reference models compare</summary>
-      <p class="energy-note">Llama 3.1 405B is the heaviest reference in this study and a provisional stand-in for the top-model requirement. Fast and mid tiers are comparisons only.</p>
-      <div class="energy-models">${e.models.map(m=>`<article><div><span>${esc(m.tier)} reference</span><h3>${esc(m.name)}</h3></div><b>${esc(m.work)}<small>chip time*</small></b><p>${esc(m.description)}</p><small>${m.rate.map(n=>n.toLocaleString('en-US')).join('–')} output tokens/second per GB300 chip, after the project’s prompt adjustment.</small></article>`).join('')}</div>
-      <p class="energy-note">*Relative chip time for the same token load, with fast = 1×. A token is a small piece of text. These benchmark ratios do not establish equal answer quality, response time or measured energy per token.</p>
+    <details class="design-details"><summary>How model use turns into electricity</summary>
+      <p>Each AI call asks chips to process the input and generate output. The heavy reference processes fewer tokens per chip per second, so the same workload occupies more chips or takes more time.</p>
+      <p>Those chips draw electrical power while working. At a fixed hardware and power limit, using more chip time per person leaves capacity for fewer people. The computers’ electrical energy becomes heat that the cooling system carries away.</p>
+      <p>The heavy reference handles every question and every call inside an agent task. We do not route part of the workload to a smaller model to make the headcount fit.</p>
     </details>
-    <details class="design-details"><summary>Follow the calculation and assumptions</summary>
-      <ol class="energy-calculation"><li><b>Keep the workload.</b> 400 million people, each with 20 chat questions and five agent tasks daily. A task may make several AI calls. Peak rates remain 4.6 output and 40 new input tokens/second per user.</li><li><b>Account for input processing.</b> At the assumed 10× input-processing speed: 400 million × (4.6 + 40 ÷ 10) = <b>3.44 billion output-equivalent tokens/second</b>.</li><li><b>Use the heavy-reference speed.</b> Divide by about 617–646 tokens/second per GB300 GPU: <b>5.3–5.6 million GB300-equivalent chips</b>.</li><li><b>Convert directly to the proposed racks.</b> Divide by 72 chips and the assumed <b>2.5× throughput per Rubin rack</b>: about <b>29,600–31,000 racks</b>, or 2.1–2.2 million Rubin chips.</li><li><b>Include the support systems.</b> Racks × (210 + 14) kW × 1.10 = <b>7.3–7.6 GW</b>. The 14 kW covers networking and storage support; 1.10 allows for cooling and other facility overhead.</li><li><b>Apply the cap.</b> 400 million × 500 MW ÷ required MW = <b>26–27 million users’ workload</b>. This is a capacity estimate before reliability reserves, not a validated service guarantee.</li></ol>
-      <div class="assumption"><strong>We assume…</strong><p>The adjusted benchmark speed carries over to this workload; the 2.5× per-rack gain reported for DeepSeek-R1 also applies to the heavy model; rack power averages 210 kW at full load; support uses 14 kW per rack; and PUE is 1.10. These inputs require validation.</p></div>
-      <p>Cached context is already assumed. We add no extra discount for batching, caching or the fraction of people online. The study removes each benchmark’s prompt-processing component before adding this workload’s input.</p>
-      <p>The old 2.3 EB cache estimate belongs to DeepSeek-R1. The heavy model’s cache size, bandwidth, support power and cost still need to be calculated. Long documents, cache misses, reasoning, response-time targets and failed equipment can reduce capacity.</p>
+    <details class="design-details"><summary>Follow the capacity calculation</summary>
+      <ol class="energy-calculation">
+        <li><b>Keep the power fixed.</b> Six campuses share 500 MW, about 83.3 MW each. One rack plus support needs (210 + 14) kW × 1.10 = 246.4 kW of facility power.</li>
+        <li><b>Fit whole rack pairs.</b> Round down 83,333 kW ÷ 246.4 kW: 338 active pairs per campus, using about 83.28 MW. Six sites hold 2,028 pairs and use 499.70 MW.</li>
+        <li><b>Keep the source workload.</b> With input processing assumed 10× faster than output generation: 4.6 + 40 ÷ 10 = <b>8.6 output-equivalent tokens/s per user at peak</b>.</li>
+        <li><b>Estimate rack throughput.</b> Llama 3.1 405B provides about 617–646 adjusted tokens/s per GB300 GPU. Multiply by 72 GPUs and the assumed 2.5× Rubin gain per rack, transferred from an R1 result.</li>
+        <li><b>Divide capacity by work per user.</b> 338 × 72 × 2.5 × 617–646 ÷ 8.6 ≈ <b>4.37–4.57 million users’ workload per datacenter</b>. Six sites support about 26.2–27.4 million.</li>
+      </ol>
+      <p>The range reflects benchmark endpoints, not all uncertainty. The hardware gain, efficient context reuse, PUE 1.10, memory bandwidth and response-time requirements need validation. No reliability reserve is included.</p>
+      <p>Llama 3.1 405B does not establish Claude Opus throughput or best-model quality. It is the heavy reference used to stand in for the top model.</p>
     </details>
-    <details class="design-details"><summary>How this relates to cooling and the campus</summary>
-      <p>The shown Cambridge campus is part of the original six-site, 500 MW concept. Each site has a ~83 MW allowance including about 75 MW for computers and networking. The drawing is not a 7.3–7.6 GW expansion design.</p>
-      <p>The 368 racks shown fit at the lower 190 kW compute-rack assumption. At the 210 kW midpoint plus support and cooling, about 338 active rack pairs fit per campus. Actual demand depends on workload and utilization.</p>
-      <p><b>Model choice sets the computer work.</b> At PUE 1.10, 1 MW used by IT requires about 1.1 MW at the site. Almost all of that computer electricity becomes heat, carried away by the cooling system.</p>
-      <p><b>Power is the rate; energy is power over time.</b> Running at 1 MW for one hour uses 1 MWh. Annual electricity use also needs a workload schedule. The 64–67 TWh figure assumes the full expanded load continuously for a year.</p>
-      <p>Efficient cooling still helps: PUE 1.10 needs about 24% less total power than PUE 1.44 for the same IT load. It does not remove the top-model capacity gap.</p>
+    <details class="design-details"><summary>Why task count is not the same as data usage</summary>
+      <p>A typed question is only part of an AI call. Code files, conversation history and tool results can return on later calls. An agent may repeat this process several times within one task.</p>
+      <p>The study’s case C lists about 104 million context reads per person daily, separately from the 40 new input tokens/s peak rate. Repeated context is not the same as new input, stored-file size or internet-download volume.</p>
+      <p>The baseline assumes effective context reuse. Cache hits still need attention, memory and bandwidth; cache misses need more input processing. These costs are not fully sized and can lower usable capacity. Peak rates alone cannot establish daily input or output token totals.</p>
     </details>
-    <p class="reference-source">${esc(e.source)}. User-approved revision, October 18, 2026. Planning estimates; the complete calculation is explained here.</p>`;
-  $('#energy-scenario').addEventListener('change',()=>{renderEnergyScenario();const panel=$('#panel-energy'),bounds=panel.getBoundingClientRect(),figures=$('#energy-result .energy-figures').getBoundingClientRect();if(figures.bottom>bounds.bottom||figures.top<bounds.top)panel.scrollTop+=$('#energy-result').getBoundingClientRect().top-bounds.top;});renderEnergyScenario();
-}
-function renderEnergyScenario(){
-  const s=content.modelEnergy.scenarios.find(s=>s.id===$('#energy-scenario').value);
-  const overflow=s.high>100;
-  $('#energy-result').innerHTML=`<p class="energy-mix">${esc(s.mix)}</p><div class="energy-figures"><div><strong>${esc(s.power)}</strong><span>power needed for all 400 million</span></div><div><strong>${esc(s.users.replace(' million','M'))}</strong><span>users’ workload within 500 MW</span></div></div><div class="energy-meter ${overflow?'over-cap':''}" role="img" aria-label="${s.low} to ${s.high} percent of the 500 MW total facility power limit. ${overflow?'Exceeds the limit; bar stops at 100 percent.':'100 percent fills the bar.'}"><span style="width:${Math.min(s.low,100)}%"></span><i style="left:${Math.min(s.low,100)}%;width:${Math.max(0,Math.min(s.high,100)-Math.min(s.low,100))}%"></i></div><div class="energy-scale"><span>0</span><span>${overflow?'Above 500 MW →':'500 MW limit'}</span></div><p class="energy-share">${s.low}–${s.high}% of the power limit · ${esc(s.served)} of demand served within it.</p><p>${esc(s.meaning)}</p><small>Whole-fleet power includes compute, networking and storage support, and cooling. Before solar. Modeled capacity, not measured electricity use.</small>`;
+    <details class="design-details"><summary>Power, energy and the 400-million target</summary>
+      <p><b>Power is the rate; energy is power over time.</b> Running at 1 MW for one hour uses 1 MWh. At the modeled campus load, one hour uses about 83.28 MWh. Actual daily and annual electricity use needs an operating-load schedule, including idle demand.</p>
+      <p>Meeting the whole 400M target with this same workload and heavy reference would require about <b>${esc(e.targetPowerGW)} GW</b> of facility power in the extrapolated model. That exceeds the 500 MW design limit. Keeping the datacenters fixed means serving the smaller population shown above.</p>
+      <p>The Blender design has 368 rack positions, which fit the lower 190 kW case. At the 210 kW midpoint, 338 active rack pairs fit each site. Cooling and backup still serve the same datacenter load.</p>
+      <p><b>Compute-rack purchase:</b> 338 × $7.8M ≈ $2.64B per campus; six sites ≈ $15.82B. Buildings, networking, context memory, electricity and operations are additional. This is not a five-year project total, and the $30B constraint still needs a complete budget review.</p>
+    </details>
+    <details class="design-details"><summary>Which models inform the estimate?</summary>
+      <p class="energy-note">The heavy reference supplies all capacity figures. The other models provide benchmark context, not a routing plan.</p>
+      <div class="energy-models">${e.models.map(m=>`<article><div><span>${esc(m.tier)}</span><h3>${esc(m.name)}</h3></div><b>${esc(m.work)}<small>relative chip time*</small></b><p>${esc(m.description)}</p><small>${m.rate.map(n=>n.toLocaleString('en-US')).join('–')} adjusted output tokens/s per GB300 GPU.</small></article>`).join('')}</div>
+      <p class="energy-note">*Same token load, fast reference = 1×. These ratios do not establish equal answer quality, response time or measured energy per token.</p>
+    </details><p class="reference-source">${esc(e.source)} Estimates require workload and hardware validation.</p>`;
 }
 renderEnergy();
 function renderGeothermal(){
@@ -216,7 +220,7 @@ function renderCard(){
   const b=content.bubbles[state.index];$('#card-kicker').textContent=state.index===0?'SEED / THE IDEA':state.index>10?'SEED / '+(state.index===11?'THE BUDGET':'THE COMPARISON'):`${String(state.index).padStart(2,'0')} / ${titleAt(state.index)}`;
   $('#headline').textContent=b.headline;$('#bullets').replaceChildren(...b.bullets.map(t=>{const li=document.createElement('li');li.textContent=t;return li;}));
   $('#number').textContent=b.number;$('#number').classList.toggle('long',b.number.length>11);$('#unit').textContent=b.unit;
-  $('#assumption').hidden=!b.assumption;$('#assumption p').textContent=b.assumption.replace(/^…/,'');$('#source').textContent=b.source;
+  $('#assumption').hidden=!b.assumption||Boolean(b.hideOverviewAssumption);$('#assumption p').textContent=b.assumption.replace(/^…/,'');$('#source').textContent=b.source;
   $('#reference-models').hidden=!b.referenceModels;$('#story').classList.toggle('has-references',!!b.referenceModels);
   $('#story').classList.toggle('has-four-cards',cardCount()===4);
   $('#show-system').hidden=!['geothermal','freeze'].includes(specialCard());$('#show-system').textContent=specialCard()==='geothermal'?'How ground cooling works →':'How we prevent freezing →';

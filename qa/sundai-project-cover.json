@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "fonts": true,
+  "overflow": false,
+  "images": true,
+  "width": 2000,
+  "height": 1125,
+  "source": "Existing Blender master rendered with blender/render_project_cover.py; Inter and approved Amaru SVG composed without changing geometry",
+  "files": [
+    "stills/Sundai-project.png",
+    "stills/Sundai-project.jpg"
+  ]
+}
