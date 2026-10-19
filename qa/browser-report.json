@@ -509,8 +509,8 @@
   "performance": {
     "medianMs": 16.69999999999709,
     "p95Ms": 16.70000000001164,
-    "drawCalls": 195,
-    "triangles": 922040
+    "drawCalls": 190,
+    "triangles": 924728
   },
   "passed": true
 }

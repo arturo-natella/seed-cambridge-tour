@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-18T22:44:14.470456+00:00",
-  "scene_revision": "seed-cambridge-03",
+  "scene_revision": "seed-cambridge-04",
   "source_handoff_sha256": "c1136f68381114b5023824d4ec62c8a79f43408c747a368342c1806ecfd67478",
   "basis_of_design_sha256": "47fa08cecd17b8dbb43b55444a2503509a6806b27d2499ce39aa0e3d9b8646a1",
-  "blender_model_sha256": "73c6ed51fef690c5b2fccd7a175d31b887e0a55a676b597917130b70a1d77152",
-  "glb_sha256": "a30095da1136779145a2ccb389a93b96cbd5a76bd354d38d56c6a95aac0a92d7",
+  "blender_model_sha256": "00000ce5608481d2336f79d0db90c3dfdb85d66c720b426f20baf8a7c15378ed",
+  "glb_sha256": "dc65a3c58bc50ae161d1f2b085ab2339d383e79d920ebcf68937d4b926319fbe",
   "render_engine": "Blender Cycles",
   "stills": {
     "S1": {
@@ -12,95 +12,106 @@
       "description": "Southwest autumn campus aerial",
       "width": 3840,
       "height": 2160,
-      "sha256": "832c20c845345f614ade09be7803f375c9c6364bb667f5038300850fe755ed44"
+      "sha256": "832c20c845345f614ade09be7803f375c9c6364bb667f5038300850fe755ed44",
+      "scene_revision": "seed-cambridge-03"
     },
     "S2": {
       "path": "stills/S2.png",
       "description": "Northeast winter campus aerial",
       "width": 3840,
       "height": 2160,
-      "sha256": "1909508eae3a931f9231b023526bba4badc12ac263a0c9114b1878642ea75b1f"
+      "sha256": "1909508eae3a931f9231b023526bba4badc12ac263a0c9114b1878642ea75b1f",
+      "scene_revision": "seed-cambridge-03"
     },
     "S3-detail": {
       "path": "stills/S3-detail.png",
       "description": "Hall interior detail from the same master",
       "width": 3840,
       "height": 2160,
-      "sha256": "c1197c11eb95703cf6b3b4d6e2759b5970a2cec68d4d0a929c0e15d2fe6d273c"
+      "sha256": "c1197c11eb95703cf6b3b4d6e2759b5970a2cec68d4d0a929c0e15d2fe6d273c",
+      "scene_revision": "seed-cambridge-03"
     },
     "S3": {
       "path": "stills/S3.png",
       "description": "North-south mesh section, with 150 m borehole depth and interior inset",
       "width": 3840,
       "height": 2160,
-      "sha256": "dc6323a9c0cc2514101578ffe75c3b62d4953834d2ad7488a32bd13fefde304e"
+      "sha256": "dc6323a9c0cc2514101578ffe75c3b62d4953834d2ad7488a32bd13fefde304e",
+      "scene_revision": "seed-cambridge-03"
     },
     "S4": {
       "path": "stills/S4.png",
       "description": "Orthographic north-up campus plan",
       "width": 3840,
       "height": 2160,
-      "sha256": "0b88ca3748a3f4024007e5b7347bcf82e34fff99bf941feb47a1f0a6ffb7a419"
+      "sha256": "0b88ca3748a3f4024007e5b7347bcf82e34fff99bf941feb47a1f0a6ffb7a419",
+      "scene_revision": "seed-cambridge-03"
     },
     "Power-detail": {
       "path": "stills/Power-detail.png",
       "description": "Battery cabinets to UPS and distribution, busways and rack drops",
       "width": 3840,
       "height": 2160,
-      "sha256": "329ad5e4d23b8ed145c0ff6aafc492b8479b2c70e846e1695c12d0902add1c1f"
+      "sha256": "329ad5e4d23b8ed145c0ff6aafc492b8479b2c70e846e1695c12d0902add1c1f",
+      "scene_revision": "seed-cambridge-03"
     },
     "Freeze-detail": {
       "path": "stills/Freeze-detail.png",
       "description": "Warm-fluid bypass and distinct indoor drain route",
       "width": 3840,
       "height": 2160,
-      "sha256": "f3b20b4241604a254a03d94b5592e8ca5842db95f647197fe640dc31bc3da4ab"
+      "sha256": "f3b20b4241604a254a03d94b5592e8ca5842db95f647197fe640dc31bc3da4ab",
+      "scene_revision": "seed-cambridge-03"
     },
     "Cooler-detail": {
       "path": "stills/Cooler-detail.png",
       "description": "Inlet and outlet isolation valves and outlet freeze sensor",
       "width": 3840,
       "height": 2160,
-      "sha256": "a5175d94d983830e5d3f93e84b59c354b5aa1b28d8ed3cd46d5c87dddcbd8aa8"
+      "sha256": "a5175d94d983830e5d3f93e84b59c354b5aa1b28d8ed3cd46d5c87dddcbd8aa8",
+      "scene_revision": "seed-cambridge-03"
     },
     "Drain-detail": {
       "path": "stills/Drain-detail.png",
       "description": "Two indoor drain-down tanks and four expansion tanks",
       "width": 3840,
       "height": 2160,
-      "sha256": "52dc34e676517c6d1c47961309496d2ab6ad0d2b8ccf436cebd40caf51dfcae1"
+      "sha256": "52dc34e676517c6d1c47961309496d2ab6ad0d2b8ccf436cebd40caf51dfcae1",
+      "scene_revision": "seed-cambridge-03"
     },
     "FreshAir-detail": {
       "path": "stills/FreshAir-detail.png",
       "description": "Fresh-air drying coil, pan and condensate drain",
       "width": 3840,
       "height": 2160,
-      "sha256": "0f7b30c83ed06fc360ca9d2d06f915ab48781f63646c95934b9efbb61795c17d"
+      "sha256": "0f7b30c83ed06fc360ca9d2d06f915ab48781f63646c95934b9efbb61795c17d",
+      "scene_revision": "seed-cambridge-03"
     }
   },
-  "web_source_notes": "Eight active coding hours per person daily on the top model, with no fixed daily question or task allowance. The supplied developer rates of 28 output and 333 new input tokens/s are explicitly assumed throughout active hours; this is not measured Claude usage. One overlapping daily cohort gives an illustrative 610–640k users per campus. The six-campus 500 MW design remains fixed. The requested main-card assumption block is hidden; detailed assumptions remain in AI & energy. A Sundai cover uses a fresh render of the unchanged Blender master. All visible cards, equipment records and design details were audited for superseded annual results. Solar generation and weather availability are separate from operating hours. The hall description clarifies enclosed mineral-wool panels.",
+  "web_source_notes": "Eight active coding hours per person daily on the top model, with no fixed daily question or task allowance. The supplied developer rates of 28 output and 333 new input tokens/s are explicitly assumed throughout active hours; this is not measured Claude usage. One overlapping daily cohort gives an illustrative 610\u2013640k users per campus. The six-campus 500 MW design remains fixed. The requested main-card assumption block is hidden; detailed assumptions remain in AI & energy. A Sundai cover uses a fresh render of the unchanged Blender master. All visible cards, equipment records and design details were audited for superseded annual results. Solar generation and weather availability are separate from operating hours. The hall description clarifies enclosed mineral-wool panels. All 816 dry-cooler and 42 chiller fans animate from Blender-authored rotors. Winter motion is illustrative; real controls can stop fans. The winter card explains heat transport in liquid and the uncalculated worst-case cold-snap heat balance.",
   "web_assets_sha256": {
-    "index.html": "ee06fdf33751755021fa15683bd74c553658a980d5e9023b3ddffac6276ecfcc",
-    "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
+    "index.html": "f312df2b6673914a246efd52ef7b3d70c2865bc845cfdb6ea8ba10b807880714",
+    "src/app.js": "10b942d1c69bafb37bd3a265e2ce882153c23370b85e9bde66ff221a925da726",
     "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-    "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
+    "assets/content.json": "3797193e1796851b320439f4b8816a1bcbe0412da136833050b043d47e097386",
     "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
     "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
-    "README.md": "ca14384a1f792038b5fa6aec4da03d1233e29e4b89bbd26b5052c940e6ce8c7a",
+    "README.md": "e2f3106b92963c56d67ec2f268f32e9d03cab4f5c5872cf83448e8d2a0d7e05a",
     "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
-    "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
+    "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb",
+    "assets/campus.glb": "dc65a3c58bc50ae161d1f2b085ab2339d383e79d920ebcf68937d4b926319fbe"
   },
   "authoring_sha256": {
-    "blender/build_scene.py": "c226ffe26d3024dce0ef6265fd7f692bb525b74fb50c18c9cc757aede7daab1b",
-    "blender/layout.json": "6e8d4b91ed525cfe6dad590efa247fea62302851c3d6d0870bc4136739c0ce56",
+    "blender/build_scene.py": "c2642790e429d18d5ba28dbd5f7facad9c2a84875bb45cd54e1c0be210129a16",
+    "blender/layout.json": "f6ad04d2cd8821565264f6e319e104e6125d8e27eae6802079338465e0c27a49",
     "blender/render_stills.py": "3db8e3a38321916787559c0414c70b1e1610e97c5716e12ae8ce9b99e55f5488",
-    "blender/verify_model.py": "ca7d0d495ffa43d5e02a45feaf5d713343c5da335ceaaa04e8d9a1d303416d85",
-    "blender/connections.json": "00c012dd18511c11ca569644c59841f9b6606398b97b05567e2428c027feef20",
-    "blender/viewer-anchors.json": "fe3a74bd4df2bea4d30f2e751acd1c464785738f90eef83f5238a90d1b8fb7e6",
+    "blender/verify_model.py": "e56835c7fa9e8fc64c42ec9460b05c3920ed303436bcbf1cf8a542439b16f4bb",
+    "blender/connections.json": "dd595a65f090922d99655d0877e0c9c55ee185daa05be5a77ff75e938b3907b5",
+    "blender/viewer-anchors.json": "33d695f66cd908c849dc618a7b055af77a58b56bbcee516779c2bfbbd480526e",
     "scripts/import-content.py": "5cafa057527d197f277e6c0b42c6e19d82ac07446595adfa79c04aea73c316b2",
     "scripts/build-model.mjs": "44d74f528c77fed507c1ea83863362e3571384bfa2e16825f61281b349a7e176",
     "scripts/render-stills.mjs": "874f65fbc26d9f3a68939ed5e2f9538738290c492c1116e5266cd30e0d6d3366",
-    "scripts/top_model_baseline.py": "06cbe142ae805efd07f965e39c3946c0d129b0d9c451cdc72feba062c093f218",
+    "scripts/top_model_baseline.py": "c2804c04c8140479f935016a953c90d473d8ee6440c552b862ec010fe25d01a6",
     "scripts/build-site.mjs": "0e215bfa76bbad7291ac9807b78479137a4c990e458129f3df4e3211f4aa8b32",
     "blender/render_project_cover.py": "ce3fe1bfc51eb2d433bd37fbaabcc627da1df951ef70d69f48b49ab7f84892fb",
     "scripts/render-project-cover.mjs": "269236664a2f634429acde8a3f400621274a50d742a0246874af0fb091af20c0",
@@ -110,18 +121,19 @@
     "browser": {
       "report": "qa/browser-report.json",
       "passed": true,
-      "sha256": "9583e244a5aaed6773e3a5ad9e722fbe14ae9b2eeb33b4d8bab9c2454e60f87b",
+      "sha256": "f43b889025bfde19fc62cb718879fcbe2db8b8fd375b2e36a3278f216e1c9084",
       "checks": 487,
       "verified_web_assets_sha256": {
-        "index.html": "ee06fdf33751755021fa15683bd74c553658a980d5e9023b3ddffac6276ecfcc",
-        "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
+        "index.html": "f312df2b6673914a246efd52ef7b3d70c2865bc845cfdb6ea8ba10b807880714",
+        "src/app.js": "10b942d1c69bafb37bd3a265e2ce882153c23370b85e9bde66ff221a925da726",
         "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-        "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
+        "assets/content.json": "3797193e1796851b320439f4b8816a1bcbe0412da136833050b043d47e097386",
         "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
         "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
-        "README.md": "ca14384a1f792038b5fa6aec4da03d1233e29e4b89bbd26b5052c940e6ce8c7a",
+        "README.md": "e2f3106b92963c56d67ec2f268f32e9d03cab4f5c5872cf83448e8d2a0d7e05a",
         "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
-        "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
+        "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb",
+        "assets/campus.glb": "dc65a3c58bc50ae161d1f2b085ab2339d383e79d920ebcf68937d4b926319fbe"
       }
     },
     "carousel_layout": {
@@ -130,15 +142,16 @@
       "sha256": "de25144164efba459d19afc3f5538790c4f03b49268f0a8ac762a617602f6203",
       "checks": 57,
       "verified_web_assets_sha256": {
-        "index.html": "ee06fdf33751755021fa15683bd74c553658a980d5e9023b3ddffac6276ecfcc",
-        "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
+        "index.html": "f312df2b6673914a246efd52ef7b3d70c2865bc845cfdb6ea8ba10b807880714",
+        "src/app.js": "10b942d1c69bafb37bd3a265e2ce882153c23370b85e9bde66ff221a925da726",
         "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-        "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
+        "assets/content.json": "3797193e1796851b320439f4b8816a1bcbe0412da136833050b043d47e097386",
         "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
         "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
-        "README.md": "ca14384a1f792038b5fa6aec4da03d1233e29e4b89bbd26b5052c940e6ce8c7a",
+        "README.md": "e2f3106b92963c56d67ec2f268f32e9d03cab4f5c5872cf83448e8d2a0d7e05a",
         "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
-        "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
+        "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb",
+        "assets/campus.glb": "dc65a3c58bc50ae161d1f2b085ab2339d383e79d920ebcf68937d4b926319fbe"
       }
     },
     "model_energy": {
@@ -147,15 +160,16 @@
       "sha256": "7016882a8264d99163ebcd0f1b5ff49cc444be3159bf00ef391eaf882490fc3e",
       "checks": 297,
       "verified_web_assets_sha256": {
-        "index.html": "ee06fdf33751755021fa15683bd74c553658a980d5e9023b3ddffac6276ecfcc",
-        "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
+        "index.html": "f312df2b6673914a246efd52ef7b3d70c2865bc845cfdb6ea8ba10b807880714",
+        "src/app.js": "10b942d1c69bafb37bd3a265e2ce882153c23370b85e9bde66ff221a925da726",
         "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-        "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
+        "assets/content.json": "3797193e1796851b320439f4b8816a1bcbe0412da136833050b043d47e097386",
         "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
         "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
-        "README.md": "ca14384a1f792038b5fa6aec4da03d1233e29e4b89bbd26b5052c940e6ce8c7a",
+        "README.md": "e2f3106b92963c56d67ec2f268f32e9d03cab4f5c5872cf83448e8d2a0d7e05a",
         "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
-        "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
+        "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb",
+        "assets/campus.glb": "dc65a3c58bc50ae161d1f2b085ab2339d383e79d920ebcf68937d4b926319fbe"
       },
       "copy_audit": {
         "auditedStrings": 599,
@@ -163,37 +177,38 @@
           "/20 questions/i",
           "/five agent tasks/i",
           "/20-question/i",
-          "/4\\.37[–-]4\\.57/",
-          "/26\\.2[–-]27\\.4/",
-          "/30[–-]40%/",
-          "/650[–-]1,130/",
+          "/4\\.37[\u2013-]4\\.57/",
+          "/26\\.2[\u2013-]27\\.4/",
+          "/30[\u2013-]40%/",
+          "/650[\u2013-]1,130/",
           "/1,580 MWh/",
           "/4,250 MWh/",
           "/4\\.4 TWh/",
-          "/86,000[–-]97,000/",
+          "/86,000[\u2013-]97,000/",
           "/under 1% of (?:a|the) site/",
           "/0\\.2% of the site/",
-          "/231[–-]242B/",
-          "/3[–-]7 weeks/",
-          "/3,600 m³/"
+          "/231[\u2013-]242B/",
+          "/3[\u2013-]7 weeks/",
+          "/3,600 m\u00b3/"
         ]
       }
     },
     "thermal_design": {
       "report": "qa/thermal-design-report.json",
       "passed": true,
-      "sha256": "a8aee8a92e47e11c39e78274140a9454169ee20f37cdb424be0330db645a0d4b",
-      "checks": 176,
+      "sha256": "53443f76b8bc80876b4127ff3ba76ae986d9bb62c621f09e351c9672b33f93a7",
+      "checks": 194,
       "verified_web_assets_sha256": {
-        "index.html": "ee06fdf33751755021fa15683bd74c553658a980d5e9023b3ddffac6276ecfcc",
-        "src/app.js": "2376a52d8e686a99d4028a77dcff92142f5d6026b59fb0b67c4c6686ddd58a16",
+        "index.html": "f312df2b6673914a246efd52ef7b3d70c2865bc845cfdb6ea8ba10b807880714",
+        "src/app.js": "10b942d1c69bafb37bd3a265e2ce882153c23370b85e9bde66ff221a925da726",
         "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
-        "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
+        "assets/content.json": "3797193e1796851b320439f4b8816a1bcbe0412da136833050b043d47e097386",
         "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
         "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
-        "README.md": "ca14384a1f792038b5fa6aec4da03d1233e29e4b89bbd26b5052c940e6ce8c7a",
+        "README.md": "e2f3106b92963c56d67ec2f268f32e9d03cab4f5c5872cf83448e8d2a0d7e05a",
         "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
-        "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb"
+        "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb",
+        "assets/campus.glb": "dc65a3c58bc50ae161d1f2b085ab2339d383e79d920ebcf68937d4b926319fbe"
       }
     },
     "rendering_clarity": {
@@ -216,23 +231,26 @@
     "model_measurements": {
       "report": "qa/model-measurements.json",
       "passed": true,
-      "checks": 66,
-      "sha256": "b87f6a118a077a13682e85794998839a9c0e860016e545a2ea3c37ca77fa8821"
+      "checks": 76,
+      "sha256": "7caba44d323f9935a1a84bad6fade6ff65dc42bcab32580b5f316c0c88928cf2"
     },
     "model_connectivity": {
       "report": "qa/model-connectivity.json",
-      "sha256": "86af65ce57717ed61cb6e80c08a728dd7d941c33bff1f48828e5c8898c4e7c04"
+      "sha256": "9dbe01f878dcf7e26ae89b9058aa1c9346100a8f2294c35b792b29bd706f40be"
     },
     "blender_visual_review": {
       "report": "qa/blender-visual-review-revision03.json",
       "sha256": "a8aca3e3a3b480a044fa17693a802835bb14e304ba2d739facb503d9905a7d08",
-      "images": 14
+      "images": 14,
+      "historical": true,
+      "scene_revision": "seed-cambridge-03",
+      "notes": "Original static render review; new fan geometry is checked separately in revision04."
     },
     "gltf_validation": {
       "report": "qa/gltf-validation.json",
       "errors": 0,
       "warnings": 0,
-      "sha256": "70fb1d6d9eeb926e68ff829cd9e67516bd5dd7cd44fd7b552fe643c19bae659d"
+      "sha256": "05e1f4ee8abeccfe8ff32a112ae99abe464d7c9f64eb73e83745c511225c751d"
     },
     "clean_view": {
       "report": "qa/clean-view-report.json",
@@ -257,7 +275,7 @@
       "passed": true,
       "notes": "Re-import reproduced the final content and sizing assets byte for byte.",
       "verified_assets_sha256": {
-        "assets/content.json": "a40b842731b0eb70ba5c673a904175a9c3d984f72f88f1bb4ab3818e97cd474c",
+        "assets/content.json": "3797193e1796851b320439f4b8816a1bcbe0412da136833050b043d47e097386",
         "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8"
       }
     },
@@ -283,13 +301,39 @@
     "publication_build": {
       "passed": true,
       "report": "qa/publication-build-report.json",
-      "sha256": "4fd6c3aa5fff079da6447c68719cc106b3dd9e574fe747dd7489c9bc78fea33a"
+      "sha256": "9307280bf938f930b66b52294eca9be2f66d7eb83631251545856a2f591cd479"
     },
     "sundai_cover": {
       "passed": true,
       "report": "qa/sundai-project-cover.json",
       "sha256": "b171880901ae567cde4ccc0fabdaa601c8e7da4dd2c70df3994b765ca3d7a740",
-      "notes": "2000 x 1125 PNG and JPG. Visual review confirms readable type, approved Amaru logo and the same Blender campus. This illustrative cover reveals the underground field without changing the saved master."
+      "notes": "2000 x 1125 PNG and JPG. Visual review confirms readable type, approved Amaru logo and the same Blender campus. This illustrative cover reveals the underground field without changing the saved master.",
+      "scene_revision": "seed-cambridge-03"
+    },
+    "fan_animation": {
+      "report": "qa/fan-animation-report.json",
+      "passed": true,
+      "sha256": "17e894b504352e848333131adb854605df739541ce5f64f0a0d678437a2d0d64",
+      "verified_glb_sha256": "dc65a3c58bc50ae161d1f2b085ab2339d383e79d920ebcf68937d4b926319fbe",
+      "checks": 19,
+      "verified_web_assets_sha256": {
+        "index.html": "f312df2b6673914a246efd52ef7b3d70c2865bc845cfdb6ea8ba10b807880714",
+        "src/app.js": "10b942d1c69bafb37bd3a265e2ce882153c23370b85e9bde66ff221a925da726",
+        "src/style.css": "8951b7c80223c9de9d4f37dfa7b3444739d9d515bd2c6732335b0cbf4847e47b",
+        "assets/content.json": "3797193e1796851b320439f4b8816a1bcbe0412da136833050b043d47e097386",
+        "assets/spec-source.md": "a800edbc84b3a42bf561fa0eb71728fc7c4b2a34a56143050214524f3dcf52e3",
+        "stills/index.html": "acdfff301ae6faedffc4b9f8d13a7df1d9b0a229841accdb1adf5e76b88fbeef",
+        "README.md": "e2f3106b92963c56d67ec2f268f32e9d03cab4f5c5872cf83448e8d2a0d7e05a",
+        "assets/top-model-sizing.json": "9916f60f632809d2dea215842e22bb1c672dc2a3195c75614a5035a539be95f8",
+        "assets/amaru-logo.svg": "5bb87ce86fe22c78614097ea8919e66ec56690a56da8052f6a0b1d729b4936cb",
+        "assets/campus.glb": "dc65a3c58bc50ae161d1f2b085ab2339d383e79d920ebcf68937d4b926319fbe"
+      }
+    },
+    "fan_geometry": {
+      "report": "qa/fan-geometry-comparison.json",
+      "passed": true,
+      "sha256": "9155a6473fde67be478dfa0c45b7b67768276ffce32cd3e6c9b38fe1ad2f2ebd",
+      "verified_glb_sha256": "dc65a3c58bc50ae161d1f2b085ab2339d383e79d920ebcf68937d4b926319fbe"
     }
   },
   "engineering_boundaries": [
@@ -303,17 +347,21 @@
     "The $2.64B per-site and $15.82B fleet subtotals buy compute racks only at the inherited $7.8M price. A new total project budget and payback are not established.",
     "Eight loaded hours use about 666 MWh per campus, plus idle and transition electricity. Daily and annual energy require the total operating-load schedule; remaining hours are not assumed to draw zero.",
     "Heavy-model context cache, storage bandwidth, additional support power and reliability reserves require validation.",
-    "Stone-wool wall cores are enclosed between steel faces. Edge closures, joints, penetrations, fire-stopping and installation dust controls require the selected assembly specifications and final engineering."
+    "Stone-wool wall cores are enclosed between steel faces. Edge closures, joints, penetrations, fire-stopping and installation dust controls require the selected assembly specifications and final engineering.",
+    "Worst-case cold-snap heat balance and minimum flow to each exposed section remain uncalculated. Aggregate computer heat does not prove freeze protection.",
+    "Air-assisted drainage and complete coil emptying require equipment-specific engineering; opening drains and vents alone does not establish freeze protection.",
+    "Fan animation illustrates operation; displayed speed and simultaneous rotation are not an engineered fan-control schedule."
   ],
   "delivery_status": "Source release verified locally. Production release status is verified separately against the GitHub merge and Vercel deployment.",
-  "updated_at": "2026-10-19T00:32:38.315847+00:00",
+  "updated_at": "2026-10-19T01:14:05.499190+00:00",
   "web_revision": "coding-capacity-05",
-  "verification_notes": "Current browser, carousel, energy and thermal reports apply to the listed web asset hashes. Geometry and original stills remain at scene revision03. Prior specialized reports are marked historical.",
+  "verification_notes": "The current browser, carousel, energy, thermal and fan reports apply to the listed web assets. Geometry is revision04, with all fan pivots verified. Existing stills and cover remain revision03 static renders; they were not re-rendered for this animation update. Prior specialized reports are historical.",
   "test_source_sha256": {
     "tests/tour.mjs": "cc2f35523a908e6e839d7a1e0bc9ebf8556225f40d0cc6fe36c88a8b7874477a",
     "tests/carousel-layout.mjs": "c50682e444a23fc14bb633bf445167c08277dad97b140d24013a5d4aae8217af",
     "tests/model-energy.mjs": "ae832afb70802d260275e3aba87ee187e8f3483a4e1089fe82e96675a818cecd",
-    "tests/thermal-design.mjs": "b276f7fde196f4a94444efa8b7bfc22cb85250c3fb7b8006bb954dbdd6b90784"
+    "tests/thermal-design.mjs": "68e7ffe1aef18dda5fba163a6b2c3a11642d0817f13bef0649ad57431fd0c49d",
+    "tests/fans.mjs": "564d4cc05d26d34d5df0f235d1fa7020fc5ea796d7b078c13fb39527bb819e2c"
   },
   "sundai_cover": {
     "stills/Sundai-campus.png": {

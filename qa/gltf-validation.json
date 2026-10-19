@@ -2,7 +2,7 @@
   "uri": "campus.glb",
   "mimeType": "model/gltf-binary",
   "validatorVersion": "2.0.0-dev.3.10",
-  "validatedAt": "2026-10-18T22:35:10.942Z",
+  "validatedAt": "2026-10-19T01:08:25.890Z",
   "issues": {
     "numErrors": 0,
     "numWarnings": 0,
@@ -19,91 +19,91 @@
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/67/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/918/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/72/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/923/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/73/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/924/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/74/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/925/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/75/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/926/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/76/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/927/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/77/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/928/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/78/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/929/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/79/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/930/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/87/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/938/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/88/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/939/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/89/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/940/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/90/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/941/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/101/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/952/primitives/0/attributes/TEXCOORD_0"
       },
       {
         "code": "UNUSED_OBJECT",
         "message": "This object may be unused.",
         "severity": 2,
-        "pointer": "/meshes/140/primitives/0/attributes/TEXCOORD_0"
+        "pointer": "/meshes/991/primitives/0/attributes/TEXCOORD_0"
       }
     ],
     "truncated": false
@@ -116,7 +116,7 @@
         "pointer": "/buffers/0",
         "mimeType": "application/gltf-buffer",
         "storage": "glb",
-        "byteLength": 53628376
+        "byteLength": 53366728
       }
     ],
     "animationCount": 0,
@@ -125,9 +125,9 @@
     "hasSkins": false,
     "hasTextures": false,
     "hasDefaultScene": true,
-    "drawCallCount": 203,
-    "totalVertexCount": 1888490,
-    "totalTriangleCount": 1038760,
+    "drawCallCount": 1054,
+    "totalVertexCount": 1893530,
+    "totalTriangleCount": 1041448,
     "maxUVs": 1,
     "maxInfluences": 0,
     "maxAttributes": 3

@@ -255,10 +255,10 @@ for row in range(6):
         for f in range(8):
             fx=x-5.2+f*1.48;pipe('coolers','black',(fx,y,9.9),(fx,y,9.96),.5,16)
             pipe('coolers','silver',(fx,y,9.97),(fx,y,10.04),.12,8)
+            rotor='coolerRotor'+str((row*17+col)*8+f)
+            rotor_origins[rotor]=[fx,y,9.99]
             for a in [0,math.pi/3,2*math.pi/3]:
-                if row==0 and col==8:
-                    rotor='coolerRotor'+str(f);rotor_origins[rotor]=[fx,y,9.99];box(rotor,'steel',(0,0,0),(.8,.065,.025),rz=a)
-                else:box('coolers','steel',(fx,y,9.99),(.8,.065,.025),rz=a)
+                box(rotor,'steel',(0,0,0),(.8,.065,.025),rz=a)
         item('dryCooler',[x,y,z],[12,2.4,2.6])
 for x in [-109,109]:
     for i in range(25):box('coolers','steel',(x,42+i*.3,i*.24+.12),(3,.31,.24))
@@ -364,7 +364,13 @@ box('chillers','concrete',(123,48,.18),(30,28,.36))
 for x in [113,123,133]:
     for y in [41,55]:
         box('chillers','white',(x,y,1.65),(2.3,12,2.5));box('chillers','black',(x-1.16,y,1.7),(.025,11.7,1.8))
-        for j in range(7):pipe('chillers','black',(x,y-5+j*1.65,2.92),(x,y-5+j*1.65,3),.8,12)
+        for j in range(7):
+            fy=y-5+j*1.65
+            pipe('chillers','black',(x,fy,2.92),(x,fy,3),.8,12)
+            rotor='chillerRotor'+str(sum(k.startswith('chillerRotor') for k in rotor_origins))
+            rotor_origins[rotor]=[x,fy,3.04]
+            for a in [0,math.pi/3,2*math.pi/3]:box(rotor,'steel',(0,0,0),(1.3,.105,.025),rz=a)
+            pipe('chillers','silver',(x,fy,3.02),(x,fy,3.10),.16,8)
         item('backupChiller',[x,y,1.65],[2.3,12,2.5])
 for x,mm,header in [(112,'blue',29),(114,'warm',28)]:route('chillers',mm,[(x,34,.6),(x,header,.6),(100,header,.6),(100,header,2.8)],.16)
 # Ground cutaway: geological faces, bottom, and all 32 x 32 U loops.
@@ -505,7 +511,7 @@ for (key,mname),(verts,faces) in batches.items():
 # Clickable roots and helper groups retain a common semantic object ID.
 for key in ['hallRoof','partitions']:group(key)['objectId']='hall' if key=='hallRoof' else 'sealed'
 for key in ['boreholeFocus','boreholeSurface','groundHeaders']:group(key)['objectId']='boreholes'
-for key,oid in {'airlockRoof':'airlock','freshAirCase':'freshAir','batteryHouseRoof':'batteryHouse','drainLines':'freezeProtection','coolerCircuitPipes':'coolers',**{key:'coolers' for key in rotor_origins}}.items():
+for key,oid in {'airlockRoof':'airlock','freshAirCase':'freshAir','batteryHouseRoof':'batteryHouse','drainLines':'freezeProtection','coolerCircuitPipes':'coolers',**{key:('chillers' if key.startswith('chillerRotor') else 'coolers') for key in rotor_origins}}.items():
     group(key)['objectId']=oid
     for child in group(key).children:child['objectId']=oid
 for key,pos in rotor_origins.items():

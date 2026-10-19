@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "previous_scene": "seed-cambridge-03",
+  "current_scene": "seed-cambridge-04",
+  "unchanged_nonfan_meshes": 194,
+  "changed_nonfan_meshes": [
+    "coolers_steel"
+  ],
+  "added_nonfan_meshes": [
+    "chillers_silver"
+  ],
+  "removed_nonfan_meshes": [],
+  "moved_nonfan_nodes": [],
+  "notes": "Fixed cooler blades removed from coolers_steel and replaced with separate rotors. Chiller hubs added as chillers_silver. Other mesh vertices, indices, materials and node transforms are unchanged."
+}
