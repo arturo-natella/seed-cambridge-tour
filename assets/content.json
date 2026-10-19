@@ -317,7 +317,7 @@
         "title": "Cooling ridge",
         "what": "102 dry coolers on short legs on a 6 m steel deck, fed by three pipe bridges. Sealed coils reject heat without evaporative cooling towers; rare hot conditions need assistance or a power limit.",
         "why": "Warm-water chips let outdoor air carry away heat in nearly all hours of the source weather file. Weather availability does not establish how many hours the datacenter actually runs.",
-        "how": "fans pull outside air up through finned coils. The fluid inside is water mixed with Dow's DOWFROST antifreeze (an inhibited propylene glycol), so in normal running it never gets colder than the high teens °F, and it stays liquid down to about 2°F (−16°C). About 73 coolers serve the chips and 29 the room air. The deck and legs keep snow clear. In winter the fans slow, coolers switch off, and a bypass valve keeps the building's water at 70°F (21°C) or warmer. In a long winter outage, the coolers are closed off and drained into indoor tanks.",
+        "how": "The computers produce heat as they use electricity. Pumps carry that heat to the dry coolers in warm liquid. Outside air passes over the sealed radiator tubes, takes up heat and leaves warmer; no hot-air duct connects the hall to the radiators. In cold weather the controls slow or stop fans and bypass some cooling. Warm liquid protects a coil only while adequate flow and temperature are maintained; idle sections and outages still need freeze protection.",
         "math": [
           "Coolers bring water within ~9°F (5°C) of the outside air, so 106°F (41°C) water works up to 97°F (36°C) outdoors. Cambridge's hottest hour (Boston-Logan weather file, 2011–2025) is 97°F (36.1°C): 1 hour in 8,760.",
           "Annual fan, pump and chiller electricity must be recalculated from the revised hourly IT load and weather. The eight-hour requirement alone does not determine annual cooling energy."
@@ -789,7 +789,7 @@
     },
     "coolers": {
       "name": "Dry coolers",
-      "text": "Giant radiators with fans. Outdoor air cools the chip loop through sealed coils, so nothing evaporates, and rare hot conditions can require assistance or a rack power limit. The fluid is water mixed with Dow's DOWFROST antifreeze: in normal running it never gets colder than the high teens °F, and it stays liquid down to about 2°F (−16°C).",
+      "text": "Pumps bring warm liquid from the computers to these outdoor radiators. Fans move outside air over sealed tubes and fins to release the heat. The hall’s air stays indoors. Colder outside air can remove the same heat with less fan work; actual fan staging depends on load and fluid temperature.",
       "number": "8,759 / 8,760 source weather hours suitable for direct chip cooling",
       "math": "#chip-loop",
       "why": "#chip-loop"

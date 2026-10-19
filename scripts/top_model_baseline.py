@@ -302,3 +302,5 @@ def update_operating_copy(content):
         'Obtain the selected panel manufacturer’s safety and installation documents.</span>')
     b[1]['designKeys'].append('hall')
     b[3]['card']['how'] += ' The hall walls use stone wool enclosed between steel panel faces; bare insulation is not intended to face the room.'
+    b[5]['card']['how'] = 'The computers produce heat as they use electricity. Pumps carry that heat to the dry coolers in warm liquid. Outside air passes over the sealed radiator tubes, takes up heat and leaves warmer; no hot-air duct connects the hall to the radiators. In cold weather the controls slow or stop fans and bypass some cooling. Warm liquid protects a coil only while adequate flow and temperature are maintained; idle sections and outages still need freeze protection.'
+    objects['coolers']['text'] = 'Pumps bring warm liquid from the computers to these outdoor radiators. Fans move outside air over sealed tubes and fins to release the heat. The hall’s air stays indoors. Colder outside air can remove the same heat with less fan work; actual fan staging depends on load and fluid temperature.'

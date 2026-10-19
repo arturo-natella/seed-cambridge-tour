@@ -17,6 +17,14 @@ def bounds(key):
     return {'min':[min(p[i] for p in points) for i in range(3)],'max':[max(p[i] for p in points) for i in range(3)]}
 checks=[]
 def check(name,value,expected,tol=.001):checks.append({'name':name,'measured':value,'expected':expected,'tolerance':tol,'pass':abs(value-expected)<=tol})
+# Every outdoor fan must be a separate rotor in the saved Blender scene.
+for prefix,total,span in [('coolerRotor',816,.8),('chillerRotor',42,1.3)]:
+    rotors=[o for o in bpy.data.objects if o.type=='EMPTY' and o.name.startswith(prefix)]
+    check(prefix+' count',len(rotors),total,0)
+    check(prefix+' unique pivots',len({tuple(round(v,4) for v in o.location) for o in rotors}),total,0)
+    check(prefix+' horizontal blade span',max(abs((bounds(o.name)['max'][0]-bounds(o.name)['min'][0])-span) for o in rotors),0,.001)
+    check(prefix+' blade height',max(abs((bounds(o.name)['max'][2]+bounds(o.name)['min'][2])/2-o.location.z) for o in rotors),0,.001)
+    check(prefix+' blade meshes',sum(len(o.children)==1 and o.children[0].type=='MESH' for o in rotors),total,0)
 b=bounds('sealed');check('Hall slab width',b['max'][0]-b['min'][0],210);check('Hall slab depth',b['max'][1]-b['min'][1],60)
 r=bounds('hallRoof');check('Roof low edge',r['min'][2],7.9,.03);check('Roof high edge',r['max'][2],9.6,.1)
 b=bounds('boreholes');check('Borehole bottom',b['min'][2],-150,.1);check('Borehole field x span',b['max'][0]-b['min'][0],155.4,.15)

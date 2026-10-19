@@ -17,7 +17,41 @@ const hemi=new THREE.HemisphereLight('#e1edee','#858878',1.65);scene.add(hemi);
 const sun=new THREE.DirectionalLight('#fff0df',2.6);sun.position.copy(v([-250,-300,380]));sun.castShadow=true;sun.shadow.mapSize.set(4096,4096);sun.shadow.camera.left=-360;sun.shadow.camera.right=360;sun.shadow.camera.top=330;sun.shadow.camera.bottom=-330;sun.shadow.camera.far=1000;sun.shadow.normalBias=.35;sun.shadow.bias=-.0007;scene.add(sun);
 const fill=new THREE.DirectionalLight('#d8e4ef',.8);fill.position.copy(v([200,100,200]));scene.add(fill);
 const state={index:0,card:0,object:null,xray:false,ground:false,flow:false,winter:false,labels:false,clean:false,powerFocus:false,exploring:false,ready:false,flying:false,hover:null};
-let campus,groups={},pickables=[],materials=[],fanRotors=[],flight=null,storyTimer=null,pointerDown=null,lastTime=performance.now();
+let campus,groups={},pickables=[],materials=[],fanBatches=[],fanAngle=0,flight=null,storyTimer=null,pointerDown=null,lastTime=performance.now();
+const fanMatrix=new THREE.Matrix4(),fanRotation=new THREE.Matrix4();
+// Preserve the Blender pivots and blade geometry; share draw calls across fans.
+function prepareFans(){
+ campus.updateMatrixWorld(true);
+ const campusInverse=campus.matrixWorld.clone().invert();
+ for(const [prefix,key] of [['coolerRotor','coolers'],['chillerRotor','chillers']]){
+  const roots=Object.entries(groups).filter(([name])=>new RegExp('^'+prefix+'\\d+$').test(name)).map(([,node])=>node);
+  if(!roots.length)continue;
+  const blades=roots.map(root=>root.children.find(child=>child.isMesh));
+  const mesh=new THREE.InstancedMesh(blades[0].geometry,blades[0].material,roots.length);
+  mesh.name=prefix+'Instances';mesh.userData.objectId=key;mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+  const pivots=roots.map(root=>new THREE.Matrix4().multiplyMatrices(campusInverse,root.matrixWorld));
+  const offsets=roots.map((root,i)=>new THREE.Matrix4().multiplyMatrices(root.matrixWorld.clone().invert(),blades[i].matrixWorld));
+  roots.forEach(root=>{root.removeFromParent();delete groups[root.name];});
+  campus.add(mesh);groups[mesh.name]=mesh;fanBatches.push({mesh,pivots,offsets});
+ }
+ updateFans(0);
+ for(const {mesh} of fanBatches){
+  mesh.computeBoundingSphere();
+  // Rotation leaves pivot positions unchanged; allow for every blade angle.
+  mesh.boundingSphere.radius+=2;
+ }
+}
+function updateFans(dt){
+ fanAngle=(fanAngle-dt*Math.PI*(state.winter?.5:2))%(Math.PI*2);
+ for(const {mesh,pivots,offsets} of fanBatches){
+  for(let i=0;i<pivots.length;i++){
+   fanRotation.makeRotationY(fanAngle+(i*.381966%1)*Math.PI*2);
+   fanMatrix.copy(pivots[i]).multiply(fanRotation).multiply(offsets[i]);
+   mesh.setMatrixAt(i,fanMatrix);
+  }
+  mesh.instanceMatrix.needsUpdate=true;
+ }
+}
 const anchors={hall:[0,-28,5],roofSolar:[0,0,10],sealed:[-37,-5,1],compute:[-36.4,-10,1.5],network:[-39.3,-10,1.5],trench:[-38.25,-10,0],fire:[-37,-5,6.6],spine:[-37,23,2],electrical:[-7,12,2],bridges:[0,33,7],coolers:[0,48,9],chillers:[123,48,2],boreholes:[0,-142,-65],batteryHouse:[0,-47,5],solar:[-75,-160,3],substation:[175,0,5],generators:[210,110,3],fuel:[255,110,4],reserved:[210,158,0],house:[-160,2,5],greenhouse:[-155,-35,6],snowpad:[160,-95,0]};
 Object.assign(anchors,{dewpoint:[-49.82,8,1.8],freshAir:[75,23.2,1.45],airlock:[102,-2,2.5],bypass:[-.85,35,8.9],freezeProtection:[0,39.35,7.72],drainTanks:[-88,23,1.85],coldInsulation:[0,-47.75,1.2]});
 const alias={hallRoof:'hall',partitions:'sealed',spares:'compute',power:'electrical',powerLine:'substation',heatPipes:'spine',geology:'boreholes',groundCap:'boreholes',parking:'solar',solarField:'solar'};
@@ -189,14 +223,18 @@ function updateGeothermal(){
 }
 function renderFreeze(){
   $('#panel-freeze').innerHTML=`<p class="energy-intro">The updated design combines <b>antifreeze, a warm-water bypass, cooler isolation and indoor drain-down tanks</b>. The protection changes when the computers stop producing heat.</p>
+    <h3>Where the heat comes from</h3><p><b>The running computers are the heat source.</b> At modeled full load, about 75 MW of IT electricity per campus becomes heat. Pumps carry that heat outdoors in liquid; there is no hot-air duct from the hall to the dry coolers.</p>
+    <ol class="energy-chain" aria-label="How computer heat reaches outdoor air"><li>Computers make heat</li><li>Liquid carries heat</li><li>Outdoor air takes heat</li></ol>
+    <p>At the radiator, warm liquid stays inside metal tubes. Outside air passes over the tubes and fins, picks up heat and leaves warmer. Cooler liquid returns to collect more heat. Room-air heat first crosses an indoor water coil; that air stays inside.</p>
+    <details class="design-details"><summary>Does computer heat make a cold snap harmless?</summary><p>Heat helps only where enough warm liquid is circulating. An idle cooler, an isolated pipe or a pump failure can leave an outdoor section cold even while the rest of the campus is producing heat.</p><p>A colder day increases heat loss. Whether a coil stays warm depends on its incoming liquid temperature, flow and exposure. This concept has not yet calculated the worst-case cold-snap heat balance, so the campus heat total is not proof that every pipe stays above freezing.</p><p>In cold weather, the controls prevent overcooling by slowing or stopping fans. The bypass keeps the hall supply warm enough, but it does not by itself protect every outdoor coil. Adequate antifreeze, monitored flow and a verified shutdown procedure remain necessary. The animated fans illustrate operation; real controls stage them according to load and temperature.</p></details>
     <div class="freeze-fluid"><b>Dow’s DOWFROST</b><p>About 35% propylene glycol by weight in the building, outdoor and borehole circuits. The separate rack circuits use PG25, a premixed 25% coolant.</p><small>Normal minimum: high teens °F (~−7°C). Stays liquid down to about 2°F (−16°C).</small></div>
-    <h3>While the computers are running</h3><ol class="energy-calculation"><li>Slow the cooler fans, then stage coolers off as less cooling is needed.</li><li>A motorized bypass blends warm return fluid around the coolers, keeping building supply at <b>70°F (21°C) or warmer</b>.</li><li>Each cooler has outlet freeze sensing and shut-off valves. Near the planned freeze limit, controls open the bypass and stop its fans.</li><li>Stop recharging the ground below <b>14°F (−10°C)</b> outdoors.</li></ol>
+    <h3>While the computers are running</h3><ol class="energy-calculation"><li>Slow the cooler fans, then stage coolers off as colder outside air removes heat more readily.</li><li>A motorized bypass blends warm return fluid around the coolers, keeping building supply at <b>70°F (21°C) or warmer</b>.</li><li>Each cooler has outlet freeze sensing and shut-off valves. Near the planned freeze limit, controls open the bypass and stop its fans.</li><li>Stop recharging the ground below <b>14°F (−10°C)</b> outdoors.</li></ol>
     <button class="inline-action" data-system-view="bypass">See the bypass and cooler valves <span>↗</span></button>
     <h3>If the computers stop during a long cold outage</h3><ol class="energy-calculation"><li><b>Close off the exposed coolers.</b> Winter wind can chill their coils even with the fans off.</li><li><b>Drain their fluid indoors.</b> Each cooler’s drain connects to the indoor drain-down tanks.</li><li><b>Keep indoor and buried fluid moving.</b> Backup power runs the pumps; the project estimates under 1 MW for that duty.</li><li><b>Check before restarting.</b> Any remaining slush must thaw. Expansion tanks accommodate fluid expansion; final volumes and restart controls need engineering.</li></ol>
     <button class="inline-action" data-system-view="drainTanks">See the drain-down tanks <span>↗</span></button>
-    <details class="design-details"><summary>Freeze limits and remaining engineering</summary><p>About 35% propylene glycol by weight corresponds to about 36% DOWFROST product. The freeze alarm concept uses a 6°F margin above the ~2°F fluid freeze point: about 8°F (−13°C). The final setpoint still needs confirmation.</p><p>Burst protection and freeze protection are different. The source estimates burst protection to about −36°F (−38°C), interpolated from Dow’s tables. Residual fluid can still become slush; this is not a guarantee of flow or safe restart.</p><div class="assumption"><strong>Still to confirm</strong><p>Fluid concentration, full drainability, tank capacities, pipe slopes, expansion volume, alarm settings and restart sequence. The illustrated tank and valve dimensions are placeholders. Heat tracing and wind screens remain optional.</p></div></details>
+    <details class="design-details"><summary>Freeze limits and remaining engineering</summary><p>About 35% propylene glycol by weight corresponds to about 36% DOWFROST product. The freeze alarm concept uses a 6°F margin above the ~2°F fluid freeze point: about 8°F (−13°C). The final setpoint still needs confirmation.</p><p>Burst protection and freeze protection are different. The source estimates burst protection to about −36°F (−38°C), interpolated from Dow’s tables. Residual fluid can still become slush; this is not a guarantee of flow or safe restart.</p><p>EVAPCO’s eco-Air instructions warn that opening drains and vents alone does not empty every tube; large dry coolers require air-assisted drainage. That equipment and sequence are not yet engineered in this concept.</p><div class="assumption"><strong>Still to confirm</strong><p>Fluid concentration, full drainability, tank capacities, pipe slopes, expansion volume, alarm settings and restart sequence. The illustrated tank and valve dimensions are placeholders. Heat tracing and wind screens remain optional.</p></div></details>
     <details class="design-details"><summary>Keeping indoor pipes dry</summary><p>The halls target a dew point of about 50°F (10°C). Cooling units keep rack supply at or above 77°F (25°C), and cold recharge pipes have vapor-sealed insulation. New wall sensors, a fresh-air drying unit and loading-dock airlocks show the condensation controls.</p><p>The fresh-air drying equipment still needs sizing. Its dehumidification duty must be verified separately from the 75°F (24°C) room-air cooling circuit.</p></details>
-    <p class="reference-source">Updated handoff §5, Freeze protection and Condensation control · punch list 1j–1l. Layout and tank sizes are illustrative; final engineering remains open.</p>`;
+    <p class="reference-source">Updated handoff §5, Freeze protection and Condensation control · punch list 1j–1l. <a href="https://www.evapcoasia.com/sites/evapcoasia.com/files/2025-12/Bulletin%20EA24OM_eco-Air%20OM%28202512%29.pdf" target="_blank" rel="noopener">EVAPCO eco-Air operation manual, p.15</a>. Layout and tank sizes are illustrative; final engineering remains open.</p>`;
 }
 renderGeothermal();renderFreeze();
 function designDetails(key){
@@ -361,7 +399,7 @@ function overlays(){
 function tick(time){requestAnimationFrame(tick);const dt=Math.min(.05,(time-lastTime)/1000);lastTime=time;
  if(flight){const f=flight,t=f.duration===0?1:Math.min(1,(time-f.start)/f.duration),s=t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;camera.position.lerpVectors(f.from,f.to,s);controls.target.lerpVectors(f.targetFrom,f.targetTo,s);camera.lookAt(controls.target);if(t===1){flight=null;f.done?.();}}
  else controls.update();
- if(!reduced)for(const rotor of fanRotors)rotor.rotation.y-=dt*Math.PI*(state.winter?.5:2);
+ if(!reduced&&fanBatches.length)updateFans(dt);
  if(state.flow)for(const f of flowPaths){f.beads.forEach((b,i)=>{b.visible=(!f.ground||state.ground)&&(!f.season||f.season===(state.winter?'winter':'summer'));if(!b.visible)return;const t=(((reduced?0:time)*.00006+i/f.beads.length)%1+1)%1;b.position.copy(f.curve.getPoint(t));const tangent=f.curve.getTangent(t);b.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),tangent);});}
  overlays();renderer.render(scene,camera);
 }
@@ -372,14 +410,14 @@ try{
  campus.traverse(o=>{if(o.name&&o.type==='Object3D')groups[o.name]=o;});
  // glTF empty nodes may load as Group or Object3D, so retain any named parent.
  for(const o of campus.children)groups[o.name]=o;
- fanRotors=Object.entries(groups).filter(([name])=>/^coolerRotor\d+$/.test(name)).map(([,node])=>node);
+ prepareFans();
  campus.traverse(o=>{if(!o.isMesh)return;o.castShadow=true;o.receiveShadow=true;pickables.push(o);const mats=Array.isArray(o.material)?o.material:[o.material];const cloned=mats.map(m=>{const mat=m.clone();const key=objectKey(o);materials.push({mat,base:mat.color.clone(),key,name:m.name,emissive:mat.emissive?.clone()||new THREE.Color()});if(m.name==='groundPipe'){mat.transparent=true;mat.opacity=.22;mat.depthWrite=false;}if(m.name==='glass'){mat.transparent=true;mat.opacity=.24;mat.depthWrite=false;mat.side=THREE.DoubleSide;}return mat;});o.material=Array.isArray(o.material)?cloned:cloned[0];});
  state.ready=true;$('#loadbar').style.width='100%';$('#loading').style.opacity='0';setTimeout(()=>$('#loading').remove(),550);
  if(params.has('render'))document.body.classList.add('render-only');projectionOffset();
  const initial=parseInt(params.get('stop')??location.hash.replace('#stop-',''),10);goTo(Number.isFinite(initial)?initial:0,true);
  // Read-only state and explicit controls are used by the QA harness and saved still views.
  window.SEED={state,content,groups,goTo,setToggle,openObject,showBoreholes,focusPower,focusSystem,camera,controls,renderer,scene,anchors,project,ready:true,
-  inspect:()=>({meshes:pickables.length,drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles,groups:Object.keys(groups),assumption:content.bubbles[state.index].assumption}),
+  inspect:()=>({meshes:pickables.length,drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles,groups:Object.keys(groups),fans:fanBatches.map(({mesh})=>({name:mesh.name,count:mesh.count})),assumption:content.bubbles[state.index].assumption}),
   view:(pos,target)=>{flight=null;camera.position.copy(v(pos));controls.target.copy(v(target));controls.update()},
   objectScreen:key=>project(anchors[key])};
 }catch(error){console.error(error);$('#loadnote').innerHTML='The campus model could not load. Start the static server from the tour folder, then refresh.<a href="./stills/index.html">View the stills ↗</a>';$('#loading').style.opacity='1';}

@@ -7,7 +7,7 @@
     "build": "node scripts/build-site.mjs",
     "start": "serve -l tcp://127.0.0.1:4173 . --no-clipboard",
     "build:model": "node scripts/build-model.mjs",
-    "test": "node tests/tour.mjs && node tests/carousel-layout.mjs && node tests/model-energy.mjs && node tests/thermal-design.mjs",
+    "test": "node tests/tour.mjs && node tests/carousel-layout.mjs && node tests/model-energy.mjs && node tests/thermal-design.mjs && node tests/fans.mjs",
     "test:clarity": "node scripts/check-rendering-clarity.mjs",
     "stills": "node scripts/render-stills.mjs",
     "import:content": "python3 -I scripts/import-content.py"

@@ -1,10 +1,80 @@
 {
   "model": "/Users/owner/Desktop/Sundai/tour/blender/SEED-Cambridge.blend",
-  "revision": "seed-cambridge-03",
-  "sha256": "73c6ed51fef690c5b2fccd7a175d31b887e0a55a676b597917130b70a1d77152",
+  "revision": "seed-cambridge-04",
+  "sha256": "00000ce5608481d2336f79d0db90c3dfdb85d66c720b426f20baf8a7c15378ed",
   "blender": "5.2.1 LTS",
   "status": "approved design modeled; not site surveyed",
   "checks": [
+    {
+      "name": "coolerRotor count",
+      "measured": 816,
+      "expected": 816,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "coolerRotor unique pivots",
+      "measured": 816,
+      "expected": 816,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "coolerRotor horizontal blade span",
+      "measured": 3.051757812455591e-06,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "coolerRotor blade height",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "coolerRotor blade meshes",
+      "measured": 816,
+      "expected": 816,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "chillerRotor count",
+      "measured": 42,
+      "expected": 42,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "chillerRotor unique pivots",
+      "measured": 42,
+      "expected": 42,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "name": "chillerRotor horizontal blade span",
+      "measured": 1.2207031250044409e-05,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "chillerRotor blade height",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "pass": true
+    },
+    {
+      "name": "chillerRotor blade meshes",
+      "measured": 42,
+      "expected": 42,
+      "tolerance": 0,
+      "pass": true
+    },
     {
       "name": "Hall slab width",
       "measured": 210.0,
@@ -573,7 +643,7 @@
       "max": [
         138.0,
         62.0,
-        3.0
+        3.0999999046325684
       ]
     },
     "drainTanks": {

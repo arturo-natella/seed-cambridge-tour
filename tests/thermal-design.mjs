@@ -76,6 +76,8 @@ try{
    check(`${viewport.name} stop ${stop}: winter protection is an inline fourth card`,await page.locator('#panel-freeze').isVisible()&&page.url()===url&&await page.locator('#card-count').textContent()==='4 / 4');
    const text=await page.locator('#panel-freeze').textContent();
    check(`${viewport.name} stop ${stop}: fluid circuits and outage trigger are distinct`,text.includes('separate rack circuits use PG25')&&text.includes('If the computers stop during a long cold outage')&&text.includes('high teens °F')&&text.includes('2°F (−16°C)'));
+   check(`${viewport.name} stop ${stop}: heat path explains liquid transport and outdoor air`,text.includes('running computers are the heat source')&&text.includes('no hot-air duct')&&text.includes('Outside air passes over the tubes and fins'));
+   check(`${viewport.name} stop ${stop}: cold snap protection does not rely on aggregate heat alone`,text.includes('worst-case cold-snap heat balance')&&text.includes('does not by itself protect every outdoor coil')&&text.includes('air-assisted drainage'));
    await noOverflow(`${viewport.name} stop ${stop}: freeze card has no horizontal overflow`,'#panel-freeze');
    if(stop===5)await capture(`${viewport.name}-freeze`);
    await page.locator('#card-next').click();check(`${viewport.name} stop ${stop}: winter card restores the unchanged overview`,await page.locator('#panel-overview').isVisible()&&JSON.stringify(await snapshotOverview())===JSON.stringify(original));

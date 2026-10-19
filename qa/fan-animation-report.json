@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:4173",
+  "checkedAt": "2026-10-19T01:13:42.814Z",
+  "checks": [
+    "All 816 dry cooler and 42 chiller fans are present",
+    "Fan rendering remains batched, below 220 draw calls",
+    "Summer: every coolerRotorInstances blade stays at its hub",
+    "Summer: every coolerRotorInstances blade turns at expected illustrative speed",
+    "Summer: every chillerRotorInstances blade stays at its hub",
+    "Summer: every chillerRotorInstances blade turns at expected illustrative speed",
+    "coolerRotor: every pivot matches the saved Blender geometry",
+    "coolerRotor: all pivots are distinct",
+    "chillerRotor: every pivot matches the saved Blender geometry",
+    "chillerRotor: all pivots are distinct",
+    "Both fan batches remain pickable as their equipment",
+    "Winter: every coolerRotorInstances blade stays at its hub",
+    "Winter: every coolerRotorInstances blade turns at expected illustrative speed",
+    "Winter: every chillerRotorInstances blade stays at its hub",
+    "Winter: every chillerRotorInstances blade turns at expected illustrative speed",
+    "Reduced motion pauses every one of the 858 fans",
+    "Visible cold snap explanation states the uncalculated heat balance",
+    "No browser errors",
+    "No failed assets"
+  ],
+  "errors": [],
+  "network": [],
+  "sourceHashesAtStart": {
+    "src/app.js": "10b942d1c69bafb37bd3a265e2ce882153c23370b85e9bde66ff221a925da726",
+    "assets/campus.glb": "dc65a3c58bc50ae161d1f2b085ab2339d383e79d920ebcf68937d4b926319fbe",
+    "blender/viewer-anchors.json": "33d695f66cd908c849dc618a7b055af77a58b56bbcee516779c2bfbbd480526e"
+  },
+  "render": [
+    {
+      "name": "coolerRotorInstances",
+      "count": 816
+    },
+    {
+      "name": "chillerRotorInstances",
+      "count": 42
+    }
+  ],
+  "drawCalls": 168
+}

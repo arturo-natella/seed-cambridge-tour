@@ -1,5 +1,5 @@
 {
-  "revision": "seed-cambridge-03",
+  "revision": "seed-cambridge-04",
   "units": "meters",
   "origin": "center of main hall at ground level",
   "axes": {
@@ -117,7 +117,7 @@
     "Freeze-protection tanks, drain pipe diameters, illustrative falls, valve sizes and tank capacity are not hydraulic sizing or a drainage-performance claim.",
     "Tank centers at x -95 and -81 preserve the existing CDU line and four service headers; their combined bounds extend x -101 to -75.",
     "Fresh-air coil duty, air delivery duct design, condensate disposal and humidity controls remain engineering assumptions.",
-    "Only eight fans on the middle front cooler have separate rotors for a representative control animation; all 816 fans are drawn.",
+    "All 816 dry-cooler fans and 42 illustrative chiller fans have separate Blender rotors. The viewer animates them in two shared draw batches. Motion shows operation, not an engineered fan speed or staging schedule; reduced-motion preferences pause it.",
     "White insulated drain lines with purple identification bands are separate from orange/blue operating coolant and gold electrical power."
   ],
   "unresolved": [
@@ -248,7 +248,12 @@
         5
       ]
     },
-    "insulation": "White vapor-sealed jacket; buried trunk and Cold Battery House routes; colored identification bands",
-    "representative_animated_fans": 8
+    "insulation": "White vapor-sealed jacket; buried trunk and Cold Battery House routes; colored identification bands"
+  },
+  "fan_animation": {
+    "dry_cooler_rotors": 816,
+    "chiller_rotors": 42,
+    "mode": "Illustrative operation; winter slows animation; actual controls may stop fans",
+    "axis": "local Blender Z; local glTF Y"
   }
 }
