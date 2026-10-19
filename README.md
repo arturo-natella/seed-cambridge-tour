@@ -33,16 +33,26 @@ Run `npm run build` to reproduce the published website. The output includes the 
 - Show boreholes flies to the ground section. A surface locator marks the field, and one actual front-edge U-loop is highlighted among all 1,024 loops. The cold battery stores cooling in rock; the electrical UPS batteries are inside the hall.
 - Ground cooling explains how room air transfers heat into circulating fluid and then rock. Its Summer / Winter buttons show the two seasonal paths; air never travels down the boreholes.
 - Winter protection separates normal cold-weather operation from a long cold outage with the computers off. Locate buttons show the bypass and indoor drain-down tanks. Tank capacities, full drainability, slopes and final control settings remain engineering work.
-- AI & energy opens on the top-model-for-every-request baseline. Four alternative mixes are labeled comparisons. All five use the same whole-facility power basis, including networking/storage support and cooling. The card contains the changed numbers, complete calculation, scope of cost and annual-energy estimates, and model-quality limitations.
+- AI & energy uses eight active coding hours per person daily on the top model, including repeated calls, retries and parallel agents. It explains how intensity, chip time and electricity determine capacity within each fixed-size datacenter.
 - Clean view in See inside hides the main card, tags, legends and hover tips while keeping the model controls and navigation available. Toggle it off or press Escape to restore the explanations without resetting the camera or selected card. It stays on while moving between tour stops.
 - X-ray reveals the hall; Ground cutaway reveals the boreholes and hides foreground terrain and meadow panels for visibility. Heat flow shows direction, reversing the seasonal ground loop in winter. Season and Labels can be changed independently.
 - Full-screen mode is in the top-right corner. Reduced-motion preferences are honored.
 
-Assumptions remain visible in the main bubbles. The revised baseline keeps the case C workload and 400-million-user target, but shows only about 26–27 million users’ equivalent workload within 500 MW on the heavy reference. Serving the full workload is estimated at 29,600–31,000 racks, 2.1–2.2 million GPUs and 7.3–7.6 GW. The $231–242B figure purchases compute racks only; no revised five-year total or payback is claimed. Llama 3.1 405B is a provisional heavy reference, not proof of best answer quality. gpt-oss-120b and DeepSeek-R1 remain comparisons.
+The requirement is eight active coding hours per person daily on the top model, with no fixed daily question or task allowance. Quota-blocked waiting is excluded. The opening overview hides its “We assume…” block; the detailed workload and hardware assumptions remain inside the supporting cards.
 
-The new calculation converts GB300-equivalent chips directly to 72-GPU Rubin racks at the assumed 2.5× per-rack throughput. This corrects the earlier 130/135 kW normalization mismatch (~4%). Each compute rack is then counted at 210 kW, with 14 kW support and PUE 1.10. The 500 MW cap is treated as total facility power before solar. Annual energy assumes full load for 8,760 hours, not forecast utilization. No additional batching/cache/concurrency savings are assumed. The old R1-specific cache capacity is not asserted for the heavy model.
+Eight hours establishes duration, not token volume. This planning estimate treats the supplied developer study’s 28 output and 333 new input tokens/s peak rates as sustained during active hours. These are assumed aggregate rates across calls and agents, not measured Claude or personal usage. Llama 3.1 405B is the heavy hardware proxy; the 2.5× Rubin throughput gain is transferred from R1 and needs validation.
 
-The existing Blender campus remains the six-site concept’s geometric reference. Its 368 drawn rack positions fit the lower 190 kW rack-power case; at the midpoint about 338 pairs fit a campus allowance. The scene does not depict an engineered expansion to 7.3–7.6 GW.
+The six-site 500 MW design stays fixed. At 210 kW compute + 14 kW support and PUE 1.10, each campus fits 338 whole rack pairs: 2,028 pairs and 499.70 MW across six sites. The illustrative one-cohort result is roughly 610–640 thousand users per datacenter per day, or 3.67–3.84 million across six sites. Active periods overlap in this baseline; each user receives eight active hours. No automatic threefold shift credit or quota-wait multiplier is applied. Actual scheduling, memory bandwidth, long-context attention, response-time targets, additional storage power and reliability reserves require validation.
+
+At that assumed intensity, eight hours processes 9,590,400 new input tokens and generates 806,400 output tokens per person. These are scenario volumes, not measured user usage or stored data. Effective context reuse is assumed, but attention, memory access and cache misses still cost resources.
+
+One eight-hour fully loaded cohort uses about 666 MWh per campus during those hours, plus idle and transition electricity. The remaining 16 hours are not assumed to draw zero. Actual daily and annual energy require a total-load schedule. Greenhouse heat availability also follows IT load.
+
+All 13 stops, the equipment explanations and embedded design details use this operating basis. Prior annual cooling savings, carbon-footprint shares and payback claims have been removed. Solar generation and weather-file availability are labeled separately from site electricity consumption and actual operating hours. The original borehole and cooling geometry remains a concept requiring a revised seasonal heat-balance simulation; the eight-hour requirement alone does not validate annual savings or field size.
+
+Compute-rack purchase is about $2.64B per campus or $15.82B across six sites. Buildings, networking, context memory, electricity and operations are additional; no revised five-year total or payback is claimed. The Blender campus has 368 drawn positions, which fit the lower 190 kW case; 338 active pairs fit at the midpoint. The workload changes operating capacity without changing the physical design.
+
+The hall wall specification encloses the stone-wool core between steel panel faces. The presentation now explains the enclosure, cut-edge and penetration details, and dust controls during installation or repair. Final assembly detailing remains engineering work.
 
 ## Deliverables
 
@@ -52,11 +62,12 @@ The existing Blender campus remains the six-site concept’s geometric reference
 - `blender/build_scene.py`: reproducible geometry and GLB export.
 - `stills/S1.png` through `S4.png`: 4K Blender renders. `S3-detail.png` is the full-size interior inset. `Power-detail.png` shows the electrical connection path. `Freeze-detail.png`, `Cooler-detail.png`, `Drain-detail.png` and `FreshAir-detail.png` show the updated thermal equipment.
 - `stills/index.html`: still gallery.
+- `stills/Sundai-project.png` and `stills/Sundai-project.jpg`: 2000 × 1125 Sundai project cover, using a fresh render of the existing Blender campus and the approved Amaru logo. `stills/Sundai-campus.png` is the underlying transparent render. Rebuild with `blender/render_project_cover.py`, then `node scripts/render-project-cover.mjs` (Inter fonts in `SEED_FONT_DIR` or the local Fonts folder).
 - `qa/model-measurements.json`: dimensions extracted from the saved Blender model and equipment inventory checks.
 - `qa/model-connectivity.json`: measured cooler connections, drain routes and separation between circuits in the saved model.
 - `qa/browser-report.json`: all-stop and equipment browser acceptance checks.
 - `qa/carousel-layout-report.json`: card titles, local details, scrolling and responsive-layout checks.
-- `qa/model-energy-report.json`: revised workload scenarios, keyboard navigation and responsive energy-card checks.
+- `qa/model-energy-report.json`: workload arithmetic, stale-copy audit, keyboard navigation and responsive energy-card checks.
 - `assets/top-model-sizing.json`: reproducible numerical results, assumptions and input hashes.
 - `scripts/top_model_baseline.py`: tour-local sizing calculation and the user-approved content revision.
 - `qa/thermal-design-report.json`: seasonal geothermal explanations, freeze-protection cards and clickable equipment checks.
@@ -75,7 +86,7 @@ npm test
 
 `npm test` expects the static server running at http://127.0.0.1:4173 and an installed Chrome. Blender commands use `/Applications/Blender.app/Contents/MacOS/Blender`; set `BLENDER_BIN` for another installation. Authored with Blender 5.2.1 LTS, Three.js 0.180.0 and Playwright 1.56.1.
 
-The optional content importer requires the original handoff, appendix/seed-basis-of-design.html and analysis files outside this repository. These are not needed to run, deploy or edit the included presentation assets. The importer reads those sources and writes only here. After importing, it applies `scripts/top_model_baseline.py`, which reads the original analysis without changing it and writes `assets/top-model-sizing.json` and the revised tour content. This prevents re-importing from restoring the superseded fast-model baseline. Never edit the source handoff, punch list, analysis or appendix as part of a tour build. `assets/spec-source.md` remains the original imported source excerpt, not the revised presentation.
+The optional content importer requires the original handoff, appendix/seed-basis-of-design.html and analysis files outside this repository. These are not needed to run, deploy or edit the included presentation assets. The importer reads those sources and writes only here. After importing, it applies `scripts/top_model_baseline.py`, which reads the original analysis without changing it and writes `assets/top-model-sizing.json` and the revised tour content. This prevents re-importing from restoring the superseded workload assumptions. Never edit the source handoff, punch list, analysis or appendix as part of a tour build. `assets/spec-source.md` remains the original imported source excerpt, not the revised presentation.
 
 ## Source and display boundaries
 

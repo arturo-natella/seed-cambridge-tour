@@ -11,7 +11,7 @@ try{
   check(`Card ${i}: exact bullets`,JSON.stringify(await page.locator('#bullets li').allTextContents())===JSON.stringify(b.bullets));
   check(`Card ${i}: exact number and unit`,await page.locator('#number').textContent()===b.number&&await page.locator('#unit').textContent()===b.unit);
   check(`Card ${i}: source tag`,await page.locator('#source').textContent()===b.source);
-  if(b.assumption){check(`Card ${i}: assumption visible`,await page.locator('#assumption').isVisible());check(`Card ${i}: exact assumption`,await page.locator('#assumption p').textContent()===b.assumption.replace(/^…/,''));}
+  if(b.assumption&&!b.hideOverviewAssumption){check(`Card ${i}: assumption visible`,await page.locator('#assumption').isVisible());check(`Card ${i}: exact assumption`,await page.locator('#assumption p').textContent()===b.assumption.replace(/^…/,''));}
   if(b.referenceModels){check(`Card ${i}: reference models visible`,await page.locator('#reference-models').isVisible());for(const m of b.referenceModels)check(`Card ${i}: ${m.name} reference`,(await page.locator('#reference-models').textContent()).includes(m.name));}
   const bounds=await page.locator('#story').evaluate(e=>({scroll:e.scrollHeight,client:e.clientHeight,rect:{top:e.getBoundingClientRect().top,bottom:e.getBoundingClientRect().bottom}}));check(`Card ${i}: fits 1080p`,bounds.scroll<=bounds.client+2&&bounds.rect.top>=95&&bounds.rect.bottom<=970);
   const file=`qa/stop-${String(i).padStart(2,'0')}.png`;await page.screenshot({path:file});report.screenshots.push(file);
@@ -57,7 +57,9 @@ try{
    let all=[];SEED.scene.traverse(o=>{if(o.isMesh&&vis(o)&&o.geometry?.attributes.position)all.push(o)});SEED.scene.updateMatrixWorld(true);
    const target=all.filter(o=>id(o)===key),ray=new T.Raycaster(),vec=new T.Vector3();
    const story=document.querySelector('#story').getBoundingClientRect();
-   function tryPoint(vec){const p=vec.clone().project(SEED.camera),x=(p.x+1)*innerWidth/2,y=(1-p.y)*innerHeight/2;if(p.z>1||x<story.right+20||x>innerWidth-220||y<115||y>innerHeight-125||document.elementFromPoint(x,y)!==SEED.renderer.domElement)return null;ray.setFromCamera(new T.Vector2(p.x,p.y),SEED.camera);const first=ray.intersectObjects(all,false)[0];return first&&id(first.object)===key?{x,y}:null;}
+   // Validate the exact screen pixel that the pointer will click. A projected
+   // vertex can otherwise round onto a neighboring rack or pipe at its edge.
+   function tryPoint(vec){const p=vec.clone().project(SEED.camera),x=Math.round((p.x+1)*innerWidth/2),y=Math.round((1-p.y)*innerHeight/2);if(p.z>1||x<story.right+20||x>innerWidth-220||y<115||y>innerHeight-125||document.elementFromPoint(x,y)!==SEED.renderer.domElement)return null;ray.setFromCamera(new T.Vector2(x/innerWidth*2-1,1-y/innerHeight*2),SEED.camera);const first=ray.intersectObjects(all,false)[0];return first&&id(first.object)===key?{x,y}:null;}
    const anchor=SEED.anchors[key];if(anchor){const p=tryPoint(new T.Vector3(anchor[0],anchor[2],-anchor[1]));if(p)return p;}
    for(const o of target){const a=o.geometry.attributes.position;for(let i=0;i<a.count;i+=Math.max(1,Math.floor(a.count/160))){vec.fromBufferAttribute(a,i).applyMatrix4(o.matrixWorld);const p=tryPoint(vec);if(p)return p;}}
    return null;
